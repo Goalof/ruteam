@@ -58,7 +58,7 @@ export default {
 	"font": {
 		"headline1": "normal 900 72px/1.2 --fontFamily-sans",
 		"headline2": "normal 900 42px/1.2 --fontFamily-sans",
-		"headline3": "normal 500 28px/1.2 --fontFamily-sans",
+		"headline3": "normal 500 36px/42px 'AvenirNextCyrRegular', sans-serif",
 		"base": "normal 300 16px/1.5 --fontFamily-sans",
 		"lead": "normal 400 18px/24px 'AvenirNextCyrRegular', sans-serif",
 		"headline5": "500 24px/30px 'AvenirNextCyrRegular', sans-serif"
