@@ -22,7 +22,7 @@ export default {
 		"nout": [
 			{
 				"type": "max-width",
-				"value": "1360"
+				"value": "1280"
 			}
 		]
 	},

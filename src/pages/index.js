@@ -27,7 +27,7 @@ export default (() => {
 			/>
 			<Stack margin="0px 0px 0px 0px" gap="0px" width="100%">
 				{"    "}
-				<StackItem width="40%" display="flex" nout-width="80%">
+				<StackItem width="45%" display="flex" nout-width="70%">
 					<Override slot="StackItemContent" align-items="flex-start" padding="15px 0px 0px 30px" />
 					{"        "}
 					<Box display="flex" align-items="center">
@@ -41,12 +41,12 @@ export default (() => {
 								padding="0px 0px 0px 0px"
 							/>
 						</Link>
-						<Text font="normal 600 18px/50px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 0px 0px" display="inline-block" color="#ffffff">
+						<Text font="normal 600 18px/50px 'AvenirNextCyrMedium', sans-serif" margin="0px 0px 0px 0px" display="inline-block" color="#ffffff">
 							<Link href="https://ru.uteam.pro/" color="#ffffff" text-decoration-line="initial">
 								Вакансии в России
 							</Link>
 						</Text>
-						<Text font="normal 300 14px/19px 'AvenirNextCyrRegular', sans-serif" margin="4px 0px 0px 12px" display="inline-block" color="#ffffff">
+						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 12px" display="inline-block" color="#ffffff">
 							<Link
 								href="http://ua.uteam.pro/"
 								color="#ffffff"
@@ -57,7 +57,7 @@ export default (() => {
 								Вакансії в Україні{" "}
 							</Link>
 						</Text>
-						<Text font="normal 300 14px/19px 'AvenirNextCyrRegular', sans-serif" margin="4px 0px 0px 12px" display="inline-block" color="#ffffff">
+						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 12px" display="inline-block" color="#ffffff">
 							<Link
 								href="http://en.uteam.pro/"
 								color="#ffffff"
@@ -80,7 +80,7 @@ export default (() => {
 					/>
 					{"        "}
 				</StackItem>
-				<StackItem width="60%" display="flex" nout-width="100%">
+				<StackItem width="55%" display="flex" nout-width="100%">
 					<Override slot="StackItemContent" flex-direction="column" nout-align-items="flex-end" />
 					{"        "}
 					<Image
@@ -253,7 +253,7 @@ export default (() => {
 		>
 			<Override slot="SectionContent" max-width="none" width="100%" />
 			<Stack margin="0px 0px 0px 0px" gap="0px">
-				<StackItem width="40%" display="flex">
+				<StackItem width="50%" display="flex" nout-width="60%" lg-width="70%">
 					<Override slot="StackItemContent" align-items="flex-start" padding="15px 30px 13px 30px" />
 					{"        "}
 					<Box display="flex" align-items="center">
@@ -272,7 +272,7 @@ export default (() => {
 								Вакансии в России
 							</Link>
 						</Text>
-						<Text font="normal 300 14px/19px 'AvenirNextCyrRegular', sans-serif" margin="3px 0px 0px 12px" display="inline-block" color="#9BABBF">
+						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 12px" display="inline-block" color="#9BABBF">
 							<Link
 								href="http://ua.uteam.pro/"
 								color="#9BABBF"
@@ -283,7 +283,7 @@ export default (() => {
 								Вакансії в Україні{" "}
 							</Link>
 						</Text>
-						<Text font="normal 300 14px/19px 'AvenirNextCyrRegular', sans-serif" margin="3px 0px 0px 12px" display="inline-block" color="#9BABBF">
+						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 12px" display="inline-block" color="#9BABBF">
 							<Link
 								href="http://en.uteam.pro/"
 								color="#9BABBF"
@@ -296,7 +296,7 @@ export default (() => {
 						</Text>
 					</Box>
 				</StackItem>
-				<StackItem width="60%" display="flex">
+				<StackItem width="50%" display="flex" nout-width="50%" lg-width="30%">
 					<Override slot="StackItemContent" align-items="center" padding="15px 30px 13px 30px" justify-content="flex-end" />
 					<Menu display="flex">
 						<Override slot="item-404" display="none" />
