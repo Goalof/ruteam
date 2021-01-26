@@ -14,33 +14,33 @@ const customHtml = `
 }
 @font-face {
   font-family: 'AvenirNextCyrRegular';
-  src: url('/fonts/AvenirNextCyr-Regular.eot');
-  src: url('/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('/fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+  src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Regular.eot');
+  src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'AvenirNextCyrMedium';
-  src: url('/fonts/AvenirNextCyr-Medium.eot');
-  src: url('/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('/fonts/AvenirNextCyr-Medium.ttf') format('truetype');
+  src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Medium.eot');
+  src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'AvenirNextCyrBold';
-  src: url('/fonts/AvenirNextCyr-Bold.eot');
-  src: url('/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('/fonts/AvenirNextCyr-Bold.ttf') format('truetype');
+  src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Bold.eot');
+  src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'AvenirNextCyrDemi';
-  src: url('/fonts/AvenirNextCyr-Demi.otf');
+  src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Demi.otf');
   font-weight: normal;
   font-style: normal;
 }
 body {
-  font-family: 'AvenirNextCyrRegular', sans-serif !important;
+  font-family: 'AvenirNextCyrRegular', sans-serif;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
