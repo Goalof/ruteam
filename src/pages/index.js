@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, Box, Span, Button, Strong, Icon } from "@quarkly/widgets";
+import { Theme, Link, Text, Image, Box, Span, Button, Strong, Icon } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, StackItem, Stack, Section, Menu } from "@quarkly/components";
@@ -31,7 +31,41 @@ export default (() => {
 				justify-content="space-between"
 				align-items="center"
 				padding="0px 0px 8px 0px"
+				position="relative"
 			/>
+			<Components.PopUp
+				left="-30px"
+				bottom="auto"
+				right="auto"
+				top="40%"
+				transition="all 0.5s ease 0s"
+			>
+				<Override
+					slot="button"
+					color="#263238"
+					font="normal 500 20px/1.5 'AvenirNextCyrMedium', sans-serif"
+					letter-spacing=".1px"
+					background="#ffe02d"
+					padding="30px 55px 24px 66px"
+					position="absolute"
+					transition="all 0.5s ease 0s"
+					left="-30px"
+					bottom="auto"
+					right="auto"
+					top="40%"
+					hover-left="0px"
+				>
+					<Box padding="0 0% 0 0%" display="flex" flex-direction="column" align-items="flex-start">
+						Присоединяйся к нам!
+						<Box padding="0 0% 0 0%" display="flex" align-items="center">
+							<Text margin="0px 8px 0px 0px" font="500 16px/30px 'AvenirNextCyrMedium', sans-serif" letter-spacing=".5px">
+								Отправить резюме
+							</Text>
+							<Image width="31px" height="12px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/arrowpop.svg?v=2021-01-26T22:37:32.256Z" />
+						</Box>
+					</Box>
+				</Override>
+			</Components.PopUp>
 			<Stack margin="0px 0px 0px 0px" gap="0px" width="100%">
 				{"    "}
 				<StackItem width="45%" display="flex" nout-width="70%">
@@ -105,7 +139,7 @@ export default (() => {
 					<Image
 						width="100%"
 						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/vectorpaint%20(1).svg?v=2021-01-25T11:01:19.138Z"
-						margin="-35px -2px 0px 0px"
+						margin="-28px -2px 0px 0px"
 						object-position="50% 49%"
 						nout-width="70%"
 						nout-margin="0px -2px 0px 0px"
@@ -271,10 +305,17 @@ export default (() => {
 			border-color="#dbe6f4"
 			transition="all 400ms ease 0s"
 			nout-border-radius="6px"
+			lg-position="fixed"
 		>
 			<Override slot="SectionContent" max-width="none" width="100%" />
 			<Stack margin="0px 0px 0px 0px" gap="0px">
-				<StackItem width="50%" display="flex" nout-width="70%" lg-width="70%">
+				<StackItem
+					width="50%"
+					display="flex"
+					nout-width="70%"
+					lg-width="70%"
+					sm-width="85%"
+				>
 					<Override slot="StackItemContent" align-items="flex-start" padding="15px 30px 13px 30px" />
 					{"        "}
 					<Box display="flex" align-items="center">
@@ -329,7 +370,13 @@ export default (() => {
 						</Text>
 					</Box>
 				</StackItem>
-				<StackItem width="50%" display="flex" nout-width="30%" lg-width="30%">
+				<StackItem
+					width="50%"
+					display="flex"
+					nout-width="30%"
+					lg-width="30%"
+					sm-width="15%"
+				>
 					<Override slot="StackItemContent" align-items="center" padding="15px 30px 13px 30px" justify-content="flex-end" />
 					<Components.MobileSide
 						flex="1 0 auto"
@@ -362,6 +409,7 @@ export default (() => {
 							nout-height="28px"
 							nout-z-index="6"
 							nout-top="35px"
+							sm-margin="-3px 0px 0px 0px"
 						/>
 						<Override
 							slot="Button Line"
@@ -436,21 +484,27 @@ export default (() => {
 				{"        "}
 			</Stack>
 		</Section>
-		<Section padding="60px 0 100px 0">
+		<Section padding="60px 0 100px 0" sm-padding="110px 0 60px 0" lg-padding="120px 0 80px 0">
 			<Override slot="SectionContent" align-items="center" />
 			<Stack margin="0px 0px 0px 0px" max-width="850px">
 				{"    "}
 				<StackItem width="100%" display="flex">
 					<Override slot="StackItemContent" align-items="center" justify-content="center" />
 					{"        "}
-					<Text font="--headline3" margin="0px 0px 70px 0px" display="inline-block">
+					<Text
+						font="--headline3"
+						margin="0px 0px 70px 0px"
+						display="inline-block"
+						sm-text-align="center"
+						sm-margin="0px 0px 30px 0px"
+					>
 						Работай с комфортом!
 						<br />
 					</Text>
 					{"    "}
 				</StackItem>
 				{"    "}
-				<StackItem width="33.3333%" display="flex">
+				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
 					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon1.svg?v=2021-01-26T15:44:54.779Z" />
@@ -461,6 +515,7 @@ export default (() => {
 						padding="0px 0px 0px 0px"
 						text-align="center"
 						color="#263238"
+						sm-margin="23px 0px 20px 0px"
 					>
 						Гибкий график
 						<br />
@@ -468,7 +523,7 @@ export default (() => {
 					</Text>
 					{"    "}
 				</StackItem>
-				<StackItem width="33.3333%" display="flex">
+				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
 					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon1.svg?v=2021-01-26T15:44:54.779Z" />
@@ -479,6 +534,7 @@ export default (() => {
 						padding="0px 0px 0px 0px"
 						text-align="center"
 						color="#263238"
+						sm-margin="23px 0px 20px 0px"
 					>
 						Профессиональное
 						<br />
@@ -488,7 +544,7 @@ export default (() => {
 					</Text>
 					{"    "}
 				</StackItem>
-				<StackItem width="33.3333%" display="flex">
+				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
 					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon1.svg?v=2021-01-26T15:44:54.779Z" />
@@ -499,6 +555,7 @@ export default (() => {
 						padding="0px 0px 0px 0px"
 						text-align="center"
 						color="#263238"
+						sm-margin="23px 0px 20px 0px"
 					>
 						Социальные
 						<br />
@@ -507,7 +564,7 @@ export default (() => {
 					</Text>
 					{"    "}
 				</StackItem>
-				<StackItem width="33.3333%" display="flex">
+				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
 					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon1.svg?v=2021-01-26T15:44:54.779Z" />
@@ -528,7 +585,7 @@ export default (() => {
 					</Text>
 					{"    "}
 				</StackItem>
-				<StackItem width="33.3333%" display="flex">
+				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
 					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon1.svg?v=2021-01-26T15:44:54.779Z" />
@@ -547,7 +604,7 @@ export default (() => {
 					</Text>
 					{"    "}
 				</StackItem>
-				<StackItem width="33.3333%" display="flex">
+				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
 					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon1.svg?v=2021-01-26T15:44:54.779Z" />
@@ -585,7 +642,7 @@ export default (() => {
 			</Stack>
 			<Stack margin="0px 0px 0px 0px" max-width="750px" width="100%" gap="--cmp-stack-gap-small">
 				{"    "}
-				<StackItem width="25%" display="flex">
+				<StackItem width="25%" display="flex" sm-width="100%" md-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
 					{"        "}
 					<Link
@@ -614,7 +671,7 @@ export default (() => {
 					</Link>
 					{"    "}
 				</StackItem>
-				<StackItem width="25%" display="flex">
+				<StackItem width="25%" display="flex" sm-width="100%" md-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
 					{"        "}
 					<Link
@@ -643,7 +700,7 @@ export default (() => {
 					</Link>
 					{"    "}
 				</StackItem>
-				<StackItem width="25%" display="flex">
+				<StackItem width="25%" display="flex" sm-width="100%" md-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
 					{"        "}
 					<Link
@@ -672,7 +729,7 @@ export default (() => {
 					</Link>
 					{"    "}
 				</StackItem>
-				<StackItem width="25%" display="flex">
+				<StackItem width="25%" display="flex" sm-width="100%" md-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
 					{"        "}
 					<Link
@@ -704,7 +761,7 @@ export default (() => {
 				{"    "}
 			</Stack>
 		</Section>
-		<Section padding="60px 0 80px 0">
+		<Section padding="60px 0 80px 0" sm-padding="30px 0 40px 0">
 			<Override slot="SectionContent" align-items="center" />
 			<Stack margin="0px 0px 0px 0px" max-width="975px" width="100%">
 				{"    "}
@@ -717,7 +774,7 @@ export default (() => {
 					{"    "}
 				</StackItem>
 				{"    "}
-				<StackItem width="25%" display="flex">
+				<StackItem width="25%" display="flex" md-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
 					<Image src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/laurel.svg?v=2021-01-26T17:35:48.102Z" />
@@ -736,7 +793,7 @@ export default (() => {
 					</Text>
 					{"    "}
 				</StackItem>
-				<StackItem width="25%" display="flex">
+				<StackItem width="25%" display="flex" md-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
 					<Image src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/laurel.svg?v=2021-01-26T17:35:48.102Z" />
@@ -755,7 +812,7 @@ export default (() => {
 					</Text>
 					{"    "}
 				</StackItem>
-				<StackItem width="25%" display="flex">
+				<StackItem width="25%" display="flex" md-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
 					<Image src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/laurel.svg?v=2021-01-26T17:35:48.102Z" />
@@ -774,7 +831,7 @@ export default (() => {
 					</Text>
 					{"    "}
 				</StackItem>
-				<StackItem width="25%" display="flex">
+				<StackItem width="25%" display="flex" md-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
 					<Image src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/laurel.svg?v=2021-01-26T17:35:48.102Z" />
@@ -794,9 +851,9 @@ export default (() => {
 					{"    "}
 				</StackItem>
 			</Stack>
-			<Stack margin="0px 0px 0px 0px" max-width="975px" width="100%">
+			<Stack margin="10px 0px 0px 0px" max-width="975px" width="100%">
 				{"        "}
-				<StackItem width="33.33%" display="flex">
+				<StackItem width="33.33%" display="flex" sm-width="100%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
 					<Text
@@ -829,7 +886,7 @@ export default (() => {
 					</Text>
 					{"    "}
 				</StackItem>
-				<StackItem width="33.33%" display="flex">
+				<StackItem width="33.33%" display="flex" sm-width="100%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
 					<Text
@@ -873,7 +930,7 @@ export default (() => {
 					</Text>
 					{"    "}
 				</StackItem>
-				<StackItem width="33.33%" display="flex">
+				<StackItem width="33.33%" display="flex" sm-width="100%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
 					<Text
@@ -946,13 +1003,14 @@ export default (() => {
 			border-style="solid"
 			border-color="#dbe6f4"
 			transition="all 400ms ease 0s"
+			lg-padding="10px 0px 10px 0px"
 		>
 			<Override slot="SectionContent" max-width="1170px" width="100%" />
 			<Stack margin="0px 0px 0px 0px" gap="0px">
-				<StackItem width="70%" display="flex" nout-width="60%" lg-width="70%">
+				<StackItem width="70%" display="flex" lg-width="100%">
 					<Override slot="StackItemContent" align-items="flex-end" padding="13px 30px 14px 30px" />
 					{"        "}
-					<Box display="flex" align-items="center">
+					<Box display="flex" align-items="center" lg-flex-direction="column" lg-width="100%">
 						<Link href="/">
 							<Image
 								src="https://screenshot.ukit.com/src/goalov/21/2021-01-27-03-36-00.png"
@@ -963,7 +1021,13 @@ export default (() => {
 								padding="0px 0px 0px 0px"
 							/>
 						</Link>
-						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 22px" display="inline-block" color="#9BABBF">
+						<Text
+							font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
+							margin="3px 0px 0px 22px"
+							display="inline-block"
+							color="#9BABBF"
+							lg-margin="10px 0px 0px 22px"
+						>
 							<Link
 								href="https://blog.ucoz.ru/"
 								color="#AEC1D9"
@@ -972,11 +1036,19 @@ export default (() => {
 								transition="color 0.2s ease 0s"
 								font="400 14px/19px 'AvenirNextCyrMedium'"
 								target="_blank"
+								lg-padding="0px 0px 0px 0px"
+								lg-margin="0px 0px 0px 0px"
 							>
 								Блог компании
 							</Link>
 						</Text>
-						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 22px" display="inline-block" color="#9BABBF">
+						<Text
+							font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
+							margin="3px 0px 0px 22px"
+							display="inline-block"
+							color="#9BABBF"
+							lg-margin="10px 0px 0px 22px"
+						>
 							<Link
 								href="http://www.ucoz.ru/all/"
 								color="#AEC1D9"
@@ -985,11 +1057,19 @@ export default (() => {
 								transition="color 0.2s ease 0s"
 								font="400 14px/19px 'AvenirNextCyrMedium'"
 								target="_blank"
+								lg-padding="0px 0px 0px 0px"
+								lg-margin="0px 0px 0px 0px"
 							>
 								Наши проекты
 							</Link>
 						</Text>
-						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 22px" display="inline-block" color="#9BABBF">
+						<Text
+							font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
+							margin="3px 0px 0px 22px"
+							display="inline-block"
+							color="#9BABBF"
+							lg-margin="10px 0px 0px 22px"
+						>
 							<Link
 								href="http://ua.uteam.pro/"
 								color="#4a8cfa"
@@ -997,11 +1077,19 @@ export default (() => {
 								hover-color="#3d72cc"
 								transition="color 0.2s ease 0s"
 								font="300 14px/19px 'AvenirNextCyrMedium'"
+								lg-padding="0px 0px 0px 0px"
+								lg-margin="0px 0px 0px 0px"
 							>
 								Вакансії в Україні{" "}
 							</Link>
 						</Text>
-						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 22px" display="inline-block" color="#9BABBF">
+						<Text
+							font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
+							margin="3px 0px 0px 22px"
+							display="inline-block"
+							color="#9BABBF"
+							lg-margin="10px 0px 0px 22px"
+						>
 							<Link
 								href="http://en.uteam.pro/"
 								color="#4a8cfa"
@@ -1009,15 +1097,23 @@ export default (() => {
 								hover-color="#3d72cc"
 								transition="color 0.2s ease 0s"
 								font="300 14px/19px 'AvenirNextCyrMedium'"
+								lg-padding="0px 0px 0px 0px"
+								lg-margin="0px 0px 0px 0px"
 							>
 								Careers for Foreigners
 							</Link>
 						</Text>
 					</Box>
 				</StackItem>
-				<StackItem width="30%" display="flex" lg-width="70%">
-					<Override slot="StackItemContent" align-items="center" padding="13px 30px 14px 30px" justify-content="flex-end" />
-					<Link href="http://vk.com/ucoz" target="_blank" margin="0px 15px 0px 0px">
+				<StackItem width="30%" display="flex" lg-width="100%">
+					<Override
+						slot="StackItemContent"
+						align-items="center"
+						padding="13px 30px 14px 30px"
+						justify-content="flex-end"
+						lg-justify-content="center"
+					/>
+					<Link href="https://www.facebook.com/ucoz" target="_blank" margin="0px 15px 0px 0px" border-color="#AFC1D8">
 						<Icon
 							category="fa"
 							icon={FaVk}
@@ -1035,7 +1131,7 @@ export default (() => {
 							size="20px"
 						/>
 					</Link>
-					<Link href="https://www.facebook.com/ucoz" target="_blank" margin="0px 15px 0px 0px">
+					<Link href="https://www.facebook.com/ucoz" target="_blank" margin="0px 15px 0px 0px" border-color="#AFC1D8">
 						<Icon
 							category="fa"
 							icon={FaFacebookF}
@@ -1053,7 +1149,7 @@ export default (() => {
 							size="20px"
 						/>
 					</Link>
-					<Link href="https://twitter.com/ucoz_ru" target="_blank" margin="0px 15px 0px 0px">
+					<Link href="https://twitter.com/ucoz_ru" target="_blank" margin="0px 15px 0px 0px" border-color="#AFC1D8">
 						<Icon
 							category="fa"
 							icon={FaTwitter}
@@ -1071,7 +1167,7 @@ export default (() => {
 							size="20px"
 						/>
 					</Link>
-					<Link href="https://instagram.com/ucoz_ru" target="_blank" margin="0px 15px 0px 0px">
+					<Link href="https://instagram.com/ucoz_ru" target="_blank" margin="0px 15px 0px 0px" border-color="#AFC1D8">
 						<Icon
 							category="fa"
 							icon={FaInstagram}
@@ -1089,7 +1185,7 @@ export default (() => {
 							size="20px"
 						/>
 					</Link>
-					<Link href="http://ok.ru/ucozru" target="_blank" margin="0px 15px 0px 0px">
+					<Link href="http://ok.ru/ucozru" target="_blank" margin="0px 15px 0px 0px" border-color="#AFC1D8">
 						<Icon
 							category="fa"
 							icon={FaOdnoklassniki}
