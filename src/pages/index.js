@@ -466,7 +466,7 @@ export default (() => {
 				</StackItem>
 				{"    "}
 			</Stack>
-			<Stack margin="0px 0px 0px 0px" max-width="750px" width="100%">
+			<Stack margin="0px 0px 0px 0px" max-width="750px" width="100%" gap="--cmp-stack-gap-small">
 				{"    "}
 				<StackItem width="25%" display="flex">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
