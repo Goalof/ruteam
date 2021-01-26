@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Image, Box, Span, Button, Strong, Icon } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, Box, Span, Button, Strong, Icon } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, StackItem, Stack, Section, Menu } from "@quarkly/components";
@@ -33,39 +33,6 @@ export default (() => {
 				padding="0px 0px 8px 0px"
 				position="relative"
 			/>
-			<Components.PopUp
-				left="-30px"
-				bottom="auto"
-				right="auto"
-				top="40%"
-				transition="all 0.5s ease 0s"
-			>
-				<Override
-					slot="button"
-					color="#263238"
-					font="normal 500 20px/1.5 'AvenirNextCyrMedium', sans-serif"
-					letter-spacing=".1px"
-					background="#ffe02d"
-					padding="30px 55px 24px 66px"
-					position="absolute"
-					transition="all 0.5s ease 0s"
-					left="-30px"
-					bottom="auto"
-					right="auto"
-					top="40%"
-					hover-left="0px"
-				>
-					<Box padding="0 0% 0 0%" display="flex" flex-direction="column" align-items="flex-start">
-						Присоединяйся к нам!
-						<Box padding="0 0% 0 0%" display="flex" align-items="center">
-							<Text margin="0px 8px 0px 0px" font="500 16px/30px 'AvenirNextCyrMedium', sans-serif" letter-spacing=".5px">
-								Отправить резюме
-							</Text>
-							<Image width="31px" height="12px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/arrowpop.svg?v=2021-01-26T22:37:32.256Z" />
-						</Box>
-					</Box>
-				</Override>
-			</Components.PopUp>
 			<Stack margin="0px 0px 0px 0px" gap="0px" width="100%">
 				{"    "}
 				<StackItem width="45%" display="flex" nout-width="70%">
@@ -164,6 +131,39 @@ export default (() => {
 				</StackItem>
 				{"    "}
 			</Stack>
+			<Components.PopUp
+				left="-30px"
+				bottom="auto"
+				right="auto"
+				top="40%"
+				transition="all 0.5s ease 0s"
+			>
+				<Override
+					slot="button"
+					color="#263238"
+					font="normal 500 20px/1.5 'AvenirNextCyrMedium', sans-serif"
+					letter-spacing=".1px"
+					background="#ffe02d"
+					padding="30px 55px 24px 66px"
+					position="absolute"
+					transition="all 0.5s ease 0s"
+					left="-30px"
+					bottom="auto"
+					right="auto"
+					top="40%"
+					hover-left="0px"
+				>
+					<Box padding="0 0% 0 0%" display="flex" flex-direction="column" align-items="flex-start">
+						Присоединяйся к нам!
+						<Box padding="0 0% 0 0%" display="flex" align-items="center">
+							<Text margin="0px 8px 0px 0px" font="500 16px/30px 'AvenirNextCyrMedium', sans-serif" letter-spacing=".5px">
+								Отправить резюме
+							</Text>
+							<Image width="31px" height="12px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/arrowpop.svg?v=2021-01-26T22:37:32.256Z" />
+						</Box>
+					</Box>
+				</Override>
+			</Components.PopUp>
 			<Stack margin="0px 0px 0px 0px" max-width="750px" width="100%" gap="16px">
 				{"    "}
 				<StackItem width="25%" display="flex">
