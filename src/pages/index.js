@@ -152,7 +152,7 @@ export default (() => {
 						hover-color="#ffffff"
 						transition="all 0.2s linear 0s"
 					>
-						Санкт-Петербург{"\n\n"}
+						Санкт-Петербург
 						<br />
 						<Span
 							color="#ffffff"
@@ -181,7 +181,7 @@ export default (() => {
 						hover-color="#ffffff"
 						transition="all 0.2s linear 0s"
 					>
-						Ростов-на-Дону{"\n\n"}
+						Ростов-на-Дону
 						<br />
 						<Span
 							color="#ffffff"
@@ -210,7 +210,7 @@ export default (() => {
 						hover-color="#ffffff"
 						transition="all 0.2s linear 0s"
 					>
-						Удаленная работа{"\n\n"}
+						Удаленная работа
 						<br />
 						<Span
 							color="#ffffff"
@@ -243,7 +243,7 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section
-			id="Header"
+			id="header"
 			quarkly-title="Header"
 			padding="0px 0px 0px 0px"
 			border-width="0px 0px 2px 0px"
@@ -329,7 +329,6 @@ export default (() => {
 					<Text font="--headline3" margin="0px 0px 70px 0px" display="inline-block">
 						Работай с комфортом!
 						<br />
-						{"\n\n"}
 					</Text>
 					{"    "}
 				</StackItem>
@@ -348,7 +347,7 @@ export default (() => {
 					>
 						Гибкий график
 						<br />
-						работы{"\n\n"}
+						работы
 					</Text>
 					{"    "}
 				</StackItem>
@@ -368,7 +367,7 @@ export default (() => {
 						<br />
 						развитие и
 						<br />
-						обучение{"\n\n\n\n"}
+						обучение
 					</Text>
 					{"    "}
 				</StackItem>
@@ -388,7 +387,6 @@ export default (() => {
 						<br />
 						гарантии, ДМС
 						<br />
-						{"\n\n\n\n"}
 					</Text>
 					{"    "}
 				</StackItem>
@@ -408,9 +406,8 @@ export default (() => {
 						<br />
 						и корпоративные
 						<br />
-						мероприятия{"\n\n"}
+						мероприятия
 						<br />
-						{"\n\n\n\n"}
 					</Text>
 					{"    "}
 				</StackItem>
@@ -430,7 +427,6 @@ export default (() => {
 						<br />
 						условия работы
 						<br />
-						{"\n\n\n\n"}
 					</Text>
 					{"    "}
 				</StackItem>
@@ -450,7 +446,6 @@ export default (() => {
 						<br />
 						в офисе
 						<br />
-						{"\n\n\n\n"}
 					</Text>
 					{"    "}
 				</StackItem>
@@ -466,7 +461,6 @@ export default (() => {
 					<Text font="--headline3" margin="0px 0px 0px -3px" display="inline-block" text-align="left">
 						Вакансии
 						<br />
-						{"\n\n"}
 					</Text>
 					{"    "}
 				</StackItem>
@@ -514,7 +508,7 @@ export default (() => {
 						hover-color="#ffffff"
 						transition="all 0.2s linear 0s"
 					>
-						Санкт-Петербург{"\n\n"}
+						Санкт-Петербург
 						<br />
 						<Span
 							color="#ffffff"
@@ -543,7 +537,7 @@ export default (() => {
 						hover-color="#ffffff"
 						transition="all 0.2s linear 0s"
 					>
-						Ростов-на-Дону{"\n\n"}
+						Ростов-на-Дону
 						<br />
 						<Span
 							color="#ffffff"
@@ -572,7 +566,7 @@ export default (() => {
 						hover-color="#ffffff"
 						transition="all 0.2s linear 0s"
 					>
-						Удаленная работа{"\n\n"}
+						Удаленная работа
 						<br />
 						<Span
 							color="#ffffff"
@@ -593,7 +587,7 @@ export default (() => {
 				{"    "}
 			</Stack>
 		</Section>
-		<Section padding="60px 0 100px 0">
+		<Section padding="60px 0 80px 0">
 			<Override slot="SectionContent" align-items="center" />
 			<Stack margin="0px 0px 0px 0px" max-width="975px" width="100%">
 				{"    "}
@@ -601,7 +595,7 @@ export default (() => {
 					<Override slot="StackItemContent" align-items="center" justify-content="center" />
 					{"        "}
 					<Text font="--headline3" margin="0px 0px 40px 0px" display="inline-block">
-						Команда uTeam{"\n\n"}
+						Команда uTeam
 					</Text>
 					{"    "}
 				</StackItem>
@@ -620,9 +614,8 @@ export default (() => {
 					>
 						Лауреат
 						<br />
-						«Премии Рунета»{"\n\n"}
+						«Премии Рунета»
 						<br />
-						{"\n\n\n\n"}
 					</Text>
 					{"    "}
 				</StackItem>
@@ -640,9 +633,8 @@ export default (() => {
 					>
 						Лучший
 						<br />
-						корпоративный сайт{"\n\n\n"}
+						корпоративный сайт
 						<br />
-						{"\n\n\n\n"}
 					</Text>
 					{"    "}
 				</StackItem>
@@ -660,9 +652,8 @@ export default (() => {
 					>
 						III место
 						<br />
-						в «Народной десятке»{"\n\n\n"}
+						в «Народной десятке»
 						<br />
-						{"\n\n\n\n"}
 					</Text>
 					{"    "}
 				</StackItem>
@@ -680,15 +671,14 @@ export default (() => {
 					>
 						Победитель
 						<br />
-						Open Web Awards{"\n\n\n"}
+						Open Web Awards
 						<br />
-						{"\n\n\n\n"}
 					</Text>
 					{"    "}
 				</StackItem>
 			</Stack>
 			<Stack margin="0px 0px 0px 0px" max-width="975px" width="100%">
-				{"    "}{"    "}
+				{"        "}
 				<StackItem width="33.33%" display="flex">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
@@ -703,9 +693,7 @@ export default (() => {
 						<Strong font="normal bold 48px/42px 'AvenirNextCyrRegular', sans-serif" color="#4a8cfa">
 							12
 						</Strong>
-						{"\n\n\n\n"}
 						<br />
-						{"\n\n\n\n"}
 					</Text>
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
@@ -719,9 +707,8 @@ export default (() => {
 						<br />
 						работы крупнейшего
 						<br />
-						сервиса Рунета{"\n\n\n\n"}
+						сервиса Рунета
 						<br />
-						{"\n\n\n\n"}
 					</Text>
 					{"    "}
 				</StackItem>
@@ -736,12 +723,21 @@ export default (() => {
 						text-align="center"
 						color="#263238"
 					>
-						<Strong font="normal bold 48px/42px 'AvenirNextCyrRegular', sans-serif" color="#4a8cfa">
-							12
+						<Strong
+							font="normal bold 48px/42px 'AvenirNextCyrRegular', sans-serif"
+							color="#4a8cfa"
+							data-q-widget-type="PRIMITIVE"
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+						>
+							165+
 						</Strong>
-						{"\n\n\n\n"}
+						{" "}
 						<br />
-						{"\n\n\n\n"}
 					</Text>
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
@@ -751,13 +747,12 @@ export default (() => {
 						text-align="center"
 						color="#263238"
 					>
-						лет стабильной
+						молодых
 						<br />
-						работы крупнейшего
+						и целеустремленных
 						<br />
-						сервиса Рунета{"\n\n\n\n"}
+						сотрудников
 						<br />
-						{"\n\n\n\n"}
 					</Text>
 					{"    "}
 				</StackItem>
@@ -772,12 +767,21 @@ export default (() => {
 						text-align="center"
 						color="#263238"
 					>
-						<Strong font="normal bold 48px/42px 'AvenirNextCyrRegular', sans-serif" color="#4a8cfa">
-							12
+						<Strong
+							font="normal bold 48px/42px 'AvenirNextCyrRegular', sans-serif"
+							color="#4a8cfa"
+							data-q-widget-type="PRIMITIVE"
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+						>
+							6
 						</Strong>
-						{"\n\n\n\n"}
+						{" "}
 						<br />
-						{"\n\n\n\n"}
 					</Text>
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
@@ -787,16 +791,91 @@ export default (() => {
 						text-align="center"
 						color="#263238"
 					>
-						лет стабильной
+						комфортных офисов
 						<br />
-						работы крупнейшего
+						в 4-х городах
 						<br />
-						сервиса Рунета{"\n\n\n\n"}
+						России и Украины
 						<br />
-						{"\n\n\n\n"}
 					</Text>
 					{"    "}
 				</StackItem>
+				<StackItem width="100%" display="flex">
+					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
+					{"        "}
+					<Link
+						href="#"
+						text-align="center"
+						text-decoration-line="initial"
+						background="#4a8cfa"
+						color="#ffffff"
+						padding="15px 15px 15px 15px"
+						border-radius="5px"
+						font="600 16px 'AvenirNextCyrRegular', sans-serif"
+						transition="all 0.2s linear 0s"
+						margin="40px 0px 0px 0px"
+						hover-background="#437de0"
+					>
+						Как попасть в команду
+					</Link>
+					{"    "}
+				</StackItem>
+			</Stack>
+		</Section>
+		<Section
+			quarkly-title="Footer"
+			padding="0px 0px 0px 0px"
+			border-width="2px 0px 0px 0px"
+			border-style="solid"
+			border-color="#dbe6f4"
+			transition="all 400ms ease 0s"
+		>
+			<Override slot="SectionContent" max-width="none" width="100%" />
+			<Stack margin="0px 0px 0px 0px" gap="0px">
+				<StackItem width="50%" display="flex" nout-width="60%" lg-width="70%">
+					<Override slot="StackItemContent" align-items="flex-start" padding="15px 30px 13px 30px" />
+					{"        "}
+					<Box display="flex" align-items="center">
+						<Link href="/">
+							<Image
+								src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/logoblue.svg?v=2021-01-25T20:59:50.954Z"
+								color="#ffffff"
+								width="50px"
+								height="50px"
+								margin="3px 10px 3px 3px"
+								padding="0px 0px 0px 0px"
+							/>
+						</Link>
+						<Text font="normal 600 18px/50px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 0px 0px" display="inline-block" color="#ffffff">
+							<Link href="https://ru.uteam.pro/" color="#000000" text-decoration-line="initial" font="500 18px/50px AvenirNextCyrRegular, sans-serif">
+								Вакансии в России
+							</Link>
+						</Text>
+						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 12px" display="inline-block" color="#9BABBF">
+							<Link
+								href="http://ua.uteam.pro/"
+								color="#9BABBF"
+								text-decoration-line="initial"
+								hover-color="#ffe02d"
+								transition="color 0.2s ease 0s"
+							>
+								Вакансії в Україні{" "}
+							</Link>
+						</Text>
+						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 12px" display="inline-block" color="#9BABBF">
+							<Link
+								href="http://en.uteam.pro/"
+								color="#9BABBF"
+								text-decoration-line="initial"
+								hover-color="#ffe02d"
+								transition="color 0.2s ease 0s"
+							>
+								Careers for Foreigners
+							</Link>
+						</Text>
+					</Box>
+				</StackItem>
+				{"        "}
 			</Stack>
 		</Section>
 		<Link
