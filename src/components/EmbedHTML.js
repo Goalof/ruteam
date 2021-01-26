@@ -14,28 +14,28 @@ const customHtml = `
 }
 @font-face {
   font-family: 'AvenirNextCyrRegular';
-  src: url('https://github.com/Goalof/ruteam/blob/main/static/fonts/AvenirNextCyr-Regular.eot');
-  src: url('https://github.com/Goalof/ruteam/blob/main/static/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('https://github.com/Goalof/ruteam/blob/main/static/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('https://github.com/Goalof/ruteam/blob/main/static/fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+  src: url('/fonts/AvenirNextCyr-Regular.eot');
+  src: url('/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('/fonts/AvenirNextCyr-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'AvenirNextCyrMedium';
-  src: url('https://github.com/Goalof/ruteam/blob/main/static/fonts/AvenirNextCyr-Medium.eot');
-  src: url('https://github.com/Goalof/ruteam/blob/main/static/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('https://github.com/Goalof/ruteam/blob/main/static/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('https://github.com/Goalof/ruteam/blob/main/static/fonts/AvenirNextCyr-Medium.ttf') format('truetype');
+  src: url('/fonts/AvenirNextCyr-Medium.eot');
+  src: url('/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('/fonts/AvenirNextCyr-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'AvenirNextCyrBold';
-  src: url('https://github.com/Goalof/ruteam/blob/main/static/fonts/AvenirNextCyr-Bold.eot');
-  src: url('https://github.com/Goalof/ruteam/blob/main/static/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('https://github.com/Goalof/ruteam/blob/main/static/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('https://github.com/Goalof/ruteam/blob/main/static/fonts/AvenirNextCyr-Bold.ttf') format('truetype');
+  src: url('/fonts/AvenirNextCyr-Bold.eot');
+  src: url('/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('/fonts/AvenirNextCyr-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'AvenirNextCyrDemi';
-  src: url('https://github.com/Goalof/ruteam/blob/main/static/fonts/AvenirNextCyr-Demi.otf');
+  src: url('/fonts/AvenirNextCyr-Demi.otf');
   font-weight: normal;
   font-style: normal;
 }
