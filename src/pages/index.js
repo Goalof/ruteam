@@ -41,8 +41,8 @@ export default (() => {
 								padding="0px 0px 0px 0px"
 							/>
 						</Link>
-						<Text font="normal 600 18px/50px 'AvenirNextCyrMedium', sans-serif" margin="0px 0px 0px 0px" display="inline-block" color="#ffffff">
-							<Link href="https://ru.uteam.pro/" color="#ffffff" text-decoration-line="initial">
+						<Text font="normal 500 18px/50px 'AvenirNextCyrMedium', sans-serif" margin="0px 0px 0px 0px" display="inline-block" color="#ffffff">
+							<Link href="https://ru.uteam.pro/" color="#ffffff" text-decoration-line="initial" font="500 18px/50px ">
 								Вакансии в России
 							</Link>
 						</Text>
@@ -86,13 +86,13 @@ export default (() => {
 					<Image
 						width="100%"
 						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/vectorpaint%20(1).svg?v=2021-01-25T11:01:19.138Z"
-						margin="-2px -2px 0px 0px"
+						margin="-25px -2px 0px 0px"
 						object-position="50% 49%"
 						nout-width="70%"
 					/>
 					<Box
 						padding="0 14% 0 14%"
-						margin="82px 0px 0px 0px"
+						margin="40px 0px 0px 0px"
 						nout-width="70%"
 						nout-display="flex"
 						nout-flex-direction="column"
@@ -110,7 +110,7 @@ export default (() => {
 				</StackItem>
 				{"    "}
 			</Stack>
-			<Stack margin="0px 0px 0px 0px" max-width="825px" width="100%">
+			<Stack margin="0px 0px 0px 0px" max-width="750px" width="100%" gap="16px">
 				{"    "}
 				<StackItem width="25%" display="flex">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
@@ -268,7 +268,7 @@ export default (() => {
 							/>
 						</Link>
 						<Text font="normal 600 18px/50px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 0px 0px" display="inline-block" color="#ffffff">
-							<Link href="https://ru.uteam.pro/" color="#000000" text-decoration-line="initial">
+							<Link href="https://ru.uteam.pro/" color="#000000" text-decoration-line="initial" font="500 18px/50px AvenirNextCyrRegular, sans-serif">
 								Вакансии в России
 							</Link>
 						</Text>
@@ -458,7 +458,7 @@ export default (() => {
 		</Section>
 		<Section padding="24px 0 38px 0" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/Photo2.jpg?v=2021-01-25T00:03:55.645Z) center/cover no-repeat fixed padding-box">
 			<Override slot="SectionContent" align-items="center" />
-			<Stack margin="0px 0px 0px 0px" width="100%" max-width="825px">
+			<Stack margin="0px 0px 0px 0px" width="100%" max-width="750px">
 				{"    "}
 				<StackItem width="100%" display="flex">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" color="#ffffff" />
@@ -472,7 +472,7 @@ export default (() => {
 				</StackItem>
 				{"    "}
 			</Stack>
-			<Stack margin="0px 0px 0px 0px" max-width="825px" width="100%">
+			<Stack margin="0px 0px 0px 0px" max-width="750px" width="100%">
 				{"    "}
 				<StackItem width="25%" display="flex">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
