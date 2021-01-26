@@ -1,10 +1,11 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, Box, Span, Strong } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, Box, Span, Button, Strong, Icon } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, StackItem, Stack, Section, Menu } from "@quarkly/components";
 import * as Components from "components";
+import { FaVk, FaFacebookF, FaTwitter, FaInstagram, FaOdnoklassniki } from "react-icons/fa";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -16,7 +17,13 @@ export default (() => {
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Components.EmbedHTML />
-		<Section height="100vh" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/Photo2.jpg?v=2021-01-25T00:03:55.645Z) center/cover no-repeat scroll padding-box" padding="0px 0 6px 0" quarkly-title="HeroBlock">
+		<Section
+			height="100vh"
+			background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/Photo2.jpg?v=2021-01-25T00:03:55.645Z) center/cover no-repeat scroll padding-box"
+			padding="0px 0 6px 0"
+			quarkly-title="HeroBlock"
+			lg-display="none"
+		>
 			<Override
 				slot="SectionContent"
 				max-width="none"
@@ -33,7 +40,7 @@ export default (() => {
 					<Box display="flex" align-items="center">
 						<Link href="/">
 							<Image
-								src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/vectorpaint.svg?v=2021-01-25T10:58:50.377Z"
+								src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/logowhite.svg?v=2021-01-26T19:12:20.383Z"
 								color="#ffffff"
 								width="50px"
 								height="50px"
@@ -46,7 +53,13 @@ export default (() => {
 								Вакансии в России
 							</Link>
 						</Text>
-						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 12px" display="inline-block" color="#ffffff">
+						<Text
+							font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
+							margin="3px 0px 0px 12px"
+							display="inline-block"
+							color="#ffffff"
+							nout-display="none"
+						>
 							<Link
 								href="http://ua.uteam.pro/"
 								color="#ffffff"
@@ -57,7 +70,13 @@ export default (() => {
 								Вакансії в Україні{" "}
 							</Link>
 						</Text>
-						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 12px" display="inline-block" color="#ffffff">
+						<Text
+							font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
+							margin="3px 0px 0px 12px"
+							display="inline-block"
+							color="#ffffff"
+							nout-display="none"
+						>
 							<Link
 								href="http://en.uteam.pro/"
 								color="#ffffff"
@@ -86,9 +105,10 @@ export default (() => {
 					<Image
 						width="100%"
 						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/vectorpaint%20(1).svg?v=2021-01-25T11:01:19.138Z"
-						margin="-25px -2px 0px 0px"
+						margin="-35px -2px 0px 0px"
 						object-position="50% 49%"
 						nout-width="70%"
+						nout-margin="0px -2px 0px 0px"
 					/>
 					<Box
 						padding="0 14% 0 14%"
@@ -230,7 +250,7 @@ export default (() => {
 				</StackItem>
 				{"    "}
 			</Stack>
-			<Stack margin="0px 0px 0px 0px">
+			<Stack margin="0px 0px 0px 0px" nout-display="none">
 				{"    "}
 				<StackItem width="100%" display="flex">
 					{"        "}
@@ -250,10 +270,11 @@ export default (() => {
 			border-style="solid"
 			border-color="#dbe6f4"
 			transition="all 400ms ease 0s"
+			nout-border-radius="6px"
 		>
 			<Override slot="SectionContent" max-width="none" width="100%" />
 			<Stack margin="0px 0px 0px 0px" gap="0px">
-				<StackItem width="50%" display="flex" nout-width="60%" lg-width="70%">
+				<StackItem width="50%" display="flex" nout-width="70%" lg-width="70%">
 					<Override slot="StackItemContent" align-items="flex-start" padding="15px 30px 13px 30px" />
 					{"        "}
 					<Box display="flex" align-items="center">
@@ -272,7 +293,13 @@ export default (() => {
 								Вакансии в России
 							</Link>
 						</Text>
-						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 12px" display="inline-block" color="#9BABBF">
+						<Text
+							font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
+							margin="3px 0px 0px 12px"
+							display="inline-block"
+							color="#9BABBF"
+							nout-display="none"
+						>
 							<Link
 								href="http://ua.uteam.pro/"
 								color="#9BABBF"
@@ -283,7 +310,13 @@ export default (() => {
 								Вакансії в Україні{" "}
 							</Link>
 						</Text>
-						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 12px" display="inline-block" color="#9BABBF">
+						<Text
+							font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
+							margin="3px 0px 0px 12px"
+							display="inline-block"
+							color="#9BABBF"
+							nout-display="none"
+						>
 							<Link
 								href="http://en.uteam.pro/"
 								color="#9BABBF"
@@ -296,9 +329,93 @@ export default (() => {
 						</Text>
 					</Box>
 				</StackItem>
-				<StackItem width="50%" display="flex" nout-width="50%" lg-width="30%">
+				<StackItem width="50%" display="flex" nout-width="30%" lg-width="30%">
 					<Override slot="StackItemContent" align-items="center" padding="15px 30px 13px 30px" justify-content="flex-end" />
-					<Menu display="flex">
+					<Components.MobileSide
+						flex="1 0 auto"
+						nout-position="relative"
+						nout-z-index="5"
+						nout-display="flex"
+						nout-justify-content="flex-end"
+						nout-align-items="center"
+						display="none"
+						nout-top="0px"
+					>
+						<Override
+							slot="Content"
+							display="flex"
+							align-items="center"
+							nout-position="fixed"
+							nout-top={0}
+							nout-left={0}
+							nout-z-index="1"
+							nout-width="100%"
+							nout-height="100%"
+							nout-background="white"
+							nout-flex-direction="column"
+						/>
+						<Override
+							slot="Button"
+							display="none"
+							nout-display="flex"
+							nout-width="33px"
+							nout-height="28px"
+							nout-z-index="6"
+							nout-top="35px"
+						/>
+						<Override
+							slot="Button Line"
+							nout-background="black"
+							nout-min-height="3px"
+							border-radius="6px"
+							nout-position="absolute"
+						/>
+						<Override
+							slot="Button Line1"
+							nout-top="4px"
+							border-radius="6px"
+							nout-width="22px"
+							nout-right="0px"
+						/>
+						<Override slot="Button Line2" nout-top="11px" nout-border-radius="6px" nout-right="0px" />
+						<Override slot="Button Line3" nout-top="18px" nout-border-radius="6px" nout-right="0px" />
+						<Override slot="Button Line1 :closed" nout-width="22px" />
+						<Override slot="Button Line2 :closed" nout-width="22px" />
+						<Override slot="Button Line3 :closed" nout-width="22px" />
+						<Override slot="Button Line2 :open" nout-opacity="0" nout-width="32px" />
+						<Override slot="Button Line1 :open" nout-width="36px" nout-transform="translateY(12px) rotate(225deg)" />
+						<Override slot="Button Line3 :open" nout-width="36px" nout-transform="translateY(-12px) rotate(135deg)" />
+						<Override slot="Content :closed" nout-opacity="0" nout-transition="transform --transitionDuration-normal step-end 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" nout-transform="translateY(-100%)" />
+						<Override slot="Content :open" nout-transform="translateY(0%)" nout-transition="transform --transitionDuration-normal step-start 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" nout-opacity="1" />
+						<Override slot="Button :open" nout-position="fixed" />
+						<Text
+							flex="0 0 auto"
+							margin="0px 0px 0px 0px"
+							font="--headline3"
+							nout-z-index="6"
+							display="none"
+							nout-display="block"
+							nout-width="90%"
+							nout-margin="24px 0px 24px 0px"
+						>
+							Sitename
+						</Text>
+						<Menu
+							flex="1 1 auto"
+							display="flex"
+							align-items="center"
+							justify-content="center"
+							nout-flex="0 1 auto"
+							nout-flex-direction="column"
+						>
+							<Override slot="item-404" display="none" />
+							<Override slot="item-index" display="none" />
+						</Menu>
+						<Button flex="0 0 auto" margin="0px 0px 0px 16px" nout-margin="0px 0px 0px 0px">
+							Button
+						</Button>
+					</Components.MobileSide>
+					<Menu display="flex" nout-display="none">
 						<Override slot="item-404" display="none" />
 						<Override slot="link-index" text-decoration-line="initial">
 							Главная
@@ -321,7 +438,7 @@ export default (() => {
 		</Section>
 		<Section padding="60px 0 100px 0">
 			<Override slot="SectionContent" align-items="center" />
-			<Stack margin="0px 0px 0px 0px" max-width="975px">
+			<Stack margin="0px 0px 0px 0px" max-width="850px">
 				{"    "}
 				<StackItem width="100%" display="flex">
 					<Override slot="StackItemContent" align-items="center" justify-content="center" />
@@ -453,7 +570,7 @@ export default (() => {
 		</Section>
 		<Section padding="24px 0 38px 0" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/Photo2.jpg?v=2021-01-25T00:03:55.645Z) center/cover no-repeat fixed padding-box">
 			<Override slot="SectionContent" align-items="center" />
-			<Stack margin="0px 0px 0px 0px" width="100%" max-width="750px">
+			<Stack margin="0px 0px 0px 0px" width="100%" max-width="750px" gap="--cmp-stack-gap-small">
 				{"    "}
 				<StackItem width="100%" display="flex">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" color="#ffffff" />
@@ -807,11 +924,11 @@ export default (() => {
 						href="#"
 						text-align="center"
 						text-decoration-line="initial"
-						background="#4a8cfa"
 						color="#ffffff"
-						padding="15px 15px 15px 15px"
-						border-radius="5px"
+						background="#4a8cfa"
+						padding="14px 15px 15px 15px"
 						font="600 16px 'AvenirNextCyrRegular', sans-serif"
+						border-radius="5px"
 						transition="all 0.2s linear 0s"
 						margin="40px 0px 0px 0px"
 						hover-background="#437de0"
@@ -830,50 +947,167 @@ export default (() => {
 			border-color="#dbe6f4"
 			transition="all 400ms ease 0s"
 		>
-			<Override slot="SectionContent" max-width="none" width="100%" />
+			<Override slot="SectionContent" max-width="1170px" width="100%" />
 			<Stack margin="0px 0px 0px 0px" gap="0px">
-				<StackItem width="50%" display="flex" nout-width="60%" lg-width="70%">
-					<Override slot="StackItemContent" align-items="flex-start" padding="15px 30px 13px 30px" />
+				<StackItem width="70%" display="flex" nout-width="60%" lg-width="70%">
+					<Override slot="StackItemContent" align-items="flex-end" padding="13px 30px 14px 30px" />
 					{"        "}
 					<Box display="flex" align-items="center">
 						<Link href="/">
 							<Image
-								src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/logoblue.svg?v=2021-01-25T20:59:50.954Z"
+								src="https://screenshot.ukit.com/src/goalov/21/2021-01-27-03-36-00.png"
 								color="#ffffff"
-								width="50px"
-								height="50px"
+								width="121px"
+								height="40px"
 								margin="3px 10px 3px 3px"
 								padding="0px 0px 0px 0px"
 							/>
 						</Link>
-						<Text font="normal 600 18px/50px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 0px 0px" display="inline-block" color="#ffffff">
-							<Link href="https://ru.uteam.pro/" color="#000000" text-decoration-line="initial" font="500 18px/50px AvenirNextCyrRegular, sans-serif">
-								Вакансии в России
+						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 22px" display="inline-block" color="#9BABBF">
+							<Link
+								href="https://blog.ucoz.ru/"
+								color="#AEC1D9"
+								text-decoration-line="initial"
+								hover-color="#4a8cfa"
+								transition="color 0.2s ease 0s"
+								font="400 14px/19px 'AvenirNextCyrMedium'"
+								target="_blank"
+							>
+								Блог компании
 							</Link>
 						</Text>
-						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 12px" display="inline-block" color="#9BABBF">
+						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 22px" display="inline-block" color="#9BABBF">
+							<Link
+								href="http://www.ucoz.ru/all/"
+								color="#AEC1D9"
+								text-decoration-line="initial"
+								hover-color="#4a8cfa"
+								transition="color 0.2s ease 0s"
+								font="400 14px/19px 'AvenirNextCyrMedium'"
+								target="_blank"
+							>
+								Наши проекты
+							</Link>
+						</Text>
+						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 22px" display="inline-block" color="#9BABBF">
 							<Link
 								href="http://ua.uteam.pro/"
-								color="#9BABBF"
+								color="#4a8cfa"
 								text-decoration-line="initial"
-								hover-color="#ffe02d"
+								hover-color="#3d72cc"
 								transition="color 0.2s ease 0s"
+								font="300 14px/19px 'AvenirNextCyrMedium'"
 							>
 								Вакансії в Україні{" "}
 							</Link>
 						</Text>
-						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 12px" display="inline-block" color="#9BABBF">
+						<Text font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif" margin="3px 0px 0px 22px" display="inline-block" color="#9BABBF">
 							<Link
 								href="http://en.uteam.pro/"
-								color="#9BABBF"
+								color="#4a8cfa"
 								text-decoration-line="initial"
-								hover-color="#ffe02d"
+								hover-color="#3d72cc"
 								transition="color 0.2s ease 0s"
+								font="300 14px/19px 'AvenirNextCyrMedium'"
 							>
 								Careers for Foreigners
 							</Link>
 						</Text>
 					</Box>
+				</StackItem>
+				<StackItem width="30%" display="flex" lg-width="70%">
+					<Override slot="StackItemContent" align-items="center" padding="13px 30px 14px 30px" justify-content="flex-end" />
+					<Link href="http://vk.com/ucoz" target="_blank" margin="0px 15px 0px 0px">
+						<Icon
+							category="fa"
+							icon={FaVk}
+							hover-color="#ffffff"
+							color="#AFC1D8"
+							border-style="solid"
+							border-color="#AFC1D8"
+							border-width="2px"
+							border-radius="50%"
+							padding="5px 5px 5px 5px"
+							transition="all 0.2s linear 0s"
+							hover-border-color="#4a8cfa"
+							hover-background="#4a8cfa"
+							background="#ffffff"
+							size="20px"
+						/>
+					</Link>
+					<Link href="https://www.facebook.com/ucoz" target="_blank" margin="0px 15px 0px 0px">
+						<Icon
+							category="fa"
+							icon={FaFacebookF}
+							hover-color="#ffffff"
+							color="#AFC1D8"
+							border-style="solid"
+							border-color="#AFC1D8"
+							border-width="2px"
+							border-radius="50%"
+							padding="5px 5px 5px 5px"
+							transition="all 0.2s linear 0s"
+							hover-border-color="#4a8cfa"
+							hover-background="#4a8cfa"
+							background="#ffffff"
+							size="20px"
+						/>
+					</Link>
+					<Link href="https://twitter.com/ucoz_ru" target="_blank" margin="0px 15px 0px 0px">
+						<Icon
+							category="fa"
+							icon={FaTwitter}
+							hover-color="#ffffff"
+							color="#AFC1D8"
+							border-style="solid"
+							border-color="#AFC1D8"
+							border-width="2px"
+							border-radius="50%"
+							padding="5px 5px 5px 5px"
+							transition="all 0.2s linear 0s"
+							hover-border-color="#4a8cfa"
+							hover-background="#4a8cfa"
+							background="#ffffff"
+							size="20px"
+						/>
+					</Link>
+					<Link href="https://instagram.com/ucoz_ru" target="_blank" margin="0px 15px 0px 0px">
+						<Icon
+							category="fa"
+							icon={FaInstagram}
+							hover-color="#ffffff"
+							color="#AFC1D8"
+							border-style="solid"
+							border-color="#AFC1D8"
+							border-width="2px"
+							border-radius="50%"
+							padding="5px 5px 5px 5px"
+							transition="all 0.2s linear 0s"
+							hover-border-color="#4a8cfa"
+							hover-background="#4a8cfa"
+							background="#ffffff"
+							size="20px"
+						/>
+					</Link>
+					<Link href="http://ok.ru/ucozru" target="_blank" margin="0px 15px 0px 0px">
+						<Icon
+							category="fa"
+							icon={FaOdnoklassniki}
+							hover-color="#ffffff"
+							color="#AFC1D8"
+							border-style="solid"
+							border-color="#AFC1D8"
+							border-width="2px"
+							border-radius="50%"
+							padding="5px 5px 5px 5px"
+							transition="all 0.2s linear 0s"
+							hover-border-color="#4a8cfa"
+							hover-background="#4a8cfa"
+							background="#ffffff"
+							size="20px"
+						/>
+					</Link>
+					{"        "}
 				</StackItem>
 				{"        "}
 			</Stack>
