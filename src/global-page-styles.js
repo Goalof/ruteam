@@ -4,27 +4,27 @@ import { createGlobalStyle } from "styled-components";
 
 const pageStyles = {
     "404": {
-        "overflow-y": "hidden",
+        "overflow-y": "",
         "overflow-x": "hidden"
     },
     "index": {
-        "overflow-y": "hidden",
+        "overflow-y": "",
         "overflow-x": "hidden"
     },
     "vakansii": {
-        "overflow-y": "hidden",
+        "overflow-y": "",
         "overflow-x": "hidden"
     },
     "komanda": {
-        "overflow-y": "hidden",
+        "overflow-y": "",
         "overflow-x": "hidden"
     },
     "kak-popast-v-komandu": {
-        "overflow-y": "hidden",
+        "overflow-y": "",
         "overflow-x": "hidden"
     },
     "kontakty": {
-        "overflow-y": "hidden",
+        "overflow-y": "",
         "overflow-x": "hidden"
     }
 };
