@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, Box, Span, Button, Strong, Icon } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, Box, Span, Strong, Icon } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, StackItem, Stack, Section, Menu } from "@quarkly/components";
@@ -167,7 +167,7 @@ export default (() => {
 					</Box>
 				</Override>
 				<Section>
-					<Components.Calc />
+					<Components.Calc nout-height="500px" height="500px" />
 				</Section>
 			</Components.PopUp>
 			<Stack margin="0px 0px 0px 0px" max-width="750px" width="100%" gap="16px">
@@ -442,18 +442,28 @@ export default (() => {
 						<Override slot="Content :closed" nout-opacity="0" nout-transition="transform --transitionDuration-normal step-end 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" nout-transform="translateY(-100%)" />
 						<Override slot="Content :open" nout-transform="translateY(0%)" nout-transition="transform --transitionDuration-normal step-start 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" nout-opacity="1" />
 						<Override slot="Button :open" nout-position="fixed" />
-						<Text
-							flex="0 0 auto"
-							margin="0px 0px 0px 0px"
-							font="--headline3"
-							nout-z-index="6"
-							display="none"
-							nout-display="block"
-							nout-width="90%"
-							nout-margin="24px 0px 24px 0px"
+						<Box
+							nout-width="100%"
+							nout-display="flex"
+							nout-align-items="center"
+							nout-padding="0px 0px 0px 0px"
+							nout-margin="0px 0px 0px 33px"
 						>
-							Sitename
-						</Text>
+							<Image width="64px" height="64px" nout-width="50px" nout-height="50px" />
+							<Text
+								flex="0 0 auto"
+								margin="0px 0px 0px 0px"
+								font="--headline3"
+								nout-z-index="6"
+								display="none"
+								nout-display="block"
+								nout-width="90%"
+								nout-margin="24px 0px 24px 12px"
+								nout-font="normal 500 18px/42px 'AvenirNextCyrMedium', sans-serif"
+							>
+								Вакансии в России{"\n\n"}
+							</Text>
+						</Box>
 						<Menu
 							flex="1 1 auto"
 							display="flex"
@@ -461,13 +471,83 @@ export default (() => {
 							justify-content="center"
 							nout-flex="0 1 auto"
 							nout-flex-direction="column"
+							nout-padding="6px 6px 0px 6px"
+							nout-margin="15px 0px 0px 0px"
 						>
 							<Override slot="item-404" display="none" />
-							<Override slot="item-index" display="none" />
+							<Override slot="item-index" display="none" nout-display="block" />
+							<Override
+								slot="link"
+								nout-text-decoration-line="initial"
+								nout-font="18px AvenirNextCyrRegular, sans-serif"
+								nout-letter-spacing=".2px"
+								nout-padding="0px 0px 0px 0px"
+								nout-color="#263238"
+							/>
+							<Override slot="item" nout-padding="15px 25px 15px 25px" />
+							<Override slot="link-index">
+								Главная
+							</Override>
 						</Menu>
-						<Button flex="0 0 auto" margin="0px 0px 0px 16px" nout-margin="0px 0px 0px 0px">
-							Button
-						</Button>
+						<StackItem width="70%" display="flex" lg-width="100%" nout-width="100%">
+							<Override
+								slot="StackItemContent"
+								align-items="flex-end"
+								padding="13px 30px 14px 30px"
+								nout-flex-direction="column"
+								nout-justify-content="center"
+								nout-align-items="center"
+								nout-padding="0px 30px 0px 30px"
+							/>
+							{"        "}
+							<Text
+								font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
+								margin="3px 0px 0px 22px"
+								display="inline-block"
+								color="#9BABBF"
+								lg-margin="10px 0px 0px 22px"
+								nout-padding="15px 25px 15px 25px"
+								nout-margin="0px 0px 0px 0px"
+							>
+								<Link
+									href="http://en.uteam.pro/"
+									color="#4a8cfa"
+									text-decoration-line="initial"
+									hover-color="#3d72cc"
+									transition="color 0.2s ease 0s"
+									font="300 14px/19px 'AvenirNextCyrMedium'"
+									lg-padding="0px 0px 0px 0px"
+									lg-margin="0px 0px 0px 0px"
+									nout-font="18px AvenirNextCyrRegular, sans-serif"
+									nout-padding="0px 0px 0px 0px"
+								>
+									Careers for Foreigners
+								</Link>
+							</Text>
+							<Text
+								font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
+								margin="3px 0px 0px 22px"
+								display="inline-block"
+								color="#9BABBF"
+								lg-margin="10px 0px 0px 22px"
+								nout-margin="0px 0px 0px 0px"
+								nout-padding="15px 25px 15px 25px"
+							>
+								<Link
+									href="http://ua.uteam.pro/"
+									color="#4a8cfa"
+									text-decoration-line="initial"
+									hover-color="#3d72cc"
+									transition="color 0.2s ease 0s"
+									font="300 14px/19px 'AvenirNextCyrMedium'"
+									lg-padding="0px 0px 0px 0px"
+									lg-margin="0px 0px 0px 0px"
+									nout-font="18px AvenirNextCyrRegular, sans-serif"
+								>
+									Вакансії в Україні{" "}
+								</Link>
+							</Text>
+						</StackItem>
 					</Components.MobileSide>
 					<Menu display="flex" nout-display="none">
 						<Override slot="item-404" display="none" />
