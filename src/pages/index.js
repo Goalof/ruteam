@@ -32,6 +32,7 @@ export default (() => {
 				align-items="center"
 				padding="0px 0px 8px 0px"
 				position="relative"
+				nout-justify-content="flex-start"
 			/>
 			<Stack margin="0px 0px 0px 0px" gap="0px" width="100%">
 				{"    "}
@@ -114,11 +115,13 @@ export default (() => {
 					<Box
 						padding="0 14% 0 14%"
 						margin="40px 0px 0px 0px"
-						nout-width="70%"
+						nout-width="65%"
 						nout-display="flex"
 						nout-flex-direction="column"
 						nout-align-items="flex-end"
 						nout-justify-content="center"
+						nout-padding="0 0% 0 0%"
+						nout-margin="40px 0px 20px 0px"
 					>
 						<Text margin="0px 0px 17px 0px" color="#ffffff" font="--headline5" padding="0 0px 0 0px">
 							и более сотрудников успешно работают и отдыхают с нами на протяжении тринадцати лет и не жалеют об этом
