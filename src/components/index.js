@@ -1,4 +1,5 @@
 export { default as EmbedHTML } from "./EmbedHTML"
+export { default as MobileSide2 } from "./MobileSide2"
 export { default as Calc } from "./Calc"
 export { default as PopUp } from "./PopUp"
 export { default as MobileSide } from "./MobileSide"

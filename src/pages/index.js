@@ -1,9 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, Box, Span, Strong, Icon } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, Box, Icon, Span, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Override, StackItem, Stack, Section, Menu } from "@quarkly/components";
+import { Override, StackItem, Menu, Stack, Section } from "@quarkly/components";
 import * as Components from "components";
 import { FaVk, FaFacebookF, FaTwitter, FaInstagram, FaOdnoklassniki } from "react-icons/fa";
 export default (() => {
@@ -91,14 +91,335 @@ export default (() => {
 						</Text>
 					</Box>
 				</StackItem>
-				<StackItem width="40%" display="none" nout-width="20%">
-					<Override
-						slot="StackItemContent"
-						align-items="flex-start"
-						padding="15px 0px 0px 30px"
+				<StackItem
+					width="50%"
+					display="none"
+					nout-width="30%"
+					lg-width="30%"
+					sm-width="15%"
+					nout-display="block"
+				>
+					<Override slot="StackItemContent" align-items="center" padding="15px 30px 13px 30px" justify-content="flex-end" />
+					<Components.MobileSide2
+						flex="1 0 auto"
+						nout-position="relative"
+						nout-z-index="5"
+						nout-display="flex"
+						nout-justify-content="flex-end"
+						nout-align-items="center"
 						display="none"
-						nout-display="block"
-					/>
+						nout-top="0px"
+					>
+						<Override
+							slot="Content"
+							display="flex"
+							align-items="center"
+							nout-position="fixed"
+							nout-top={0}
+							nout-left={0}
+							nout-z-index="1"
+							nout-width="100%"
+							nout-height="100%"
+							nout-background="white"
+							nout-flex-direction="column"
+						/>
+						<Override
+							slot="Button"
+							display="none"
+							nout-display="flex"
+							nout-width="33px"
+							nout-height="28px"
+							nout-z-index="6"
+							nout-top="35px"
+							sm-margin="-3px 0px 0px 0px"
+						/>
+						<Override
+							slot="Button Liner"
+							nout-background="#ffffff"
+							nout-min-height="3px"
+							border-radius="6px"
+							nout-position="absolute"
+						/>
+						<Override
+							slot="Button Liner1"
+							nout-top="4px"
+							border-radius="6px"
+							nout-width="22px"
+							nout-right="0px"
+						/>
+						<Override slot="Button Liner2" nout-top="11px" nout-border-radius="6px" nout-right="0px" />
+						<Override slot="Button Liner3" nout-top="18px" nout-border-radius="6px" nout-right="0px" />
+						<Override slot="Button Liner1 :closed" nout-width="22px" />
+						<Override slot="Button Liner2 :closed" nout-width="22px" />
+						<Override slot="Button Liner3 :closed" nout-width="22px" />
+						<Override slot="Button Liner2 :open" nout-opacity="0" nout-width="32px" />
+						<Override slot="Button Liner1 :open" nout-width="36px" nout-transform="translateY(12px) rotate(225deg)" />
+						<Override slot="Button Liner3 :open" nout-width="36px" nout-transform="translateY(-12px) rotate(135deg)" />
+						<Override slot="Content :closed" nout-opacity="0" nout-transition="transform --transitionDuration-normal step-end 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" nout-transform="translateY(-100%)" />
+						<Override slot="Content :open" nout-transform="translateY(0%)" nout-transition="transform --transitionDuration-normal step-start 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" nout-opacity="1" />
+						<Override slot="Button :open" nout-position="fixed" />
+						<Box
+							nout-width="100%"
+							nout-display="flex"
+							nout-align-items="center"
+							nout-padding="0px 0px 0px 0px"
+							nout-margin="0px 0px 0px 33px"
+						>
+							<Image
+								width="64px"
+								height="64px"
+								nout-width="50px"
+								nout-height="50px"
+								src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/logoblue.svg?v=2021-01-25T20:59:50.954Z"
+							/>
+							<Text
+								flex="0 0 auto"
+								margin="0px 0px 0px 0px"
+								font="--headline3"
+								nout-z-index="6"
+								display="none"
+								nout-display="block"
+								nout-width="90%"
+								nout-margin="24px 0px 24px 12px"
+								nout-font="normal 500 18px/42px 'AvenirNextCyrMedium', sans-serif"
+							>
+								Вакансии в России
+							</Text>
+						</Box>
+						<Menu
+							flex="1 1 auto"
+							display="flex"
+							align-items="center"
+							justify-content="center"
+							nout-flex="0 1 auto"
+							nout-flex-direction="column"
+							nout-padding="6px 6px 0px 6px"
+							nout-margin="15px 0px 0px 0px"
+						>
+							<Override slot="item-404" display="none" />
+							<Override slot="item-index" display="none" nout-display="block" />
+							<Override
+								slot="link"
+								nout-text-decoration-line="initial"
+								nout-font="18px AvenirNextCyrRegular, sans-serif"
+								nout-letter-spacing=".2px"
+								nout-padding="0px 0px 0px 0px"
+								nout-color="#263238"
+							/>
+							<Override slot="item" nout-padding="15px 25px 15px 25px" />
+							<Override slot="link-index">
+								Главная
+							</Override>
+						</Menu>
+						<StackItem width="70%" display="flex" lg-width="100%" nout-width="100%">
+							<Override
+								slot="StackItemContent"
+								align-items="flex-end"
+								padding="13px 30px 14px 30px"
+								nout-flex-direction="column"
+								nout-justify-content="center"
+								nout-align-items="center"
+								nout-padding="0px 30px 0px 30px"
+							/>
+							{"        "}
+							<Text
+								font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
+								margin="3px 0px 0px 22px"
+								display="inline-block"
+								color="#9BABBF"
+								lg-margin="10px 0px 0px 22px"
+								nout-padding="15px 25px 15px 25px"
+								nout-margin="0px 0px 0px 0px"
+							>
+								<Link
+									href="http://en.uteam.pro/"
+									color="#4a8cfa"
+									text-decoration-line="initial"
+									hover-color="#3d72cc"
+									transition="color 0.2s ease 0s"
+									font="300 14px/19px 'AvenirNextCyrMedium'"
+									lg-padding="0px 0px 0px 0px"
+									lg-margin="0px 0px 0px 0px"
+									nout-font="18px AvenirNextCyrRegular, sans-serif"
+									nout-padding="0px 0px 0px 0px"
+								>
+									Careers for Foreigners
+								</Link>
+							</Text>
+							<Text
+								font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
+								margin="3px 0px 0px 22px"
+								display="inline-block"
+								color="#9BABBF"
+								lg-margin="10px 0px 0px 22px"
+								nout-margin="0px 0px 0px 0px"
+								nout-padding="15px 25px 15px 25px"
+							>
+								<Link
+									href="http://ua.uteam.pro/"
+									color="#4a8cfa"
+									text-decoration-line="initial"
+									hover-color="#3d72cc"
+									transition="color 0.2s ease 0s"
+									font="300 14px/19px 'AvenirNextCyrMedium'"
+									lg-padding="0px 0px 0px 0px"
+									lg-margin="0px 0px 0px 0px"
+									nout-font="18px AvenirNextCyrRegular, sans-serif"
+								>
+									Вакансії в Україні{" "}
+								</Link>
+							</Text>
+						</StackItem>
+						<StackItem width="30%" display="flex" lg-width="100%" nout-width="100%">
+							<Override
+								slot="StackItemContent"
+								align-items="center"
+								padding="13px 30px 14px 30px"
+								justify-content="flex-end"
+								lg-justify-content="center"
+								nout-justify-content="center"
+								nout-margin="10px 0px 0px 0px"
+							/>
+							<Link
+								href="https://www.facebook.com/ucoz"
+								target="_blank"
+								margin="0px 15px 0px 0px"
+								border-color="#AFC1D8"
+								color="#AFC1D8"
+								border-radius="50%"
+								border-width="2px"
+								border-style="solid"
+								hover-background="#4a8cfa"
+								hover-color="#ffffff"
+								hover-border-color="#4a8cfa"
+							>
+								<Icon
+									category="fa"
+									icon={FaVk}
+									border-radius="50%"
+									padding="5px 5px 5px 5px"
+									transition="all 0.2s linear 0s"
+									size="20px"
+									hover-color="inherit"
+									color="inherit"
+								/>
+							</Link>
+							<Link
+								href="https://www.facebook.com/ucoz"
+								target="_blank"
+								margin="0px 15px 0px 0px"
+								border-color="#AFC1D8"
+								color="#AFC1D8"
+								border-radius="50%"
+								border-width="2px"
+								border-style="solid"
+								hover-background="#4a8cfa"
+								hover-color="#ffffff"
+								hover-border-color="#4a8cfa"
+							>
+								<Icon
+									category="fa"
+									icon={FaFacebookF}
+									border-radius="50%"
+									padding="5px 5px 5px 5px"
+									transition="all 0.2s linear 0s"
+									size="20px"
+									hover-color="inherit"
+									color="inherit"
+								/>
+							</Link>
+							<Link
+								href="https://twitter.com/ucoz_ru"
+								target="_blank"
+								margin="0px 15px 0px 0px"
+								border-color="#AFC1D8"
+								color="#AFC1D8"
+								border-radius="50%"
+								border-width="2px"
+								border-style="solid"
+								hover-background="#4a8cfa"
+								hover-color="#ffffff"
+								hover-border-color="#4a8cfa"
+							>
+								<Icon
+									category="fa"
+									icon={FaTwitter}
+									border-radius="50%"
+									padding="5px 5px 5px 5px"
+									transition="all 0.2s linear 0s"
+									size="20px"
+									hover-color="inherit"
+									color="inherit"
+								/>
+							</Link>
+							<Link
+								href="https://instagram.com/ucoz_ru"
+								target="_blank"
+								margin="0px 15px 0px 0px"
+								border-color="#AFC1D8"
+								color="#AFC1D8"
+								border-radius="50%"
+								border-width="2px"
+								border-style="solid"
+								hover-background="#4a8cfa"
+								hover-color="#ffffff"
+								hover-border-color="#4a8cfa"
+							>
+								<Icon
+									category="fa"
+									icon={FaInstagram}
+									border-radius="50%"
+									padding="5px 5px 5px 5px"
+									transition="all 0.2s linear 0s"
+									size="20px"
+									hover-color="inherit"
+									color="inherit"
+								/>
+							</Link>
+							<Link
+								href="http://ok.ru/ucozru"
+								target="_blank"
+								margin="0px 15px 0px 0px"
+								border-color="#AFC1D8"
+								color="#AFC1D8"
+								border-radius="50%"
+								border-width="2px"
+								border-style="solid"
+								hover-background="#4a8cfa"
+								hover-color="#ffffff"
+								hover-border-color="#4a8cfa"
+								nout-margin="0px 0px 0px 0px"
+							>
+								<Icon
+									category="fa"
+									icon={FaOdnoklassniki}
+									border-radius="50%"
+									padding="5px 5px 5px 5px"
+									transition="all 0.2s linear 0s"
+									size="20px"
+									hover-color="inherit"
+									color="inherit"
+								/>
+							</Link>
+							{"        "}
+						</StackItem>
+					</Components.MobileSide2>
+					<Menu display="flex" nout-display="none">
+						<Override slot="item-404" display="none" />
+						<Override slot="link-index" text-decoration-line="initial">
+							Главная
+						</Override>
+						<Override slot="item-active" color="#4a8cfa" />
+						<Override slot="link-active" color="#4a8cfa" />
+						<Override
+							slot="link"
+							transition="color 0.3s ease-in-out 0s"
+							font="400 16px/24px 'AvenirNextCyrMedium'"
+							text-decoration-line="initial"
+							color="#263238"
+							hover-color="#4a8cfa"
+						/>
+					</Menu>
 					{"        "}
 				</StackItem>
 				<StackItem width="55%" display="flex" nout-width="100%">
@@ -336,7 +657,7 @@ export default (() => {
 							/>
 						</Link>
 						<Text font="normal 600 18px/50px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 0px 0px" display="inline-block" color="#ffffff">
-							<Link href="https://ru.uteam.pro/" color="#000000" text-decoration-line="initial" font="500 18px/50px AvenirNextCyrRegular, sans-serif">
+							<Link href="https://ru.uteam.pro/" color="#000000" text-decoration-line="initial" font="500 18px/50px 'AvenirNextCyrMedium', sans-serif">
 								Вакансии в России
 							</Link>
 						</Text>
@@ -449,7 +770,13 @@ export default (() => {
 							nout-padding="0px 0px 0px 0px"
 							nout-margin="0px 0px 0px 33px"
 						>
-							<Image width="64px" height="64px" nout-width="50px" nout-height="50px" />
+							<Image
+								width="64px"
+								height="64px"
+								nout-width="50px"
+								nout-height="50px"
+								src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/logoblue.svg?v=2021-01-25T20:59:50.954Z"
+							/>
 							<Text
 								flex="0 0 auto"
 								margin="0px 0px 0px 0px"
@@ -461,7 +788,7 @@ export default (() => {
 								nout-margin="24px 0px 24px 12px"
 								nout-font="normal 500 18px/42px 'AvenirNextCyrMedium', sans-serif"
 							>
-								Вакансии в России{"\n\n"}
+								Вакансии в России
 							</Text>
 						</Box>
 						<Menu
@@ -548,6 +875,139 @@ export default (() => {
 								</Link>
 							</Text>
 						</StackItem>
+						<StackItem width="30%" display="flex" lg-width="100%" nout-width="100%">
+							<Override
+								slot="StackItemContent"
+								align-items="center"
+								padding="13px 30px 14px 30px"
+								justify-content="flex-end"
+								lg-justify-content="center"
+								nout-justify-content="center"
+								nout-margin="10px 0px 0px 0px"
+							/>
+							<Link
+								href="https://www.facebook.com/ucoz"
+								target="_blank"
+								margin="0px 15px 0px 0px"
+								border-color="#AFC1D8"
+								color="#AFC1D8"
+								border-radius="50%"
+								border-width="2px"
+								border-style="solid"
+								hover-background="#4a8cfa"
+								hover-color="#ffffff"
+								hover-border-color="#4a8cfa"
+							>
+								<Icon
+									category="fa"
+									icon={FaVk}
+									border-radius="50%"
+									padding="5px 5px 5px 5px"
+									transition="all 0.2s linear 0s"
+									size="20px"
+									hover-color="inherit"
+									color="inherit"
+								/>
+							</Link>
+							<Link
+								href="https://www.facebook.com/ucoz"
+								target="_blank"
+								margin="0px 15px 0px 0px"
+								border-color="#AFC1D8"
+								color="#AFC1D8"
+								border-radius="50%"
+								border-width="2px"
+								border-style="solid"
+								hover-background="#4a8cfa"
+								hover-color="#ffffff"
+								hover-border-color="#4a8cfa"
+							>
+								<Icon
+									category="fa"
+									icon={FaFacebookF}
+									border-radius="50%"
+									padding="5px 5px 5px 5px"
+									transition="all 0.2s linear 0s"
+									size="20px"
+									hover-color="inherit"
+									color="inherit"
+								/>
+							</Link>
+							<Link
+								href="https://twitter.com/ucoz_ru"
+								target="_blank"
+								margin="0px 15px 0px 0px"
+								border-color="#AFC1D8"
+								color="#AFC1D8"
+								border-radius="50%"
+								border-width="2px"
+								border-style="solid"
+								hover-background="#4a8cfa"
+								hover-color="#ffffff"
+								hover-border-color="#4a8cfa"
+							>
+								<Icon
+									category="fa"
+									icon={FaTwitter}
+									border-radius="50%"
+									padding="5px 5px 5px 5px"
+									transition="all 0.2s linear 0s"
+									size="20px"
+									hover-color="inherit"
+									color="inherit"
+								/>
+							</Link>
+							<Link
+								href="https://instagram.com/ucoz_ru"
+								target="_blank"
+								margin="0px 15px 0px 0px"
+								border-color="#AFC1D8"
+								color="#AFC1D8"
+								border-radius="50%"
+								border-width="2px"
+								border-style="solid"
+								hover-background="#4a8cfa"
+								hover-color="#ffffff"
+								hover-border-color="#4a8cfa"
+							>
+								<Icon
+									category="fa"
+									icon={FaInstagram}
+									border-radius="50%"
+									padding="5px 5px 5px 5px"
+									transition="all 0.2s linear 0s"
+									size="20px"
+									hover-color="inherit"
+									color="inherit"
+								/>
+							</Link>
+							<Link
+								href="http://ok.ru/ucozru"
+								target="_blank"
+								margin="0px 15px 0px 0px"
+								border-color="#AFC1D8"
+								color="#AFC1D8"
+								border-radius="50%"
+								border-width="2px"
+								border-style="solid"
+								hover-background="#4a8cfa"
+								hover-color="#ffffff"
+								hover-border-color="#4a8cfa"
+								nout-margin="0px 0px 0px 0px"
+							>
+								<Icon
+									category="fa"
+									icon={FaOdnoklassniki}
+									border-radius="50%"
+									padding="5px 5px 5px 5px"
+									transition="all 0.2s linear 0s"
+									size="20px"
+									hover-color="inherit"
+									color="inherit"
+								/>
+							</Link>
+							{"        "}
+						</StackItem>
 					</Components.MobileSide>
 					<Menu display="flex" nout-display="none">
 						<Override slot="item-404" display="none" />
@@ -593,7 +1053,7 @@ export default (() => {
 				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon1.svg?v=2021-01-26T15:44:54.779Z" />
+					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon1.svg?v=2021-01-27T14:59:58.221Z" />
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
 						margin="23px 0px 70px 0px"
@@ -612,7 +1072,7 @@ export default (() => {
 				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon1.svg?v=2021-01-26T15:44:54.779Z" />
+					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon2.svg?v=2021-01-27T14:59:58.219Z" />
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
 						margin="23px 0px 70px 0px"
@@ -633,7 +1093,7 @@ export default (() => {
 				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon1.svg?v=2021-01-26T15:44:54.779Z" />
+					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon3.svg?v=2021-01-27T14:59:58.223Z" />
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
 						margin="23px 0px 70px 0px"
@@ -653,7 +1113,7 @@ export default (() => {
 				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon1.svg?v=2021-01-26T15:44:54.779Z" />
+					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon4.svg?v=2021-01-27T14:59:58.223Z" />
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
 						margin="23px 0px 0px 0px"
@@ -674,7 +1134,7 @@ export default (() => {
 				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon1.svg?v=2021-01-26T15:44:54.779Z" />
+					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon5-1.svg?v=2021-01-27T14:59:58.227Z" />
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
 						margin="23px 0px 0px 0px"
@@ -693,7 +1153,7 @@ export default (() => {
 				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon1.svg?v=2021-01-26T15:44:54.779Z" />
+					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon6.svg?v=2021-01-27T14:59:58.226Z" />
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
 						margin="23px 0px 0px 0px"
@@ -1199,94 +1659,125 @@ export default (() => {
 						justify-content="flex-end"
 						lg-justify-content="center"
 					/>
-					<Link href="https://www.facebook.com/ucoz" target="_blank" margin="0px 15px 0px 0px" border-color="#AFC1D8">
+					<Link
+						href="https://www.facebook.com/ucoz"
+						target="_blank"
+						margin="0px 15px 0px 0px"
+						border-color="#AFC1D8"
+						color="#AFC1D8"
+						border-radius="50%"
+						border-width="2px"
+						border-style="solid"
+						hover-background="#4a8cfa"
+						hover-color="#ffffff"
+						hover-border-color="#4a8cfa"
+					>
 						<Icon
 							category="fa"
 							icon={FaVk}
-							hover-color="#ffffff"
-							color="#AFC1D8"
-							border-style="solid"
-							border-color="#AFC1D8"
-							border-width="2px"
 							border-radius="50%"
 							padding="5px 5px 5px 5px"
 							transition="all 0.2s linear 0s"
-							hover-border-color="#4a8cfa"
 							hover-background="#4a8cfa"
-							background="#ffffff"
 							size="20px"
+							hover-color="inherit"
+							color="inherit"
 						/>
 					</Link>
-					<Link href="https://www.facebook.com/ucoz" target="_blank" margin="0px 15px 0px 0px" border-color="#AFC1D8">
+					<Link
+						href="https://www.facebook.com/ucoz"
+						target="_blank"
+						margin="0px 15px 0px 0px"
+						border-color="#AFC1D8"
+						color="#AFC1D8"
+						border-radius="50%"
+						border-width="2px"
+						border-style="solid"
+						hover-background="#4a8cfa"
+						hover-color="#ffffff"
+						hover-border-color="#4a8cfa"
+					>
 						<Icon
 							category="fa"
 							icon={FaFacebookF}
-							hover-color="#ffffff"
-							color="#AFC1D8"
-							border-style="solid"
-							border-color="#AFC1D8"
-							border-width="2px"
 							border-radius="50%"
 							padding="5px 5px 5px 5px"
 							transition="all 0.2s linear 0s"
-							hover-border-color="#4a8cfa"
-							hover-background="#4a8cfa"
-							background="#ffffff"
 							size="20px"
+							hover-color="inherit"
+							color="inherit"
 						/>
 					</Link>
-					<Link href="https://twitter.com/ucoz_ru" target="_blank" margin="0px 15px 0px 0px" border-color="#AFC1D8">
+					<Link
+						href="https://twitter.com/ucoz_ru"
+						target="_blank"
+						margin="0px 15px 0px 0px"
+						border-color="#AFC1D8"
+						color="#AFC1D8"
+						border-radius="50%"
+						border-width="2px"
+						border-style="solid"
+						hover-background="#4a8cfa"
+						hover-color="#ffffff"
+						hover-border-color="#4a8cfa"
+					>
 						<Icon
 							category="fa"
 							icon={FaTwitter}
-							hover-color="#ffffff"
-							color="#AFC1D8"
-							border-style="solid"
-							border-color="#AFC1D8"
-							border-width="2px"
 							border-radius="50%"
 							padding="5px 5px 5px 5px"
 							transition="all 0.2s linear 0s"
-							hover-border-color="#4a8cfa"
-							hover-background="#4a8cfa"
-							background="#ffffff"
 							size="20px"
+							hover-color="inherit"
+							color="inherit"
 						/>
 					</Link>
-					<Link href="https://instagram.com/ucoz_ru" target="_blank" margin="0px 15px 0px 0px" border-color="#AFC1D8">
+					<Link
+						href="https://instagram.com/ucoz_ru"
+						target="_blank"
+						margin="0px 15px 0px 0px"
+						border-color="#AFC1D8"
+						color="#AFC1D8"
+						border-radius="50%"
+						border-width="2px"
+						border-style="solid"
+						hover-background="#4a8cfa"
+						hover-color="#ffffff"
+						hover-border-color="#4a8cfa"
+					>
 						<Icon
 							category="fa"
 							icon={FaInstagram}
-							hover-color="#ffffff"
-							color="#AFC1D8"
-							border-style="solid"
-							border-color="#AFC1D8"
-							border-width="2px"
 							border-radius="50%"
 							padding="5px 5px 5px 5px"
 							transition="all 0.2s linear 0s"
-							hover-border-color="#4a8cfa"
-							hover-background="#4a8cfa"
-							background="#ffffff"
 							size="20px"
+							hover-color="inherit"
+							color="inherit"
 						/>
 					</Link>
-					<Link href="http://ok.ru/ucozru" target="_blank" margin="0px 15px 0px 0px" border-color="#AFC1D8">
+					<Link
+						href="http://ok.ru/ucozru"
+						target="_blank"
+						margin="0px 15px 0px 0px"
+						border-color="#AFC1D8"
+						color="#AFC1D8"
+						border-radius="50%"
+						border-width="2px"
+						border-style="solid"
+						hover-background="#4a8cfa"
+						hover-color="#ffffff"
+						hover-border-color="#4a8cfa"
+					>
 						<Icon
 							category="fa"
 							icon={FaOdnoklassniki}
-							hover-color="#ffffff"
-							color="#AFC1D8"
-							border-style="solid"
-							border-color="#AFC1D8"
-							border-width="2px"
 							border-radius="50%"
 							padding="5px 5px 5px 5px"
 							transition="all 0.2s linear 0s"
-							hover-border-color="#4a8cfa"
-							hover-background="#4a8cfa"
-							background="#ffffff"
 							size="20px"
+							hover-color="inherit"
+							color="inherit"
 						/>
 					</Link>
 					{"        "}

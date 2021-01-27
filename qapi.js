@@ -47,7 +47,10 @@ export default {
 	"mode": "production",
 	"projectType": "gatsby",
 	"site": {
-		"styles": {},
+		"styles": {
+			"overflow-y": "hidden",
+			"overflow-x": "hidden"
+		},
 		"seo": {}
 	}
 }
