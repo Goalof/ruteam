@@ -1,9 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, Box, Icon, Span, Strong } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, Box, Icon, Input, Button, Span, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Override, StackItem, Menu, Stack, Section } from "@quarkly/components";
+import { Override, StackItem, Menu, Stack, Formspree, Section } from "@quarkly/components";
 import * as Components from "components";
 import { FaVk, FaFacebookF, FaTwitter, FaInstagram, FaOdnoklassniki } from "react-icons/fa";
 export default (() => {
@@ -111,7 +111,7 @@ export default (() => {
 						nout-top="0px"
 					>
 						<Override
-							slot="Content"
+							slot="Content2"
 							display="flex"
 							align-items="center"
 							nout-position="fixed"
@@ -124,7 +124,7 @@ export default (() => {
 							nout-flex-direction="column"
 						/>
 						<Override
-							slot="Button"
+							slot="Button2"
 							display="none"
 							nout-display="flex"
 							nout-width="33px"
@@ -135,10 +135,12 @@ export default (() => {
 						/>
 						<Override
 							slot="Button Liner"
-							nout-background="#ffffff"
+							nout-background="--color-dark"
 							nout-min-height="3px"
 							border-radius="6px"
 							nout-position="absolute"
+							min-height={0}
+							min-width={0}
 						/>
 						<Override
 							slot="Button Liner1"
@@ -153,11 +155,11 @@ export default (() => {
 						<Override slot="Button Liner2 :closed" nout-width="22px" />
 						<Override slot="Button Liner3 :closed" nout-width="22px" />
 						<Override slot="Button Liner2 :open" nout-opacity="0" nout-width="32px" />
-						<Override slot="Button Liner1 :open" nout-width="36px" nout-transform="translateY(12px) rotate(225deg)" />
-						<Override slot="Button Liner3 :open" nout-width="36px" nout-transform="translateY(-12px) rotate(135deg)" />
-						<Override slot="Content :closed" nout-opacity="0" nout-transition="transform --transitionDuration-normal step-end 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" nout-transform="translateY(-100%)" />
-						<Override slot="Content :open" nout-transform="translateY(0%)" nout-transition="transform --transitionDuration-normal step-start 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" nout-opacity="1" />
-						<Override slot="Button :open" nout-position="fixed" />
+						<Override slot="Button Liner1 :open" nout-width="36px" nout-transform="translateY(12px) rotate(225deg)" nout-background="--color-dark" />
+						<Override slot="Button Liner3 :open" nout-width="36px" nout-transform="translateY(-12px) rotate(135deg)" background="--color-green" />
+						<Override slot="Content2 :closed" nout-opacity="0" nout-transition="transform --transitionDuration-normal step-end 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" nout-transform="translateY(-100%)" />
+						<Override slot="Content2 :open" nout-transform="translateY(0%)" nout-transition="transform --transitionDuration-normal step-start 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" nout-opacity="1" />
+						<Override slot="Button2 :open" nout-position="fixed" />
 						<Box
 							nout-width="100%"
 							nout-display="flex"
@@ -444,7 +446,7 @@ export default (() => {
 						nout-padding="0 0% 0 0%"
 						nout-margin="40px 0px 20px 0px"
 					>
-						<Text margin="0px 0px 17px 0px" color="#ffffff" font="--headline5" padding="0 0px 0 0px">
+						<Text margin="0px 0px 17px 0px" color="#ffffff" font="bold 24px/30px 'AvenirNextCyrRegular', sans-serif" padding="0 0px 0 0px">
 							и более сотрудников успешно работают и отдыхают с нами на протяжении тринадцати лет и не жалеют об этом
 						</Text>
 						<Text margin="0px 0px 10px 0px" color="#ffffff" font="--lead">
@@ -487,8 +489,74 @@ export default (() => {
 						</Box>
 					</Box>
 				</Override>
-				<Section>
-					<Components.Calc nout-height="500px" height="500px" />
+				<Override
+					slot="wrapper"
+					background="#ffffff"
+					max-width="672px"
+					width="100%"
+					margin="0px 0px 0px 0px"
+					padding="0px 0px 0px 0px"
+					border-radius="0px"
+				/>
+				<Override slot="close" color="#c5cfdb" padding="0.7rem 0.7rem .5rem .5rem" size="20px" />
+				<Section padding="0px 0 0px 0">
+					<Text text-align="center" color="#4a8cfa" font="30px 'AvenirNextCyrMedium'" margin="20px 0px 28px 0px">
+						Отправить резюме
+					</Text>
+					<Formspree
+						errorMessage="Something went wrong"
+						completeText="Success"
+						endpoint="xpzobepb"
+						display="flex"
+						flex-direction="row"
+						width="100%"
+						align-items="center"
+						justify-content="center"
+						padding="0px 0px 0px 0px"
+					>
+						<Box width="100%">
+							<Text color="#8da8b8" font="600 14px AvenirNextCyrRegular, sans-serif" margin="0px 0px 12px 0px">
+								Ваше имя *
+							</Text>
+							<Input
+								margin-right="4px"
+								width="100%"
+								type="text"
+								name="name"
+								font="normal 300 14px/32px 'AvenirNextCyrMedium', sans-serif"
+								border-color="#c5cfdb"
+								border-width="2px"
+								transition="border 0.2s linear 0s"
+								margin="0px 4px 19px 0px"
+								border-radius="5px"
+								padding="0px 16px 0px 16px"
+								focus-border-color="#58646f"
+								hover-border-color="#58646f"
+							/>
+						</Box>
+						<Box width="100%">
+							<Text color="#8da8b8" font="600 14px AvenirNextCyrRegular, sans-serif" margin="0px 0px 12px 0px">
+								Ваше имя *
+							</Text>
+							<Input
+								width="100%"
+								type="text"
+								name="name"
+								font="normal 300 14px/32px 'AvenirNextCyrMedium', sans-serif"
+								border-color="#c5cfdb"
+								border-width="2px"
+								transition="border 0.2s linear 0s"
+								margin="0px 4px 19px 0px"
+								border-radius="5px"
+								padding="0px 16px 0px 16px"
+								focus-border-color="#58646f"
+								hover-border-color="#58646f"
+							/>
+						</Box>
+						<Button>
+							Submit
+						</Button>
+					</Formspree>
 				</Section>
 			</Components.PopUp>
 			<Stack margin="0px 0px 0px 0px" max-width="750px" width="100%" gap="16px">
@@ -1314,7 +1382,7 @@ export default (() => {
 				<StackItem width="100%" display="flex">
 					<Override slot="StackItemContent" align-items="center" justify-content="center" />
 					{"        "}
-					<Text font="--headline3" margin="0px 0px 40px 0px" display="inline-block">
+					<Text font="--headline3" margin="0px 0px 40px 0px" display="inline-block" text-align="center">
 						Команда uTeam
 					</Text>
 					{"    "}
@@ -1682,6 +1750,7 @@ export default (() => {
 							size="20px"
 							hover-color="inherit"
 							color="inherit"
+							background="#ffffff"
 						/>
 					</Link>
 					<Link

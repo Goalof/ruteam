@@ -2,13 +2,13 @@ import React, { useState, useCallback } from 'react';
 import { useOverrides } from '@quarkly/components';
 import { Box } from '@quarkly/widgets';
 const overrides = {
-	'Button': {
+	'Button2': {
 		kind: 'Box'
 	},
-	'Button Line': {
+	'Button Liner': {
 		kind: 'Box'
 	},
-	'Content': {
+	'Content2': {
 		kind: 'Box'
 	}
 };
@@ -23,12 +23,12 @@ const MobileSidePanel = props => {
 	      onToggleOpen = useCallback(() => setOpen(!isOpen), [isOpen]),
 	      stateOpen = isOpen ? ':open' : ':closed';
 	return <Box {...rest}>
-		<Box onPointerDown={onToggleOpen} {...override('Button', `Button ${stateOpen}`)}>
+		<Box onPointerDown={onToggleOpen} {...override('Button2', `Button2 ${stateOpen}`)}>
 			<Box {...override('Button Liner', 'Button Liner1', `Button Liner1 ${stateOpen}`)} />
 			<Box {...override('Button Liner', 'Button Liner2', `Button Liner2 ${stateOpen}`)} />
 			<Box {...override('Button Liner', 'Button Liner3', `Button Liner3 ${stateOpen}`)} />
 		</Box>
-		<Box {...override('Content', `Content ${stateOpen}`)}>
+		<Box {...override('Content2', `Content2 ${stateOpen}`)}>
 			{children}
 		</Box>
 	</Box>;
