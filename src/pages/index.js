@@ -163,6 +163,9 @@ export default (() => {
 						</Box>
 					</Box>
 				</Override>
+				<Section>
+					<Components.Calc />
+				</Section>
 			</Components.PopUp>
 			<Stack margin="0px 0px 0px 0px" max-width="750px" width="100%" gap="16px">
 				{"    "}
