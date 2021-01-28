@@ -28,6 +28,7 @@ export default (() => {
 			nout-border-radius="6px"
 			lg-position="fixed"
 			position="fixed"
+			background="#ffffff"
 		>
 			<Override slot="SectionContent" max-width="none" width="100%" />
 			<Stack margin="0px 0px 0px 0px" gap="0px">
@@ -467,6 +468,214 @@ export default (() => {
 					<Override slot="StackItemContent" align-items="center" justify-content="center" />
 					{"        "}
 					<Components.Slider width="100%" slides="http://ru.uteam.pro/img/members/new_ourteam_page/24.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/23.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/20.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/19.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/18.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/17.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/16.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/15.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/14.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/13.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/12.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/10.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/09.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/08.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/07.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/06.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/05.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/04.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/03.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/02.jpg" />
+					<Text>
+						Some text
+					</Text>
+					{"    "}
+				</StackItem>
+				{"    "}
+			</Stack>
+			<Stack margin="50px 0px 0px 0px" max-width="1170px">
+				{"    "}
+				<StackItem width="40%" display="flex">
+					<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
+					{"        "}
+					<Text
+						font="normal 400 30px/36px 'AvenirNextCyrBold', sans-serif"
+						margin="0px 0px 18px 0px"
+						display="inline-block"
+						sm-text-align="center"
+						sm-margin="0px 0px 30px 0px"
+						text-align="center"
+						letter-spacing="0.3px"
+						color="#3D72CC"
+					>
+						17 сотрудников
+						<br />
+						{"\n\n"}
+					</Text>
+					<Text
+						font="normal 400 18px/26px 'AvenirNextCyrMedium', sans-serif"
+						margin="0px 0px 5px 0px"
+						display="inline-block"
+						sm-text-align="center"
+						sm-margin="0px 0px 30px 0px"
+						text-align="left"
+						letter-spacing="0.3px"
+						color="#9BABBF"
+					>
+						В московском офисе компании находится руководство, команды продуктологов, маркетинга, PR и бухгалтерия.
+						<br />
+						{"\n\n"}
+					</Text>
+					{"    "}
+				</StackItem>
+				<StackItem width="20%" display="flex">
+					<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
+					{"        "}
+					<Image
+						width="90px"
+						height="90px"
+						margin="0px 0px 24px 0px"
+						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+						border-radius="100%"
+					/>
+					<Text
+						font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
+						margin="0px 0px 12px 0px"
+						display="inline-block"
+						sm-text-align="center"
+						sm-margin="0px 0px 30px 0px"
+						text-align="left"
+						letter-spacing="0.3px"
+						color="#3D72CC"
+					>
+						Евгений Курт{"\n\n"}
+					</Text>
+					<Text
+						font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
+						margin="0px 0px 0px 0px"
+						display="inline-block"
+						sm-text-align="center"
+						sm-margin="0px 0px 30px 0px"
+						text-align="left"
+						letter-spacing="0.3px"
+						color="#9BABBF"
+					>
+						CEO{"\n\n"}
+					</Text>
+					{"    "}
+				</StackItem>
+				<StackItem width="20%" display="flex">
+					<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
+					{"        "}
+					<Image
+						width="90px"
+						height="90px"
+						margin="0px 0px 24px 0px"
+						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+						border-radius="100%"
+					/>
+					<Text
+						font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
+						margin="0px 0px 12px 0px"
+						display="inline-block"
+						sm-text-align="center"
+						sm-margin="0px 0px 30px 0px"
+						text-align="left"
+						letter-spacing="0.3px"
+						color="#3D72CC"
+					>
+						Евгений Курт{"\n\n"}
+					</Text>
+					<Text
+						font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
+						margin="0px 0px 0px 0px"
+						display="inline-block"
+						sm-text-align="center"
+						sm-margin="0px 0px 30px 0px"
+						text-align="left"
+						letter-spacing="0.3px"
+						color="#9BABBF"
+					>
+						CEO{"\n\n"}
+					</Text>
+					{"    "}
+				</StackItem>
+				<StackItem width="20%" display="flex">
+					<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
+					{"        "}
+					<Image
+						width="90px"
+						height="90px"
+						margin="0px 0px 24px 0px"
+						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+						border-radius="100%"
+					/>
+					<Text
+						font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
+						margin="0px 0px 12px 0px"
+						display="inline-block"
+						sm-text-align="center"
+						sm-margin="0px 0px 30px 0px"
+						text-align="left"
+						letter-spacing="0.3px"
+						color="#3D72CC"
+					>
+						Евгений Курт{"\n\n"}
+					</Text>
+					<Text
+						font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
+						margin="0px 0px 0px 0px"
+						display="inline-block"
+						sm-text-align="center"
+						sm-margin="0px 0px 30px 0px"
+						text-align="left"
+						letter-spacing="0.3px"
+						color="#9BABBF"
+					>
+						CEO{"\n\n"}
+					</Text>
+					{"    "}
+				</StackItem>
+				<StackItem width="20%" display="flex">
+					<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
+					{"        "}
+					<Image
+						width="90px"
+						height="90px"
+						margin="0px 0px 24px 0px"
+						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+						border-radius="100%"
+					/>
+					<Text
+						font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
+						margin="0px 0px 12px 0px"
+						display="inline-block"
+						sm-text-align="center"
+						sm-margin="0px 0px 30px 0px"
+						text-align="left"
+						letter-spacing="0.3px"
+						color="#3D72CC"
+					>
+						Евгений Курт{"\n\n"}
+					</Text>
+					<Text
+						font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
+						margin="0px 0px 0px 0px"
+						display="inline-block"
+						sm-text-align="center"
+						sm-margin="0px 0px 30px 0px"
+						text-align="left"
+						letter-spacing="0.3px"
+						color="#9BABBF"
+					>
+						CEO{"\n\n"}
+					</Text>
+					{"    "}
+				</StackItem>
+				<StackItem width="20%" display="flex">
+					<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
+					{"        "}
+					<Image
+						width="90px"
+						height="90px"
+						margin="0px 0px 24px 0px"
+						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/4.png?v=2021-01-28T13:06:34.865Z"
+						border-radius="100%"
+					/>
+					<Text
+						font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
+						margin="0px 0px 12px 0px"
+						display="inline-block"
+						sm-text-align="center"
+						sm-margin="0px 0px 30px 0px"
+						text-align="left"
+						letter-spacing="0.3px"
+						color="#3D72CC"
+					>
+						специалистов
+					</Text>
 					{"    "}
 				</StackItem>
 				{"    "}

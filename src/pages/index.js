@@ -508,10 +508,10 @@ export default (() => {
 						completeText="Success"
 						endpoint="xpzobepb"
 						display="flex"
-						flex-direction="row"
+						flex-direction="column"
 						width="100%"
-						align-items="center"
-						justify-content="center"
+						align-items="stretch"
+						justify-content="stretch"
 						padding="0px 0px 0px 0px"
 					>
 						<Box width="100%">
@@ -532,6 +532,7 @@ export default (() => {
 								padding="0px 16px 0px 16px"
 								focus-border-color="#58646f"
 								hover-border-color="#58646f"
+								display="block"
 							/>
 						</Box>
 						<Box width="100%">
@@ -551,6 +552,7 @@ export default (() => {
 								padding="0px 16px 0px 16px"
 								focus-border-color="#58646f"
 								hover-border-color="#58646f"
+								display="block"
 							/>
 						</Box>
 						<Button>
@@ -701,6 +703,7 @@ export default (() => {
 			transition="all 400ms ease 0s"
 			nout-border-radius="6px"
 			lg-position="fixed"
+			background="#ffffff"
 		>
 			<Override slot="SectionContent" max-width="none" width="100%" />
 			<Stack margin="0px 0px 0px 0px" gap="0px">

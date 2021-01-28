@@ -1,6 +1,6 @@
 export { default as EmbedHTML } from "./EmbedHTML"
+export { default as MobileSide2 } from "./MobileSide2"
+export { default as PopUp } from "./PopUp"
 export { default as MobileSide } from "./MobileSide"
 export { default as Slider } from "./Slider"
 export { default as InformerUcoz } from "./InformerUcoz"
-export { default as MobileSide2 } from "./MobileSide2"
-export { default as PopUp } from "./PopUp"

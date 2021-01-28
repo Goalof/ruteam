@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import atomize from '@quarkly/atomize';
 import { useOverrides } from '@quarkly/components';
-import { Box, Icon } from '@quarkly/widgets';
+import { Box, Icon, Text } from '@quarkly/widgets';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 const overrides = {
 	'Arrow prev icon': {
@@ -10,6 +10,12 @@ const overrides = {
 			'size': '52px',
 			'category': 'md',
 			'icon': MdKeyboardArrowLeft
+		}
+	},
+	'Description': {
+		'kind': 'Text',
+		'props': {
+			'display': 'inline-block'
 		}
 	},
 	'Arrow next icon': {
@@ -94,6 +100,11 @@ const Slide = ({
 			position="absolute"
 			display="block"
 		/>
+		            
+		<Text>
+			            s
+      
+		</Text>
 		        
 	</Box>;
 };
