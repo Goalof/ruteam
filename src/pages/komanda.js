@@ -27,6 +27,7 @@ export default (() => {
 			transition="all 400ms ease 0s"
 			nout-border-radius="6px"
 			lg-position="fixed"
+			position="fixed"
 		>
 			<Override slot="SectionContent" max-width="none" width="100%" />
 			<Stack margin="0px 0px 0px 0px" gap="0px">
@@ -37,7 +38,7 @@ export default (() => {
 					lg-width="70%"
 					sm-width="85%"
 				>
-					<Override slot="StackItemContent" align-items="flex-start" padding="15px 30px 13px 30px" />
+					<Override slot="StackItemContent" align-items="flex-start" padding="13px 30px 13px 30px" />
 					{"        "}
 					<Box display="flex" align-items="center">
 						<Link href="/">
@@ -424,7 +425,7 @@ export default (() => {
 				{"        "}
 			</Stack>
 		</Section>
-		<Section padding="60px 0 100px 0" sm-padding="110px 0 60px 0" lg-padding="120px 0 80px 0">
+		<Section padding="120px 0 100px 0" sm-padding="110px 0 60px 0" lg-padding="120px 0 80px 0">
 			<Override slot="SectionContent" align-items="center" />
 			<Stack margin="0px 0px 0px 0px" max-width="850px">
 				{"    "}
@@ -442,7 +443,6 @@ export default (() => {
 					>
 						Команда
 						<br />
-						{"\n\n"}
 					</Text>
 					{"    "}
 				</StackItem>
@@ -460,7 +460,6 @@ export default (() => {
 					>
 						Мы гордимся не только теми сервисами, которые мы делаем для вас каждый день, но и тем, что умеем превращать профессионалов своего дела в настоящих друзей и членов одной семьи. Посмотрите, как мы живем, — возможно, именно в этой атмосфере и среди этих людей вы окажетесь очень скоро.
 						<br />
-						{"\n\n"}
 					</Text>
 					{"    "}
 				</StackItem>
@@ -485,19 +484,18 @@ export default (() => {
 					<Text font="18px/28px 'AvenirNextCyrMedium', sans-serif" margin="8px 0px 0px 0px" text-align="center" color="#fff">
 						опыта на своей позиции у каждого ключевого участника команды
 					</Text>
-					{"        "}{"    "}
+					{"            "}
 				</StackItem>
 				<StackItem width="33.333%" display="flex" sm-width="100%" md-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					<Text font="42px/28px 'AvenirNextCyrBold', sans-serif" margin="0px 0px 16px 0px" color="#fff">
-						12 лет{"\n\n"}
+						12 лет
 						<br />
-						{"\n\n"}
 					</Text>
 					<Text font="18px/28px 'AvenirNextCyrMedium', sans-serif" margin="8px 0px 0px 0px" text-align="center" color="#fff">
 						на рынке SaaS-решений для создания сайтов и оптимизации их конверсии
 					</Text>
-					{"        "}{"    "}
+					{"            "}
 				</StackItem>
 				<StackItem width="33.333%" display="flex" sm-width="100%" md-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
@@ -507,9 +505,8 @@ export default (() => {
 					<Text font="18px/28px 'AvenirNextCyrMedium', sans-serif" margin="8px 0px 0px 0px" text-align="center" color="#fff">
 						выпущены совместно и успешно работают
 						<br />
-						{"\n\n"}
 					</Text>
-					{"        "}{"    "}
+					{"            "}
 				</StackItem>
 				{"    "}
 			</Stack>
@@ -524,7 +521,6 @@ export default (() => {
 					<Text font="normal 500 36px/40px 'AvenirNextCyrBold', sans-serif" margin="0px 0px 40px 0px" display="inline-block">
 						Последние новости из блогов
 						<br />
-						{"\n\n"}
 					</Text>
 					{"    "}
 				</StackItem>
@@ -540,12 +536,65 @@ export default (() => {
 				</StackItem>
 			</Stack>
 		</Section>
-		<Section>
+		<Section padding="40px 0 40px 0">
 			<Stack margin="10px 0px 0px 0px" max-width="1170px" width="100%">
 				{"        "}
 				<StackItem width="50%" display="flex" sm-width="100%">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
-					{"        "}{"    "}
+					<Override slot="StackItemContent" flex-direction="row" align-items="flex-start" />
+					<Link
+						href="https://www.instagram.com/ucoz_ru/"
+						display="flex"
+						align-items="center"
+						text-decoration-line="initial"
+						target="_blank"
+						transition="color 0.2s ease 0s"
+						font="18px 'AvenirNextCyrMedium', sans-serif"
+						color="#263238"
+						hover-color="#4A8CFA"
+					>
+						<Icon category="fa" icon={FaInstagram} margin="-1px 12px 0px 0px" />
+						<Text margin="0px 0px 0px 0px">
+							Жизнь команды в Instagram
+						</Text>
+					</Link>
+					{"            "}
+				</StackItem>
+				<StackItem width="50%" display="flex" sm-width="100%">
+					<Override slot="StackItemContent" flex-direction="row" align-items="center" justify-content="flex-end" />
+					<Link
+						href="https://vk.com/ucoz"
+						display="flex"
+						align-items="center"
+						flex-direction="column"
+						justify-content="center"
+						text-decoration-line="initial"
+						color="#263238"
+						font="18px 'AvenirNextCyrMedium', sans-serif"
+						transition="color 0.2s ease 0s"
+						hover-color="#4A8CFA"
+						target="_blank"
+						margin="0px 24px 0px 0px"
+					>
+						uCoz в ВК
+						<Image width="100px" height="100px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/4.png?v=2021-01-28T00:54:51.035Z" margin="18px 0px 0px 0px" />
+					</Link>
+					<Link
+						href="https://vk.com/ucoz"
+						display="flex"
+						align-items="center"
+						flex-direction="column"
+						justify-content="center"
+						text-decoration-line="initial"
+						color="#263238"
+						font="18px 'AvenirNextCyrMedium', sans-serif"
+						transition="color 0.2s ease 0s"
+						hover-color="#4A8CFA"
+						target="_blank"
+					>
+						uKit в ВК
+						<Image width="100px" height="100px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/5.png?v=2021-01-28T01:00:02.248Z" margin="18px 0px 0px 0px" />
+					</Link>
+					{"            "}
 				</StackItem>
 			</Stack>
 		</Section>
