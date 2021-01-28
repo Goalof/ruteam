@@ -450,7 +450,7 @@ export default (() => {
 				{"    "}
 			</Stack>
 		</Section>
-		<Section padding="20px 0 20px 0" sm-padding="110px 0 60px 0" lg-padding="120px 0 80px 0">
+		<Section padding="30px 0 40px 0" sm-padding="110px 0 60px 0" lg-padding="120px 0 80px 0">
 			<Override slot="SectionContent" align-items="center" />
 			<Stack margin="0px 0px 0px 0px" max-width="1170px" width="100%">
 				{"    "}
@@ -588,7 +588,16 @@ export default (() => {
 						Согласно ФЗ от 28 декабря 2013 г. N 426-ФЗ «О специальной оценке условий труда» статья 15 п.6. мы публикуем результаты специальной оценки условий труда в наших офисах
 						<br />
 					</Text>
-					<Link href="/documents/Exp_opinion_2018.pdf" display="flex" text-decoration-line="initial" target="_blank">
+					<Link
+						href="/documents/Exp_opinion_2018.pdf"
+						display="flex"
+						text-decoration-line="initial"
+						target="_blank"
+						transition="color 0.2s ease 0s"
+						hover-color="#5F99FB"
+						color="#333"
+						margin="0px 0px 12px 0px"
+					>
 						<Image width="24px" height="24px" margin="1px 12px 0px 0px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/document.svg?v=2021-01-28T21:23:13.010Z" />
 						<Text
 							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
@@ -597,9 +606,170 @@ export default (() => {
 							sm-text-align="center"
 							sm-margin="0px 0px 30px 0px"
 							text-align="left"
-							color="#333"
+							color="inherit"
 						>
 							Заключение эксперта по результатам проведения оценки условий труда в московском офисе
+						</Text>
+					</Link>
+					<Link
+						href="/documents/list_of_measures_spb_2018.pdf"
+						display="flex"
+						text-decoration-line="initial"
+						target="_blank"
+						transition="color 0.2s ease 0s"
+						hover-color="#5F99FB"
+						color="#333"
+						margin="0px 0px 12px 0px"
+					>
+						<Image width="24px" height="24px" margin="1px 12px 0px 0px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/document.svg?v=2021-01-28T21:23:13.010Z" />
+						<Text
+							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
+							margin="0px 0px 0px 0px"
+							display="inline-block"
+							sm-text-align="center"
+							sm-margin="0px 0px 30px 0px"
+							text-align="left"
+							color="inherit"
+						>
+							Перечень мероприятий по улучшению условий труда в санкт-петербургском офисе
+						</Text>
+					</Link>
+					<Link
+						href="/documents/Summary_list_msk_2018.pdf"
+						display="flex"
+						text-decoration-line="initial"
+						target="_blank"
+						transition="color 0.2s ease 0s"
+						hover-color="#5F99FB"
+						color="#333"
+						margin="0px 0px 12px 0px"
+					>
+						<Image width="24px" height="24px" margin="1px 12px 0px 0px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/document.svg?v=2021-01-28T21:23:13.010Z" />
+						<Text
+							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
+							margin="0px 0px 0px 0px"
+							display="inline-block"
+							sm-text-align="center"
+							sm-margin="0px 0px 30px 0px"
+							text-align="left"
+							color="inherit"
+						>
+							Сводная ведомость результатов проведения условий труда в московском офисе
+						</Text>
+					</Link>
+					<Link
+						href="http://ru.uteam.pro/resources/documents/Summary_list_spb_2018.pdf"
+						display="flex"
+						text-decoration-line="initial"
+						target="_blank"
+						transition="color 0.2s ease 0s"
+						hover-color="#5F99FB"
+						color="#333"
+						margin="0px 0px 12px 0px"
+					>
+						<Image width="24px" height="24px" margin="1px 12px 0px 0px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/document.svg?v=2021-01-28T21:23:13.010Z" />
+						<Text
+							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
+							margin="0px 0px 0px 0px"
+							display="inline-block"
+							sm-text-align="center"
+							sm-margin="0px 0px 30px 0px"
+							text-align="left"
+							color="inherit"
+						>
+							Сводная ведомость результатов проведения условий труда в санкт-пербургском офисе
+						</Text>
+					</Link>
+					<Link
+						href="/documents/event_list_msk.pdf"
+						display="flex"
+						text-decoration-line="initial"
+						target="_blank"
+						transition="color 0.2s ease 0s"
+						hover-color="#5F99FB"
+						color="#333"
+						margin="0px 0px 12px 0px"
+					>
+						<Image width="24px" height="24px" margin="1px 12px 0px 0px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/document.svg?v=2021-01-28T21:23:13.010Z" />
+						<Text
+							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
+							margin="0px 0px 0px 0px"
+							display="inline-block"
+							sm-text-align="center"
+							sm-margin="0px 0px 30px 0px"
+							text-align="left"
+							color="inherit"
+						>
+							Перечень мероприятий по улучшению условий труда в московском офисе (2017)
+						</Text>
+					</Link>
+					<Link
+						href="/documents/event_list_spb.pdf"
+						display="flex"
+						text-decoration-line="initial"
+						target="_blank"
+						transition="color 0.2s ease 0s"
+						hover-color="#5F99FB"
+						color="#333"
+						margin="0px 0px 12px 0px"
+					>
+						<Image width="24px" height="24px" margin="1px 12px 0px 0px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/document.svg?v=2021-01-28T21:23:13.010Z" />
+						<Text
+							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
+							margin="0px 0px 0px 0px"
+							display="inline-block"
+							sm-text-align="center"
+							sm-margin="0px 0px 30px 0px"
+							text-align="left"
+							color="inherit"
+						>
+							Перечень мероприятий по улучшению условий труда в санкт-петербургском офисе (2017)
+						</Text>
+					</Link>
+					<Link
+						href="/documents/results_msk.pdf"
+						display="flex"
+						text-decoration-line="initial"
+						target="_blank"
+						transition="color 0.2s ease 0s"
+						hover-color="#5F99FB"
+						color="#333"
+						margin="0px 0px 12px 0px"
+					>
+						<Image width="24px" height="24px" margin="1px 12px 0px 0px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/document.svg?v=2021-01-28T21:23:13.010Z" />
+						<Text
+							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
+							margin="0px 0px 0px 0px"
+							display="inline-block"
+							sm-text-align="center"
+							sm-margin="0px 0px 30px 0px"
+							text-align="left"
+							color="inherit"
+						>
+							Сводная ведомость результатов проведения оценки условий труда в московском офисе (2017)
+						</Text>
+					</Link>
+					<Link
+						href="/documents/results_spb.pdf"
+						display="flex"
+						text-decoration-line="initial"
+						target="_blank"
+						transition="color 0.2s ease 0s"
+						hover-color="#5F99FB"
+						color="#333"
+						margin="0px 0px 12px 0px"
+					>
+						<Image width="24px" height="24px" margin="1px 12px 0px 0px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/document.svg?v=2021-01-28T21:23:13.010Z" />
+						<Text
+							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
+							margin="0px 0px 0px 0px"
+							display="inline-block"
+							sm-text-align="center"
+							sm-margin="0px 0px 30px 0px"
+							text-align="left"
+							color="inherit"
+						>
+							Сводная ведомость результатов проведения оценки условий труда в санкт-петербургском офисе (2017)
 						</Text>
 					</Link>
 					{"    "}

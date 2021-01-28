@@ -499,7 +499,8 @@ export default (() => {
 					border-radius="0px"
 				/>
 				<Override slot="close" color="#c5cfdb" padding="0.7rem 0.7rem .5rem .5rem" size="20px" />
-				<Section padding="0px 0 0px 0">
+				<Section padding="10px 0 40px 0">
+					<Override slot="SectionContent" align-items="center" />
 					<Text text-align="center" color="#4a8cfa" font="30px 'AvenirNextCyrMedium'" margin="20px 0px 28px 0px">
 						Отправить резюме
 					</Text>
@@ -513,6 +514,7 @@ export default (() => {
 						align-items="stretch"
 						justify-content="stretch"
 						padding="0px 0px 0px 0px"
+						max-width="472px"
 					>
 						<Box width="100%">
 							<Text color="#8da8b8" font="600 14px AvenirNextCyrRegular, sans-serif" margin="0px 0px 12px 0px">
@@ -533,16 +535,62 @@ export default (() => {
 								focus-border-color="#58646f"
 								hover-border-color="#58646f"
 								display="block"
+								required
 							/>
+						</Box>
+						<Box width="100%" display="flex" flex-direction="row" justify-content="space-between">
+							<Box display="flex" flex-direction="column" width="100%" max-width="220px">
+								<Text color="#8da8b8" font="600 14px AvenirNextCyrRegular, sans-serif" margin="0px 0px 12px 0px">
+									Ваш E-mail *
+								</Text>
+								<Input
+									width="100%"
+									type="email"
+									name="email"
+									font="normal 300 14px/32px 'AvenirNextCyrMedium', sans-serif"
+									border-color="#c5cfdb"
+									border-width="2px"
+									transition="border 0.2s linear 0s"
+									margin="0px 4px 19px 0px"
+									border-radius="5px"
+									padding="0px 16px 0px 16px"
+									focus-border-color="#58646f"
+									hover-border-color="#58646f"
+									display="block"
+									required
+								/>
+							</Box>
+							<Box display="flex" flex-direction="column" width="100%" max-width="220px">
+								<Text color="#8da8b8" font="600 14px AvenirNextCyrRegular, sans-serif" margin="0px 0px 12px 0px">
+									Ваш телефон *
+								</Text>
+								<Input
+									width="100%"
+									type="tel"
+									name="phone"
+									font="normal 300 14px/32px 'AvenirNextCyrMedium', sans-serif"
+									border-color="#c5cfdb"
+									border-width="2px"
+									transition="border 0.2s linear 0s"
+									margin="0px 4px 19px 0px"
+									border-radius="5px"
+									padding="0px 16px 0px 16px"
+									focus-border-color="#58646f"
+									hover-border-color="#58646f"
+									display="block"
+									required
+								/>
+							</Box>
 						</Box>
 						<Box width="100%">
 							<Text color="#8da8b8" font="600 14px AvenirNextCyrRegular, sans-serif" margin="0px 0px 12px 0px">
-								Ваше имя *
+								Город *
 							</Text>
 							<Input
+								margin-right="4px"
 								width="100%"
 								type="text"
-								name="name"
+								name="city"
 								font="normal 300 14px/32px 'AvenirNextCyrMedium', sans-serif"
 								border-color="#c5cfdb"
 								border-width="2px"
@@ -553,11 +601,92 @@ export default (() => {
 								focus-border-color="#58646f"
 								hover-border-color="#58646f"
 								display="block"
+								required
 							/>
 						</Box>
-						<Button>
-							Submit
-						</Button>
+						<Box width="100%">
+							<Text color="#8da8b8" font="600 14px AvenirNextCyrRegular, sans-serif" margin="0px 0px 12px 0px">
+								Коротко о себе
+							</Text>
+							<Input
+								margin-right="4px"
+								width="100%"
+								type="text"
+								name="about-me"
+								font="normal 300 14px/32px 'AvenirNextCyrMedium', sans-serif"
+								border-color="#c5cfdb"
+								border-width="2px"
+								transition="border 0.2s linear 0s"
+								margin="0px 4px 19px 0px"
+								border-radius="5px"
+								padding="0px 16px 0px 16px"
+								focus-border-color="#58646f"
+								hover-border-color="#58646f"
+								display="block"
+								required={false}
+								as="textarea"
+								min-height="96px"
+							/>
+						</Box>
+						<Box width="100%">
+							<Text color="#8da8b8" font="600 14px AvenirNextCyrRegular, sans-serif" margin="0px 0px 12px 0px">
+								Приложите ссылку на своё портфолио
+							</Text>
+							<Input
+								margin-right="4px"
+								width="100%"
+								type="text"
+								name="portfolio"
+								font="normal 300 14px/32px 'AvenirNextCyrMedium', sans-serif"
+								border-color="#c5cfdb"
+								border-width="2px"
+								transition="border 0.2s linear 0s"
+								margin="0px 4px 19px 0px"
+								border-radius="5px"
+								padding="0px 16px 0px 16px"
+								focus-border-color="#58646f"
+								hover-border-color="#58646f"
+								display="block"
+								required={false}
+							/>
+						</Box>
+						<Box width="100%">
+							<Text color="#8da8b8" font="600 14px AvenirNextCyrRegular, sans-serif" margin="0px 0px 12px 0px">
+								Почему вы хотите работать у нас
+							</Text>
+							<Input
+								margin-right="4px"
+								width="100%"
+								type="text"
+								name="about-me"
+								font="normal 300 14px/32px 'AvenirNextCyrMedium', sans-serif"
+								border-color="#c5cfdb"
+								border-width="2px"
+								transition="border 0.2s linear 0s"
+								margin="0px 4px 19px 0px"
+								border-radius="5px"
+								padding="0px 16px 0px 16px"
+								focus-border-color="#58646f"
+								hover-border-color="#58646f"
+								display="block"
+								required={false}
+								as="textarea"
+								min-height="96px"
+							/>
+						</Box>
+						<Box display="flex" align-items="center" justify-content="center">
+							<Button
+								border-radius="5px"
+								font="normal 600 16px/1.5 'AvenirNextCyrRegular', sans-serif"
+								padding="12px 15px 12px 15px"
+								background="#4a8cfa"
+								hover-background="#437de0"
+								margin="20px 0px 0px 0px"
+								transition="all 0.2s linear 0s"
+							>
+								Отправить резюме
+							</Button>
+						</Box>
 					</Formspree>
 				</Section>
 			</Components.PopUp>
