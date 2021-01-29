@@ -642,6 +642,7 @@ export default (() => {
 								transition="border 0.2s linear 0s"
 								hover-border-color="#58646f"
 								border-radius="5px"
+								cursor="pointer"
 							>
 								<Input
 									className="fileResume"
@@ -665,6 +666,9 @@ export default (() => {
 									flex-direction="column"
 									align-items="center"
 									justify-content="center"
+									cursor="pointer"
+									position="relative"
+									z-index="9"
 								/>
 								<Text
 									className="fileText"
@@ -677,6 +681,8 @@ export default (() => {
 									top="30%"
 									padding="0 0 0 0"
 									margin="0 0 0 0"
+									position="absolute"
+									z-index="1"
 								>
 									Выберите файл
 									<br />
