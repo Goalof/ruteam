@@ -913,11 +913,9 @@ export default (() => {
 							border-radius="50%"
 							padding="5px 5px 5px 5px"
 							transition="all 0.2s linear 0s"
-							hover-background="#4a8cfa"
 							size="20px"
 							hover-color="inherit"
 							color="inherit"
-							background="#ffffff"
 						/>
 					</Link>
 					<Link

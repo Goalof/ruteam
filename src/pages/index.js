@@ -657,7 +657,7 @@ export default (() => {
 									padding="0px 16px 0px 16px"
 									focus-border-color="#58646f"
 									hover-border-color="#58646f"
-									required={false}
+									required
 									as="input"
 									min-height="96px"
 									display="flex"
@@ -667,6 +667,7 @@ export default (() => {
 									cursor="pointer"
 									position="relative"
 									z-index="9"
+									text-align="center"
 								/>
 								<Text
 									className="fileText"
@@ -1946,11 +1947,9 @@ export default (() => {
 							border-radius="50%"
 							padding="5px 5px 5px 5px"
 							transition="all 0.2s linear 0s"
-							hover-background="#4a8cfa"
 							size="20px"
 							hover-color="inherit"
 							color="inherit"
-							background="#ffffff"
 						/>
 					</Link>
 					<Link
