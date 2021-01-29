@@ -3,6 +3,11 @@ import atomize from "@quarkly/atomize"; // Put your HTML here:
 
 const customHtml = `
 <style>
+.example-1 input[type=file]{outline:0;opacity:0;pointer-events:none;user-select:none}
+.example-1 .label{border:2px dashed #c5cfdb;border-radius:5px;display:block;padding:1.2em;transition:border 300ms ease;cursor:pointer;text-align:center}
+.example-1 .label i{display:block;font-size:42px;}
+
+
 .no-user-select {
   -webkit-user-select: none;
   -moz-user-select: none;

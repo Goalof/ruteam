@@ -628,30 +628,36 @@ export default (() => {
 								min-height="96px"
 							/>
 						</Box>
-						<Box width="100%">
+						<Box className="example-1" width="100%" align-items="center" justify-content="center">
 							<Text color="#8da8b8" font="600 14px AvenirNextCyrRegular, sans-serif" margin="0px 0px 12px 0px">
 								Резюме *
 							</Text>
-							<Input
-								className="fileResume"
-								margin-right="4px"
-								width="100%"
-								type="file"
-								name="about-me"
-								font="normal 300 14px/32px 'AvenirNextCyrMedium', sans-serif"
-								border-color="#c5cfdb"
-								border-width="2px"
-								transition="border 0.2s linear 0s"
-								margin="0px 4px 19px 0px"
-								border-radius="5px"
-								padding="0px 16px 0px 16px"
-								focus-border-color="#58646f"
-								hover-border-color="#58646f"
-								required={false}
-								as="input"
-								min-height="96px"
-								border-style="dashed"
-							/>
+							<Box className="label">
+								<Input
+									className="fileResume"
+									margin-right="4px"
+									width="100%"
+									type="file"
+									name="about-me"
+									font="normal 300 14px/32px 'AvenirNextCyrMedium', sans-serif"
+									border-color="#c5cfdb"
+									border-width="2px"
+									transition="border 0.2s linear 0s"
+									margin="0px 4px 19px 0px"
+									border-radius="5px"
+									padding="0px 16px 0px 16px"
+									focus-border-color="#58646f"
+									hover-border-color="#58646f"
+									required={false}
+									as="input"
+									min-height="96px"
+									border-style="dashed"
+									display="flex"
+									flex-direction="column"
+									align-items="center"
+									justify-content="center"
+								/>
+							</Box>
 						</Box>
 						<Box width="100%">
 							<Text color="#8da8b8" font="600 14px AvenirNextCyrRegular, sans-serif" margin="0px 0px 12px 0px">
