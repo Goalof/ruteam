@@ -12,12 +12,6 @@ const overrides = {
 			'icon': MdKeyboardArrowLeft
 		}
 	},
-	'Description': {
-		'kind': 'Text',
-		'props': {
-			'display': 'inline-block'
-		}
-	},
 	'Arrow next icon': {
 		'kind': 'Icon',
 		'props': {
@@ -25,6 +19,9 @@ const overrides = {
 			'category': 'md',
 			'icon': MdKeyboardArrowRight
 		}
+	},
+	'Slide Description': {
+		'kind': 'Text'
 	}
 };
 const Image = atomize.img(); // Get slide position
@@ -60,6 +57,7 @@ const Slide = ({
 	numb,
 	height,
 	duration,
+	override,
 	opts
 }) => {
 	const isTarget = numb === opts.target;
@@ -101,9 +99,18 @@ const Slide = ({
 			display="block"
 		/>
 		            
-		<Text>
-			            s
-      
+		<Text
+			bottom="0"
+			left="0"
+			padding="15px"
+			width="100%"
+			position="absolute"
+			background-color="rgba(255,255,255,.5)"
+			{...override('Slide Description', `Slide ${numb} Description`)}
+		>
+			                
+			{override(`Slide ${numb} Description`).children || 'Slide Description'}
+			            
 		</Text>
 		        
 	</Box>;
@@ -277,6 +284,7 @@ const Slider = ({
 				numb={i + 1}
 				height={height}
 				duration={duration}
+				override={override}
 				opts={{
 					active,
 					target,

@@ -630,9 +630,10 @@ export default (() => {
 						</Box>
 						<Box width="100%">
 							<Text color="#8da8b8" font="600 14px AvenirNextCyrRegular, sans-serif" margin="0px 0px 12px 0px">
-								Резюме *{"\n\n"}
+								Резюме *
 							</Text>
 							<Input
+								className="fileResume"
 								margin-right="4px"
 								width="100%"
 								type="file"
@@ -697,6 +698,12 @@ export default (() => {
 								as="textarea"
 								min-height="96px"
 							/>
+							<Box display="flex" align-items="center">
+								<Input type="checkbox" value="yes" checked />
+								<Text margin="0px 0px 0px 4px" font="600 14px AvenirNextCyrRegular, sans-serif" color="#8da8b8">
+									Даю согласие на обработку моих персональных данных
+								</Text>
+							</Box>
 						</Box>
 						<Box display="flex" align-items="center" justify-content="center">
 							<Button
@@ -705,7 +712,7 @@ export default (() => {
 								padding="12px 15px 12px 15px"
 								background="#4a8cfa"
 								hover-background="#437de0"
-								margin="20px 0px 0px 0px"
+								margin="30px 0px 10px 0px"
 								transition="all 0.2s linear 0s"
 							>
 								Отправить резюме
