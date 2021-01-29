@@ -3,23 +3,6 @@ import atomize from "@quarkly/atomize"; // Put your HTML here:
 
 const customHtml = `
 <style>
-.example-1 input[type=file]{outline:0;opacity:0;pointer-events:none;user-select:none}
-.example-1 .label{border:2px dashed #c5cfdb;border-radius:5px;display:block;padding:1.2em;transition:border 300ms ease;cursor:pointer;text-align:center}
-.example-1 .label i{display:block;font-size:42px;}
-.example-1 .form-group{padding:1em;margin:1em}
-.example-1 input[type=file]{outline:0;opacity:0;pointer-events:none;user-select:none}
-.example-1 .label{width:120px;border:2px dashed grey;border-radius:5px;display:block;padding:1.2em;transition:border 300ms ease;cursor:pointer;text-align:center}
-.example-1 .label i{display:block;font-size:42px;padding-bottom:16px}
-.example-1 .label i,.example-1 .label .title{color:grey;transition:200ms color}
-.example-1 .label:hover{border:2px solid #000}
-.example-1 .label:hover i,.example-1 .label:hover .title{color:#000}
-
-.no-user-select {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 * {
   -webkit-tap-highlight-color: transparent!important;
 }
