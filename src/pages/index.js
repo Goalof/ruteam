@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, Box, Icon, Input, Button, Span, Strong } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, Box, Icon, Input, Span, Button, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, StackItem, Menu, Stack, Formspree, Section } from "@quarkly/components";
@@ -632,10 +632,19 @@ export default (() => {
 							<Text color="#8da8b8" font="600 14px AvenirNextCyrRegular, sans-serif" margin="0px 0px 12px 0px">
 								Резюме *
 							</Text>
-							<Box className="label">
+							<Box
+								className="label"
+								position="relative"
+								border-width="2px"
+								border-style="dashed"
+								margin="0px 0px 19px 0px"
+								border-color="#c5cfdb"
+								transition="border 0.2s linear 0s"
+								hover-border-color="#58646f"
+								border-radius="5px"
+							>
 								<Input
 									className="fileResume"
-									margin-right="4px"
 									width="100%"
 									type="file"
 									name="about-me"
@@ -643,7 +652,7 @@ export default (() => {
 									border-color="#c5cfdb"
 									border-width="2px"
 									transition="border 0.2s linear 0s"
-									margin="0px 4px 19px 0px"
+									margin="0px 4px 0px 0px"
 									border-radius="5px"
 									padding="0px 16px 0px 16px"
 									focus-border-color="#58646f"
@@ -656,7 +665,27 @@ export default (() => {
 									flex-direction="column"
 									align-items="center"
 									justify-content="center"
-								/>
+								>
+									<Text
+										className="fileText"
+										color="#4a8cfa"
+										font="600 14px AvenirNextCyrRegular, sans-serif"
+										text-align="center"
+										left="24%"
+										right="auto"
+										bottom="auto"
+										top="30%"
+										width="100px"
+										padding="0 0 0 0"
+										margin="0 0 0 0"
+									>
+										Выберите файл
+										<br />
+										<Span color="#8da8b8" font="400 14px/20px AvenirNextCyrRegular, sans-serif">
+											или перетащите его сюда для загрузки
+										</Span>
+									</Text>
+								</Input>
 							</Box>
 						</Box>
 						<Box width="100%">

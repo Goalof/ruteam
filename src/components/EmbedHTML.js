@@ -3,6 +3,12 @@ import atomize from "@quarkly/atomize"; // Put your HTML here:
 
 const customHtml = `
 <style>
+input[type="file" i] {
+    opacity: 0;
+}
+input.fileText {
+    opacity: 1 !important;
+}
 * {
   -webkit-tap-highlight-color: transparent!important;
 }
