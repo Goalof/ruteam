@@ -665,27 +665,25 @@ export default (() => {
 									flex-direction="column"
 									align-items="center"
 									justify-content="center"
+								/>
+								<Text
+									className="fileText"
+									color="#4a8cfa"
+									font="600 14px AvenirNextCyrRegular, sans-serif"
+									text-align="center"
+									left="24%"
+									right="auto"
+									bottom="auto"
+									top="30%"
+									padding="0 0 0 0"
+									margin="0 0 0 0"
 								>
-									<Text
-										className="fileText"
-										color="#4a8cfa"
-										font="600 14px AvenirNextCyrRegular, sans-serif"
-										text-align="center"
-										left="24%"
-										right="auto"
-										bottom="auto"
-										top="30%"
-										width="100px"
-										padding="0 0 0 0"
-										margin="0 0 0 0"
-									>
-										Выберите файл
-										<br />
-										<Span color="#8da8b8" font="400 14px/20px AvenirNextCyrRegular, sans-serif">
-											или перетащите его сюда для загрузки
-										</Span>
-									</Text>
-								</Input>
+									Выберите файл
+									<br />
+									<Span color="#8da8b8" font="400 14px/20px AvenirNextCyrRegular, sans-serif">
+										или перетащите его сюда для загрузки
+									</Span>
+								</Text>
 							</Box>
 						</Box>
 						<Box width="100%">
