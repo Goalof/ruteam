@@ -23,7 +23,7 @@ const pageStyles = {
         "overflow-y": "",
         "overflow-x": "hidden"
     },
-    "kontakty": {
+    "contacts": {
         "overflow-y": "",
         "overflow-x": "hidden"
     }

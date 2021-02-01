@@ -14,7 +14,7 @@ export default (() => {
 				Quarkly export
 			</title>
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
-			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
+			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/favicon_uteam.png?v=2021-02-01T19:35:08.128Z"} type={"image/x-icon"} />
 		</Helmet>
 		<Components.EmbedHTML />
 		<Section
@@ -453,8 +453,8 @@ export default (() => {
 			<Override slot="SectionContent" align-items="center" />
 			<Stack margin="0px 0px 0px 0px" max-width="850px" width="100%">
 				<StackItem width="100%">
-					<Text font="--lead">
-						Stack item
+					<Text font="--lead" text-align="center">
+						HR хотят переделать этот блок, но еще не знают как
 					</Text>
 				</StackItem>
 				{"        "}

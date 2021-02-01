@@ -40,8 +40,12 @@ export default {
 		},
 		"600f4712aae0d1001eea89d8": {
 			"id": "600f4712aae0d1001eea89d8",
-			"pageUrl": "kontakty",
-			"name": "Контакты"
+			"pageUrl": "contacts",
+			"name": "Контакты",
+			"seo": {
+				"title": "Контакт - Работа в uTeam",
+				"description": "Вакансии в uCoz. Все вакансии компании по направлениям и проектам. В офисах в Москве, Санкт-Петербурге, Ростове-на-Дону. Удаленная работа."
+			}
 		}
 	},
 	"mode": "production",
@@ -51,6 +55,8 @@ export default {
 			"overflow-y": "",
 			"overflow-x": "hidden"
 		},
-		"seo": {}
+		"seo": {
+			"favicon_32px": "https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/favicon_uteam.png?v=2021-02-01T19:35:08.128Z"
+		}
 	}
 }
