@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, Box, Icon } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, Box, Icon, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, StackItem, Menu, Stack, Section, GoogleMap } from "@quarkly/components";
@@ -488,8 +488,55 @@ export default (() => {
 				{"    "}
 				<StackItem width="100%" display="flex">
 					<Override slot="StackItemContent" flex-direction="column" align-items="flex-start" />
-					<GoogleMap />
-					<Box display="flex">
+					<Components.Tabs defaultTab="one" orientation="Horizontal">
+						<Components.TabList>
+							<Components.TabItem tabId="one">
+								<Override slot="Selected Tab" border-width="2px" border-style="solid" border-color="--color-secondary" />
+								<Button>
+									Tab 1
+								</Button>
+							</Components.TabItem>
+							<Components.TabItem tabId="two">
+								<Button>
+									Tab 2
+								</Button>
+							</Components.TabItem>
+							<Components.TabItem tabId="three">
+								<Button>
+									Tab 3
+								</Button>
+							</Components.TabItem>
+							<Components.TabItem tabId="four">
+								<Button>
+									Tab 4
+								</Button>
+							</Components.TabItem>
+						</Components.TabList>
+						<Components.TabPanels>
+							<Components.TabPanel tabId="one">
+								<Text>
+									Tab 1
+								</Text>
+							</Components.TabPanel>
+							<Components.TabPanel tabId="two">
+								<Text>
+									Tab 2
+								</Text>
+							</Components.TabPanel>
+							<Components.TabPanel tabId="three">
+								<Text>
+									Tab 3
+								</Text>
+							</Components.TabPanel>
+							<Components.TabPanel tabId="four">
+								<Text>
+									Tab 4
+								</Text>
+							</Components.TabPanel>
+						</Components.TabPanels>
+					</Components.Tabs>
+					<GoogleMap query="ул. Барклая 6, строение 5, БЦ" />
+					<Box display="flex" margin="0px 0px 25px 0px">
 						<Box display="flex" flex-direction="column" align-items="flex-start" max-width="300px">
 							<Text
 								font="normal 400 18px/22px 'AvenirNextCyrMedium'"
@@ -542,13 +589,13 @@ export default (() => {
 						</Box>
 					</Box>
 					<Link
-						href="#"
+						href="/vakansii"
 						background="#ffd83a"
 						text-decoration-line="initial"
 						color="#263238"
 						font="16px/50px 'AvenirNextCyrMedium', sans-serif"
-						padding="0px 15px 0px 15px"
-						margin="36px 0px 0px 0px"
+						padding="8px 15px 8px 15px"
+						margin="0px 0px 0px 0px"
 						transition="all 0.2s linear 0s"
 						hover-background="#e6c235"
 						border-radius="5px"

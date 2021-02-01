@@ -451,10 +451,12 @@ export default (() => {
 		</Section>
 		<Section padding="20px 0 20px 0" sm-padding="110px 0 60px 0" lg-padding="120px 0 80px 0">
 			<Override slot="SectionContent" align-items="center" />
-			<Stack margin="0px 0px 0px 0px" max-width="1170px" width="100%">
-				{"        "}
-			</Stack>
-			<Stack margin="0px 0px 0px 0px" max-width="1170px" width="100%">
+			<Stack margin="0px 0px 0px 0px" max-width="850px" width="100%">
+				<StackItem width="100%">
+					<Text font="--lead">
+						Stack item
+					</Text>
+				</StackItem>
 				{"        "}
 			</Stack>
 		</Section>
