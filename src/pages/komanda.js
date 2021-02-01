@@ -1,9 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, Box, Icon } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, Box, Icon, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Override, StackItem, Menu, Stack, Section } from "@quarkly/components";
+import { Override, StackItem, Menu, Stack, Section, GoogleMap } from "@quarkly/components";
 import * as Components from "components";
 import { FaVk, FaFacebookF, FaTwitter, FaInstagram, FaOdnoklassniki } from "react-icons/fa";
 export default (() => {
@@ -553,203 +553,472 @@ export default (() => {
 			</Stack>
 			<Stack margin="50px 0px 0px 0px" max-width="1170px">
 				{"    "}
-				<StackItem width="40%" display="flex">
+				<StackItem width="100%" display="flex">
 					<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Text
-						font="normal 400 30px/36px 'AvenirNextCyrBold', sans-serif"
-						margin="0px 0px 18px 0px"
-						display="inline-block"
-						sm-text-align="center"
-						sm-margin="0px 0px 30px 0px"
-						text-align="center"
-						letter-spacing="0.3px"
-						color="#3D72CC"
+					<Components.Tabs
+						defaultTab="one"
+						orientation="Horizontal"
+						width="100%"
+						height="auto"
+						align="center"
 					>
-						17 сотрудников
-						<br />
-					</Text>
-					<Text
-						font="normal 400 18px/26px 'AvenirNextCyrMedium', sans-serif"
-						margin="0px 0px 5px 0px"
-						display="inline-block"
-						sm-text-align="center"
-						sm-margin="0px 0px 30px 0px"
-						text-align="left"
-						letter-spacing="0.3px"
-						color="#9BABBF"
-					>
-						В московском офисе компании находится руководство, команды продуктологов, маркетинга, PR и бухгалтерия.
-						<br />
-					</Text>
-					{"    "}
-				</StackItem>
-				<StackItem width="20%" display="flex">
-					<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
-					{"        "}
-					<Image
-						width="90px"
-						height="90px"
-						margin="0px 0px 24px 0px"
-						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
-						border-radius="100%"
-					/>
-					<Text
-						font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
-						margin="0px 0px 12px 0px"
-						display="inline-block"
-						sm-text-align="center"
-						sm-margin="0px 0px 30px 0px"
-						text-align="left"
-						letter-spacing="0.3px"
-						color="#3D72CC"
-					>
-						Евгений Курт
-					</Text>
-					<Text
-						font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
-						margin="0px 0px 0px 0px"
-						display="inline-block"
-						sm-text-align="center"
-						sm-margin="0px 0px 30px 0px"
-						text-align="left"
-						letter-spacing="0.3px"
-						color="#9BABBF"
-					>
-						CEO
-					</Text>
-					{"    "}
-				</StackItem>
-				<StackItem width="20%" display="flex">
-					<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
-					{"        "}
-					<Image
-						width="90px"
-						height="90px"
-						margin="0px 0px 24px 0px"
-						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
-						border-radius="100%"
-					/>
-					<Text
-						font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
-						margin="0px 0px 12px 0px"
-						display="inline-block"
-						sm-text-align="center"
-						sm-margin="0px 0px 30px 0px"
-						text-align="left"
-						letter-spacing="0.3px"
-						color="#3D72CC"
-					>
-						Евгений Курт
-					</Text>
-					<Text
-						font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
-						margin="0px 0px 0px 0px"
-						display="inline-block"
-						sm-text-align="center"
-						sm-margin="0px 0px 30px 0px"
-						text-align="left"
-						letter-spacing="0.3px"
-						color="#9BABBF"
-					>
-						CEO
-					</Text>
-					{"    "}
-				</StackItem>
-				<StackItem width="20%" display="flex">
-					<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
-					{"        "}
-					<Image
-						width="90px"
-						height="90px"
-						margin="0px 0px 24px 0px"
-						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
-						border-radius="100%"
-					/>
-					<Text
-						font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
-						margin="0px 0px 12px 0px"
-						display="inline-block"
-						sm-text-align="center"
-						sm-margin="0px 0px 30px 0px"
-						text-align="left"
-						letter-spacing="0.3px"
-						color="#3D72CC"
-					>
-						Евгений Курт
-					</Text>
-					<Text
-						font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
-						margin="0px 0px 0px 0px"
-						display="inline-block"
-						sm-text-align="center"
-						sm-margin="0px 0px 30px 0px"
-						text-align="left"
-						letter-spacing="0.3px"
-						color="#9BABBF"
-					>
-						CEO
-					</Text>
-					{"    "}
-				</StackItem>
-				<StackItem width="20%" display="flex">
-					<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
-					{"        "}
-					<Image
-						width="90px"
-						height="90px"
-						margin="0px 0px 24px 0px"
-						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
-						border-radius="100%"
-					/>
-					<Text
-						font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
-						margin="0px 0px 12px 0px"
-						display="inline-block"
-						sm-text-align="center"
-						sm-margin="0px 0px 30px 0px"
-						text-align="left"
-						letter-spacing="0.3px"
-						color="#3D72CC"
-					>
-						Евгений Курт
-					</Text>
-					<Text
-						font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
-						margin="0px 0px 0px 0px"
-						display="inline-block"
-						sm-text-align="center"
-						sm-margin="0px 0px 30px 0px"
-						text-align="left"
-						letter-spacing="0.3px"
-						color="#9BABBF"
-					>
-						CEO
-					</Text>
-					{"    "}
-				</StackItem>
-				<StackItem width="20%" display="flex">
-					<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
-					{"        "}
-					<Image
-						width="90px"
-						height="90px"
-						margin="0px 0px 24px 0px"
-						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/4.png?v=2021-01-28T13:06:34.865Z"
-						border-radius="100%"
-					/>
-					<Text
-						font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
-						margin="0px 0px 12px 0px"
-						display="inline-block"
-						sm-text-align="center"
-						sm-margin="0px 0px 30px 0px"
-						text-align="left"
-						letter-spacing="0.3px"
-						color="#3D72CC"
-					>
-						специалистов
-					</Text>
+						<Components.TabList sm-width="100%" sm-display="flex" sm-flex-direction="column">
+							<Override slot="TabList Wrapper" sm-flex-direction="column" />
+							<Components.TabItem tabId="one" color="#263238" transition="all 0.2s linear 0s">
+								<Override
+									slot="Selected Tab"
+									color="#4a8cfa"
+									border-width="2px"
+									border-style="solid"
+									border-color="#4a8cfa"
+								/>
+								<Override
+									slot="Tab"
+									border-color="rgba(74, 140, 250, 0)"
+									border-radius="5px"
+									border-width="2px"
+									border-style="solid"
+									color="inherit"
+									transition="all 0.2s linear 0s"
+								/>
+								<Button
+									background="rgba(0, 119, 204, 0)"
+									color="inherit"
+									padding="8px 12px 8px 12px"
+									font="normal 400 16px/22px 'AvenirNextCyrMedium'"
+									transition="all 0.2s linear 0s"
+									hover-color="#4a8cfa"
+								>
+									Москва
+								</Button>
+							</Components.TabItem>
+							<Components.TabItem tabId="two" color="#263238" border-color="#263238" transition="all 0.2s linear 0s">
+								<Override
+									slot="Selected Tab"
+									color="#4a8cfa"
+									border-width="2px"
+									border-style="solid"
+									border-color="#4a8cfa"
+								/>
+								<Override
+									slot="Tab"
+									border-radius="5px"
+									border-width="2px"
+									border-style="solid"
+									border-color="rgba(0, 0, 0, 0)"
+									transition="all 0.2s linear 0s"
+								/>
+								<Button
+									background="rgba(0, 119, 204, 0)"
+									color="inherit"
+									padding="8px 12px 8px 12px"
+									font="normal 400 16px/22px 'AvenirNextCyrMedium'"
+									border-width="0px"
+									transition="all 0.2s linear 0s"
+									hover-color="#4a8cfa"
+								>
+									Санкт-Петербург
+								</Button>
+							</Components.TabItem>
+							<Components.TabItem tabId="three" color="#263238" border-color="#263238" transition="all 0.2s linear 0s">
+								<Override
+									slot="Selected Tab"
+									color="#4a8cfa"
+									border-width="2px"
+									border-style="solid"
+									border-color="#4a8cfa"
+								/>
+								<Override
+									slot="Tab"
+									border-radius="5px"
+									border-width="2px"
+									border-style="solid"
+									border-color="rgba(0, 0, 0, 0)"
+									transition="all 0.2s linear 0s"
+								/>
+								<Button
+									background="rgba(0, 119, 204, 0)"
+									color="inherit"
+									padding="8px 12px 8px 12px"
+									font="normal 400 16px/22px 'AvenirNextCyrMedium'"
+									border-width="0px"
+									transition="all 0.2s linear 0s"
+									hover-color="#4a8cfa"
+								>
+									Ростов-на-Дону
+								</Button>
+							</Components.TabItem>
+						</Components.TabList>
+						<Components.TabPanels>
+							<Components.TabPanel tabId="one" display="flex">
+								<Stack margin="40px 0px 0px 0px">
+									<StackItem width="40%" display="flex">
+										<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
+										{"        "}
+										<Text
+											font="normal 400 30px/36px 'AvenirNextCyrBold', sans-serif"
+											margin="0px 0px 18px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="center"
+											letter-spacing="0.3px"
+											color="#3D72CC"
+										>
+											17 сотрудников
+											<br />
+										</Text>
+										<Text
+											font="normal 400 18px/26px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 5px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#9BABBF"
+										>
+											В московском офисе компании находится руководство, команды продуктологов, маркетинга, PR и бухгалтерия.
+											<br />
+										</Text>
+										{"    "}
+									</StackItem>
+									<StackItem width="20%" display="flex">
+										<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
+										{"        "}
+										<Image
+											width="90px"
+											height="90px"
+											margin="0px 0px 24px 0px"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+											border-radius="100%"
+										/>
+										<Text
+											font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 12px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#3D72CC"
+										>
+											Евгений Курт
+										</Text>
+										<Text
+											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 0px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#9BABBF"
+										>
+											CEO
+										</Text>
+										{"    "}
+									</StackItem>
+									<StackItem width="20%" display="flex">
+										<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
+										{"        "}
+										<Image
+											width="90px"
+											height="90px"
+											margin="0px 0px 24px 0px"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+											border-radius="100%"
+										/>
+										<Text
+											font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 12px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#3D72CC"
+										>
+											Евгений Курт
+										</Text>
+										<Text
+											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 0px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#9BABBF"
+										>
+											CEO
+										</Text>
+										{"    "}
+									</StackItem>
+									<StackItem width="20%" display="flex">
+										<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
+										{"        "}
+										<Image
+											width="90px"
+											height="90px"
+											margin="0px 0px 24px 0px"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+											border-radius="100%"
+										/>
+										<Text
+											font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 12px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#3D72CC"
+										>
+											Евгений Курт
+										</Text>
+										<Text
+											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 0px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#9BABBF"
+										>
+											CEO
+										</Text>
+										{"    "}
+									</StackItem>
+									<StackItem width="20%" display="flex">
+										<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
+										{"        "}
+										<Image
+											width="90px"
+											height="90px"
+											margin="0px 0px 24px 0px"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+											border-radius="100%"
+										/>
+										<Text
+											font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 12px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#3D72CC"
+										>
+											Евгений Курт
+										</Text>
+										<Text
+											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 0px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#9BABBF"
+										>
+											CEO
+										</Text>
+										{"    "}
+									</StackItem>
+									<StackItem width="20%" display="flex">
+										<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
+										{"        "}
+										<Box
+											margin="0px 0px 24px 0px"
+											width="90px"
+											height="90px"
+											border-radius="50%"
+											background="#3D72CC"
+											display="flex"
+											align-items="center"
+											justify-content="center"
+										>
+											<Text color="#ffffff" font="600 36px 'AvenirNextCyrBold', sans-serif">
+												+13
+											</Text>
+										</Box>
+										<Text
+											font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 12px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#3D72CC"
+										>
+											специалистов
+										</Text>
+										{"    "}
+									</StackItem>
+									{"    "}{"    "}
+								</Stack>
+							</Components.TabPanel>
+							<Components.TabPanel tabId="two">
+								<GoogleMap query="Лифляндская ул. 6" margin="15px 0px 0px 0px" z-index="0" sm-margin="15px 0px 20px 0px" />
+								<Box display="flex" margin="0px 0px 25px 0px" sm-flex-direction="column">
+									<Box
+										display="flex"
+										flex-direction="column"
+										align-items="flex-start"
+										max-width="270px"
+										width="100%"
+									>
+										<Text
+											font="normal 400 18px/22px 'AvenirNextCyrMedium'"
+											margin="20px 0px 17px 0px"
+											display="inline-block"
+											sm-margin="0px 0px 30px 0px"
+											text-align="center"
+											color="#333"
+										>
+											Прийти
+										</Text>
+										<Text
+											font="normal 400 18px/22px 'AvenirNextCyrMedium'"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											color="#333"
+											margin="0px 0px 0px 0px"
+										>
+											БЦ «Интеграл», Лифляндская{" "}
+											<br />
+											ул. 6
+										</Text>
+									</Box>
+									<Box display="flex" flex-direction="column" align-items="flex-start" max-width="300px">
+										<Text
+											font="normal 400 18px/22px 'AvenirNextCyrMedium'"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="center"
+											color="#333"
+											margin="20px 0px 17px 0px"
+										>
+											Написать
+											<Link href="mailto:job@ucoz.ru">
+												<br />
+											</Link>
+										</Text>
+										<Link
+											href="malito:job@ucoz.ru"
+											text-decoration-line="initial"
+											color="#4a8cfa"
+											font="normal 400 18px/24px 'AvenirNextCyrMedium'"
+											transition="color 0.2s linear 0s"
+											hover-color="#3d72cc"
+										>
+											job@ucoz.ru
+										</Link>
+									</Box>
+								</Box>
+								<Link
+									href="/vakansii"
+									background="#ffd83a"
+									text-decoration-line="initial"
+									color="#263238"
+									font="16px/50px 'AvenirNextCyrMedium', sans-serif"
+									padding="12px 15px 12px 15px"
+									margin="0px 0px 0px 0px"
+									transition="all 0.2s linear 0s"
+									hover-background="#e6c235"
+									border-radius="5px"
+								>
+									Смотреть все вакансии
+								</Link>
+							</Components.TabPanel>
+							<Components.TabPanel tabId="three">
+								<GoogleMap
+									query="Ростов-на-Дону, ул. Алексея Береста, 6"
+									margin="15px 0px 0px 0px"
+									lg-z-index="1"
+									z-index="0"
+									sm-margin="15px 0px 20px 0px"
+								/>
+								<Box display="flex" margin="0px 0px 25px 0px" sm-flex-direction="column">
+									<Box
+										display="flex"
+										flex-direction="column"
+										align-items="flex-start"
+										max-width="270px"
+										width="100%"
+										sm-max-width="none"
+									>
+										<Text
+											font="normal 400 18px/22px 'AvenirNextCyrMedium'"
+											margin="20px 0px 17px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="center"
+											color="#333"
+										>
+											Прийти
+										</Text>
+										<Text
+											font="normal 400 18px/22px 'AvenirNextCyrMedium'"
+											display="inline-block"
+											sm-margin="0px 0px 30px 0px"
+											color="#333"
+											margin="0px 0px 0px 0px"
+										>
+											Ростов-на-Дону, ул. Алексея Береста, 6
+										</Text>
+									</Box>
+									<Box display="flex" flex-direction="column" align-items="flex-start" max-width="300px">
+										<Text
+											font="normal 400 18px/22px 'AvenirNextCyrMedium'"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="center"
+											color="#333"
+											margin="20px 0px 17px 0px"
+										>
+											Написать
+											<Link href="mailto:job@ucoz.ru">
+												<br />
+											</Link>
+										</Text>
+										<Link
+											href="malito:job@ucoz.ru"
+											text-decoration-line="initial"
+											color="#4a8cfa"
+											font="normal 400 18px/24px 'AvenirNextCyrMedium'"
+											transition="color 0.2s linear 0s"
+											hover-color="#3d72cc"
+										>
+											job@ucoz.ru
+										</Link>
+									</Box>
+								</Box>
+								<Link
+									href="/vakansii"
+									background="#ffd83a"
+									text-decoration-line="initial"
+									color="#263238"
+									font="16px/50px 'AvenirNextCyrMedium', sans-serif"
+									padding="12px 15px 12px 15px"
+									margin="0px 0px 0px 0px"
+									transition="all 0.2s linear 0s"
+									hover-background="#e6c235"
+									border-radius="5px"
+								>
+									Смотреть все вакансии
+								</Link>
+							</Components.TabPanel>
+						</Components.TabPanels>
+					</Components.Tabs>
 					{"    "}
 				</StackItem>
 				{"    "}
@@ -859,7 +1128,7 @@ export default (() => {
 						margin="0px 24px 0px 0px"
 					>
 						uCoz в ВК
-						<Image width="100px" height="100px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/4.png?v=2021-01-28T00:54:51.035Z" margin="18px 0px 0px 0px" />
+						<Image width="100px" height="100px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/ucoz.png?v=2021-02-01T22:05:06.991Z" margin="18px 0px 0px 0px" />
 					</Link>
 					<Link
 						href="https://vk.com/ucoz"
