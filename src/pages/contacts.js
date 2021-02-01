@@ -490,6 +490,7 @@ export default (() => {
 					<Override slot="StackItemContent" flex-direction="column" align-items="flex-start" />
 					<Components.Tabs defaultTab="one" orientation="Horizontal" width="100%" height="auto">
 						<Components.TabList sm-width="100%" sm-display="flex" sm-flex-direction="column">
+							<Override slot="TabList Wrapper" sm-flex-direction="column" />
 							<Components.TabItem tabId="one" color="#263238" transition="all 0.2s linear 0s">
 								<Override
 									slot="Selected Tab"

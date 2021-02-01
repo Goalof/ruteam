@@ -2,7 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import atomize from '@quarkly/atomize';
 import { Box } from '@quarkly/widgets';
+import { useOverrides } from '@quarkly/components';
 import { useTabs } from './Tabs';
+const overrides = {
+	'TabList Wrapper': {
+		kind: 'Box'
+	}
+};
 const NoScroll = styled(Box)`
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -17,15 +23,17 @@ const alignConvert = {
 	'full width': 'center'
 };
 
-const TabList = ({
-	children,
-	...props
-}) => {
+const TabList = props => {
 	const {
 		align,
 		orientation
 	} = useTabs();
-	return <NoScroll overflow="auto" {...props}>
+	const {
+		override,
+		children,
+		rest
+	} = useOverrides(props, overrides);
+	return <NoScroll overflow="auto" {...rest}>
 		    
 		<Box
 			display="flex"
@@ -33,6 +41,7 @@ const TabList = ({
 			white-space="nowrap"
 			flex-direction={orientation === 'Horizontal' ? 'row' : 'column'}
 			justify-content={alignConvert[align]}
+			{...override('TabList Wrapper')}
 		>
 			      
 			{children}
@@ -46,5 +55,6 @@ export default atomize(TabList)({
 	name: 'TabList',
 	description: {
 		ru: 'Список компонентов Tab, которые являются ссылками на TabPanel. Этот компонент должен располагаться внутри Tabs'
-	}
+	},
+	overrides
 });

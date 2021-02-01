@@ -16,7 +16,7 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/favicon_uteam.png?v=2021-02-01T19:35:08.128Z"} type={"image/x-icon"} />
 		</Helmet>
-		<Components.EmbedHTML />
+		<Components.EmbedHTML font="4000 14px/18px 'AvenirNextCyrMedium'" color="#ffffff" />
 		<Section
 			id="header"
 			quarkly-title="Header"
@@ -468,15 +468,84 @@ export default (() => {
 					<Override slot="StackItemContent" align-items="center" justify-content="center" />
 					{"        "}
 					<Components.Slider width="100%" slides="http://ru.uteam.pro/img/members/new_ourteam_page/24.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/23.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/20.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/19.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/18.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/17.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/16.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/15.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/14.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/13.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/12.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/10.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/09.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/08.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/07.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/06.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/05.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/04.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/03.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/02.jpg">
-						<Override slot="Slide Description">
+						<Override
+							slot="Slide Description"
+							margin="16px 0px 0px 0px"
+							background="rgba(0, 0, 0, 0.55)"
+							font="400 14px/18px 'AvenirNextCyrMedium'"
+							color="#ffffff"
+						>
 							Slide 1 text
 						</Override>
 						<Override slot="Slide 1 Description">
-							First Slide
+							Команда uKit, Ростов-на-Дону
 						</Override>
 						<Override slot="Slide 2 Description">
-							Second Slide
+							Павел Кудинов, технический директор uKit, руковдитель uKit AI, Ростов-на-Дону
 						</Override>
+						<Override slot="Slide 3 Description">
+							Frontend-разработчики, Луис Бланко и Роман Арестович, Ростов-на-Дону
+						</Override>
+						<Override slot="Slide 4 Description">
+							Команда дизайнеров, Ростов-на-Дону
+							<br />
+							Андрей Сербуль, Анна Курсанова, Виктор Кадников, Екатерина Чубукова
+						</Override>
+						<Override slot="Slide 5 Description">
+							Дизайнеры, Анна Курсанова и Андрей Сербуль, Ростов-на-Дону
+						</Override>
+						<Override slot="Slide 6 Description">
+							uTeam, Ростов-на-Дону
+							<br />
+							{" "}Роман Штейнберг, Александр Пезиков, Ирина Черепанова, Павел Кудинов, Михаил Гуревич
+						</Override>
+						<Override slot="Slide 7 Description">
+							uTeam, Ростов-на-Дону
+						</Override>
+						<Override slot="Slide 8 Description">
+							Татьяна Жукова, руководитель направления локализации, Ростов-на-Дону
+						</Override>
+						<Override slot="Slide 9 Description">
+							Дмитрий Молчанов, руководитель проекта uCalc, Ростов-на-Дону
+						</Override>
+						<Override slot="Slide 10 Description">
+							Иван Возлюбленный, scrum-мастер
+							<br />
+							{" "}Георгий Авсецин, UI/UX-дизайнер Web Tycoon
+						</Override>
+						<Override slot="Slide 11 Description">
+							HR, Ольга Колесникова и Наталья Маринченко, Ростов-на-Дону
+						</Override>
+						<Override slot="Slide 12 Description">
+							uTeam, ростовский офис
+						</Override>
+						<Override slot="Slide 13 Description">
+							uTeam, ростовский офис
+						</Override>
+						<Override slot="Slide 14 Description">
+							uTeam, ростовский офис
+						</Override>
+						<Override slot="Slide 15 Description">
+							Михаил Гуревич, финансовый директор uKit Group, Ростов-на-Дону
+						</Override>
+						<Override slot="Slide 16 Description">
+							Финансовый департамент, Москва
+							<br />
+							Зарина Татрова, Чемарина Алиса, Горбунова Анастасия, Лобаскова Александра
+						</Override>
+						<Override slot="Slide 17 Description">
+							Совещание в головном офис в Москве. Справа – Ирина Черепанова, директор по продукту, Алексей Попов, руководитель техподдержки, Анна Лубенченко и Антон Бурлаков
+						</Override>
+						<Override slot="Slide 18 Description">
+							Олег Лисовенко, менеджер проектов и маркетолог, Санкт-Петербург
+						</Override>
+						<Override slot="Slide 19 Description">
+							uTeam, Санкт-Петербург
+						</Override>
+						<Override slot="Slide 20 Description">
+							Команда uCoz, Черкассы (Украина)
+						</Override>
+						<Override slot="Points" display="none" />
 					</Components.Slider>
 					{"    "}
 				</StackItem>
@@ -499,7 +568,6 @@ export default (() => {
 					>
 						17 сотрудников
 						<br />
-						{"\n\n"}
 					</Text>
 					<Text
 						font="normal 400 18px/26px 'AvenirNextCyrMedium', sans-serif"
@@ -513,7 +581,6 @@ export default (() => {
 					>
 						В московском офисе компании находится руководство, команды продуктологов, маркетинга, PR и бухгалтерия.
 						<br />
-						{"\n\n"}
 					</Text>
 					{"    "}
 				</StackItem>
@@ -537,7 +604,7 @@ export default (() => {
 						letter-spacing="0.3px"
 						color="#3D72CC"
 					>
-						Евгений Курт{"\n\n"}
+						Евгений Курт
 					</Text>
 					<Text
 						font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -549,7 +616,7 @@ export default (() => {
 						letter-spacing="0.3px"
 						color="#9BABBF"
 					>
-						CEO{"\n\n"}
+						CEO
 					</Text>
 					{"    "}
 				</StackItem>
@@ -573,7 +640,7 @@ export default (() => {
 						letter-spacing="0.3px"
 						color="#3D72CC"
 					>
-						Евгений Курт{"\n\n"}
+						Евгений Курт
 					</Text>
 					<Text
 						font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -585,7 +652,7 @@ export default (() => {
 						letter-spacing="0.3px"
 						color="#9BABBF"
 					>
-						CEO{"\n\n"}
+						CEO
 					</Text>
 					{"    "}
 				</StackItem>
@@ -609,7 +676,7 @@ export default (() => {
 						letter-spacing="0.3px"
 						color="#3D72CC"
 					>
-						Евгений Курт{"\n\n"}
+						Евгений Курт
 					</Text>
 					<Text
 						font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -621,7 +688,7 @@ export default (() => {
 						letter-spacing="0.3px"
 						color="#9BABBF"
 					>
-						CEO{"\n\n"}
+						CEO
 					</Text>
 					{"    "}
 				</StackItem>
@@ -645,7 +712,7 @@ export default (() => {
 						letter-spacing="0.3px"
 						color="#3D72CC"
 					>
-						Евгений Курт{"\n\n"}
+						Евгений Курт
 					</Text>
 					<Text
 						font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -657,7 +724,7 @@ export default (() => {
 						letter-spacing="0.3px"
 						color="#9BABBF"
 					>
-						CEO{"\n\n"}
+						CEO
 					</Text>
 					{"    "}
 				</StackItem>

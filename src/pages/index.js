@@ -1679,10 +1679,19 @@ export default (() => {
 						text-align="center"
 						color="#263238"
 					>
-						<Strong font="normal bold 48px/42px 'AvenirNextCyrRegular', sans-serif" color="#4a8cfa">
-							12
+						<Strong
+							font="normal bold 48px/42px 'AvenirNextCyrRegular', sans-serif"
+							color="#4a8cfa"
+							data-q-widget-type="PRIMITIVE"
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+						>
+							15
 						</Strong>
-						<br />
 					</Text>
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
@@ -1723,10 +1732,9 @@ export default (() => {
 							text-overflow="clip"
 							hyphens="manual"
 						>
-							165+
+							120+
 						</Strong>
 						{" "}
-						<br />
 					</Text>
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
