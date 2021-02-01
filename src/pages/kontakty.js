@@ -488,17 +488,51 @@ export default (() => {
 				{"    "}
 				<StackItem width="100%" display="flex">
 					<Override slot="StackItemContent" flex-direction="column" align-items="flex-start" />
-					<Components.Tabs defaultTab="one" orientation="Horizontal">
+					<Components.Tabs defaultTab="one" orientation="Horizontal" width="100%" height="auto">
 						<Components.TabList>
-							<Components.TabItem tabId="one">
-								<Override slot="Selected Tab" border-width="2px" border-style="solid" border-color="--color-secondary" />
-								<Button>
-									Tab 1
+							<Components.TabItem tabId="one" color="#263238">
+								<Override
+									slot="Selected Tab"
+									color="#4a8cfa"
+									border-width="2px"
+									border-style="solid"
+									border-color="#4a8cfa"
+								/>
+								<Override
+									slot="Tab"
+									border-color="rgba(74, 140, 250, 0)"
+									border-radius="5px"
+									border-width="2px"
+									border-style="solid"
+									color="inherit"
+								/>
+								<Button background="rgba(0, 119, 204, 0)" color="inherit" padding="8px 12px 8px 12px" font="normal 400 16px/22px 'AvenirNextCyrMedium'">
+									Москва
 								</Button>
 							</Components.TabItem>
-							<Components.TabItem tabId="two">
-								<Button>
-									Tab 2
+							<Components.TabItem tabId="two" color="#263238" border-color="#263238">
+								<Override
+									slot="Selected Tab"
+									color="#4a8cfa"
+									border-width="2px"
+									border-style="solid"
+									border-color="#4a8cfa"
+								/>
+								<Override
+									slot="Tab"
+									border-radius="5px"
+									border-width="2px"
+									border-style="solid"
+									border-color="rgba(0, 0, 0, 0)"
+								/>
+								<Button
+									background="rgba(0, 119, 204, 0)"
+									color="inherit"
+									padding="8px 12px 8px 12px"
+									font="normal 400 16px/22px 'AvenirNextCyrMedium'"
+									border-width="0px"
+								>
+									Санкт-Петербург
 								</Button>
 							</Components.TabItem>
 							<Components.TabItem tabId="three">
@@ -506,17 +540,76 @@ export default (() => {
 									Tab 3
 								</Button>
 							</Components.TabItem>
-							<Components.TabItem tabId="four">
-								<Button>
-									Tab 4
-								</Button>
-							</Components.TabItem>
 						</Components.TabList>
 						<Components.TabPanels>
 							<Components.TabPanel tabId="one">
-								<Text>
-									Tab 1
-								</Text>
+								<GoogleMap query="ул. Барклая 6, строение 5, БЦ" />
+								<Box display="flex" margin="0px 0px 25px 0px">
+									<Box display="flex" flex-direction="column" align-items="flex-start" max-width="300px">
+										<Text
+											font="normal 400 18px/22px 'AvenirNextCyrMedium'"
+											margin="20px 0px 17px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="center"
+											color="#333"
+										>
+											Прийти
+										</Text>
+										<Text
+											font="normal 400 18px/22px 'AvenirNextCyrMedium'"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											color="#333"
+											margin="0px 0px 0px 0px"
+										>
+											ул. Барклая 6, строение 5, БЦ «Барклай Плаза»
+											<br />
+										</Text>
+									</Box>
+									<Box display="flex" flex-direction="column" align-items="flex-start" max-width="300px">
+										<Text
+											font="normal 400 18px/22px 'AvenirNextCyrMedium'"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="center"
+											color="#333"
+											margin="20px 0px 17px 0px"
+										>
+											Написать
+											<Link href="mailto:job@ucoz.ru">
+												<br />
+											</Link>
+										</Text>
+										<Link
+											href="malito:job@ucoz.ru"
+											text-decoration-line="initial"
+											color="#4a8cfa"
+											font="normal 400 18px/24px 'AvenirNextCyrMedium'"
+											transition="color 0.2s linear 0s"
+											hover-color="#3d72cc"
+										>
+											job@ucoz.ru
+										</Link>
+									</Box>
+								</Box>
+								<Link
+									href="/vakansii"
+									background="#ffd83a"
+									text-decoration-line="initial"
+									color="#263238"
+									font="16px/50px 'AvenirNextCyrMedium', sans-serif"
+									padding="8px 15px 8px 15px"
+									margin="0px 0px 0px 0px"
+									transition="all 0.2s linear 0s"
+									hover-background="#e6c235"
+									border-radius="5px"
+								>
+									Смотреть все вакансии
+								</Link>
 							</Components.TabPanel>
 							<Components.TabPanel tabId="two">
 								<Text>
@@ -535,73 +628,6 @@ export default (() => {
 							</Components.TabPanel>
 						</Components.TabPanels>
 					</Components.Tabs>
-					<GoogleMap query="ул. Барклая 6, строение 5, БЦ" />
-					<Box display="flex" margin="0px 0px 25px 0px">
-						<Box display="flex" flex-direction="column" align-items="flex-start" max-width="300px">
-							<Text
-								font="normal 400 18px/22px 'AvenirNextCyrMedium'"
-								margin="20px 0px 17px 0px"
-								display="inline-block"
-								sm-text-align="center"
-								sm-margin="0px 0px 30px 0px"
-								text-align="center"
-								color="#333"
-							>
-								Прийти
-							</Text>
-							<Text
-								font="normal 400 18px/22px 'AvenirNextCyrMedium'"
-								display="inline-block"
-								sm-text-align="center"
-								sm-margin="0px 0px 30px 0px"
-								color="#333"
-								margin="0px 0px 0px 0px"
-							>
-								ул. Барклая 6, строение 5, БЦ «Барклай Плаза»
-								<br />
-							</Text>
-						</Box>
-						<Box display="flex" flex-direction="column" align-items="flex-start" max-width="300px">
-							<Text
-								font="normal 400 18px/22px 'AvenirNextCyrMedium'"
-								display="inline-block"
-								sm-text-align="center"
-								sm-margin="0px 0px 30px 0px"
-								text-align="center"
-								color="#333"
-								margin="20px 0px 17px 0px"
-							>
-								Написать
-								<Link href="mailto:job@ucoz.ru">
-									<br />
-								</Link>
-							</Text>
-							<Link
-								href="malito:job@ucoz.ru"
-								text-decoration-line="initial"
-								color="#4a8cfa"
-								font="normal 400 18px/24px 'AvenirNextCyrMedium'"
-								transition="color 0.2s linear 0s"
-								hover-color="#3d72cc"
-							>
-								job@ucoz.ru
-							</Link>
-						</Box>
-					</Box>
-					<Link
-						href="/vakansii"
-						background="#ffd83a"
-						text-decoration-line="initial"
-						color="#263238"
-						font="16px/50px 'AvenirNextCyrMedium', sans-serif"
-						padding="8px 15px 8px 15px"
-						margin="0px 0px 0px 0px"
-						transition="all 0.2s linear 0s"
-						hover-background="#e6c235"
-						border-radius="5px"
-					>
-						Смотреть все вакансии
-					</Link>
 					{"            "}
 				</StackItem>
 				{"    "}
