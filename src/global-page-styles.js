@@ -15,7 +15,7 @@ const pageStyles = {
         "overflow-y": "",
         "overflow-x": "hidden"
     },
-    "komanda": {
+    "uteam": {
         "overflow-y": "",
         "overflow-x": "hidden"
     },
