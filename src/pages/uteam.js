@@ -599,7 +599,7 @@ export default (() => {
 									background="rgba(0, 119, 204, 0)"
 									color="inherit"
 									padding="8px 12px 8px 12px"
-									font="normal 400 16px/22px 'AvenirNextCyrMedium'"
+									font="normal 400 14px/22px 'AvenirNextCyrMedium'"
 									transition="all 0.2s linear 0s"
 								>
 									Москва
@@ -634,7 +634,7 @@ export default (() => {
 									background="rgba(0, 119, 204, 0)"
 									color="inherit"
 									padding="8px 12px 8px 12px"
-									font="normal 400 16px/22px 'AvenirNextCyrMedium'"
+									font="normal 400 14px/22px 'AvenirNextCyrMedium'"
 									border-width="0px"
 									transition="all 0.2s linear 0s"
 								>
@@ -670,7 +670,7 @@ export default (() => {
 									background="rgba(0, 119, 204, 0)"
 									color="inherit"
 									padding="8px 12px 8px 12px"
-									font="normal 400 16px/22px 'AvenirNextCyrMedium'"
+									font="normal 400 14px/22px 'AvenirNextCyrMedium'"
 									border-width="0px"
 									transition="all 0.2s linear 0s"
 								>
@@ -706,7 +706,7 @@ export default (() => {
 									background="rgba(0, 119, 204, 0)"
 									color="inherit"
 									padding="8px 12px 8px 12px"
-									font="normal 400 16px/22px 'AvenirNextCyrMedium'"
+									font="normal 400 14px/22px 'AvenirNextCyrMedium'"
 									border-width="0px"
 									transition="all 0.2s linear 0s"
 								>
@@ -904,7 +904,7 @@ export default (() => {
 											align-items="center"
 											justify-content="center"
 										>
-											<Text color="#ffffff" font="600 36px 'AvenirNextCyrBold', sans-serif">
+											<Text color="#ffffff" font="500 36px 'AvenirNextCyrBold', sans-serif">
 												+5
 											</Text>
 										</Box>
