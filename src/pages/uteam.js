@@ -1210,7 +1210,7 @@ export default (() => {
 											color="#9BABBF"
 											lg-text-align="center"
 										>
-											В питерском офисе работает одна из команд uKit. Тут созданы сервисы uSocial, uPartner, Divly.
+											В ростовском офисе самая большая команда. Тут разрабатываются проекты uKit, uCalc, uLanding, uWeb и Web Tycoon.
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1228,7 +1228,7 @@ export default (() => {
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/lisovenko.jpg?v=2021-02-02T11:26:45.639Z"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kudinov.jpg?v=2021-02-03T10:12:38.861Z"
 											border-radius="100%"
 										/>
 										<Text
@@ -1241,7 +1241,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Олег Лисовенко
+											Павел Кудинов
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1253,7 +1253,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Менеджер проектов Divly, uSocial
+											Технический директор uKit, Руководитель uKit AI
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1271,7 +1271,7 @@ export default (() => {
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/pavlov.jpg?v=2021-02-02T11:26:45.643Z"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/gurevich.jpg?v=2021-02-03T10:12:38.856Z"
 											border-radius="100%"
 										/>
 										<Text
@@ -1284,7 +1284,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Олег Павлов
+											Михаил Гуревич
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1296,7 +1296,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											SMM и direct-маркетолог
+											Финансовый директор
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1314,7 +1314,7 @@ export default (() => {
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kuznetcov.jpg?v=2021-02-02T11:26:45.640Z"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/zhukova.jpg?v=2021-02-03T10:12:38.858Z"
 											border-radius="100%"
 										/>
 										<Text
@@ -1327,7 +1327,9 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Виктор Кузнецов
+											Татьяна Жукова
+											<br />
+											{"\n\n"}
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1339,7 +1341,144 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Руководитель службы технической поддержки
+											Руководитель
+											<br />
+											отдела локализации{"\n\n"}
+										</Text>
+										{"    "}
+									</StackItem>
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
+										/>
+										{"        "}
+										<Image
+											width="90px"
+											height="90px"
+											margin="0px 0px 24px 0px"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/mudrov.jpg?v=2021-02-03T10:12:38.864Z"
+											border-radius="100%"
+										/>
+										<Text
+											font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 12px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#3D72CC"
+										>
+											Евгений Мудров
+											<br />
+											{"\n\n"}
+										</Text>
+										<Text
+											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 0px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#9BABBF"
+										>
+											Разработчик ядра uKit AI
+											<br />
+											{"\n\n"}
+										</Text>
+										{"    "}
+									</StackItem>
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
+										/>
+										{"        "}
+										<Image
+											width="90px"
+											height="90px"
+											margin="0px 0px 24px 0px"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/derbitov.jpg?v=2021-02-03T10:12:38.858Z"
+											border-radius="100%"
+										/>
+										<Text
+											font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 12px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#3D72CC"
+										>
+											Андрей Дербитов
+										</Text>
+										<Text
+											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 0px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#9BABBF"
+										>
+											Старший разработчик uLanding{"\n\n"}
+										</Text>
+										{"    "}
+									</StackItem>
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
+										/>
+										{"        "}
+										<Image
+											width="90px"
+											height="90px"
+											margin="0px 0px 24px 0px"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kadnikov.jpg?v=2021-02-03T10:12:38.858Z"
+											border-radius="100%"
+										/>
+										<Text
+											font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 12px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#3D72CC"
+										>
+											Виктор Кадников
+										</Text>
+										<Text
+											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 0px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#9BABBF"
+										>
+											Арт-директор uKit
+											<br />
+											{"\n\n"}
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1364,7 +1503,7 @@ export default (() => {
 											justify-content="center"
 										>
 											<Text font="500 36px 'AvenirNextCyrBold', sans-serif" color="#ffffff">
-												+12
+												+53
 											</Text>
 										</Box>
 										<Text
@@ -1419,7 +1558,7 @@ export default (() => {
 											color="#9BABBF"
 											lg-text-align="center"
 										>
-											В питерском офисе работает одна из команд uKit. Тут созданы сервисы uSocial, uPartner, Divly.
+											Исторически самый первый офис компании. Здесь разрабатывается легендарный uCoz, а также uID.me и uShop.
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1437,7 +1576,7 @@ export default (() => {
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/lisovenko.jpg?v=2021-02-02T11:26:45.639Z"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kolpakov.jpg?v=2021-02-03T12:07:48.618Z"
 											border-radius="100%"
 										/>
 										<Text
@@ -1450,7 +1589,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Олег Лисовенко
+											Иван Колпаков
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1462,7 +1601,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Менеджер проектов Divly, uSocial
+											Технический директор uCoz
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1480,7 +1619,7 @@ export default (() => {
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/pavlov.jpg?v=2021-02-02T11:26:45.643Z"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/donets.jpg?v=2021-02-03T12:07:48.614Z"
 											border-radius="100%"
 										/>
 										<Text
@@ -1493,7 +1632,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Олег Павлов
+											Алексей Донец
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1505,7 +1644,9 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											SMM и direct-маркетолог
+											Интернет-маркетолог,
+											<br />
+											SEO-специалист
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1523,7 +1664,7 @@ export default (() => {
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kuznetcov.jpg?v=2021-02-02T11:26:45.640Z"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/latanuk.jpg?v=2021-02-03T12:07:48.614Z"
 											border-radius="100%"
 										/>
 										<Text
@@ -1536,7 +1677,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Виктор Кузнецов
+											Иван Латанюк
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1548,7 +1689,95 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Руководитель службы технической поддержки
+											Старший разработчик uCoz, uID.me
+										</Text>
+										{"    "}
+									</StackItem>
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
+										/>
+										{"        "}
+										<Image
+											width="90px"
+											height="90px"
+											margin="0px 0px 24px 0px"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/pereyaslovets.jpg?v=2021-02-03T12:07:48.623Z"
+											border-radius="100%"
+										/>
+										<Text
+											font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 12px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#3D72CC"
+										>
+											Наталья Переясловец
+											<br />
+											{"\n\n"}
+										</Text>
+										<Text
+											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 0px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#9BABBF"
+										>
+											Старший QA-инженер
+										</Text>
+										{"    "}
+									</StackItem>
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
+										/>
+										{"        "}
+										<Image
+											width="90px"
+											height="90px"
+											margin="0px 0px 24px 0px"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/chubenko.jpg?v=2021-02-03T12:07:48.638Z"
+											border-radius="100%"
+										/>
+										<Text
+											font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 12px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#3D72CC"
+										>
+											Игорь Чубенко
+										</Text>
+										<Text
+											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
+											margin="0px 0px 0px 0px"
+											display="inline-block"
+											sm-text-align="center"
+											sm-margin="0px 0px 30px 0px"
+											text-align="left"
+											letter-spacing="0.3px"
+											color="#9BABBF"
+										>
+											Старший разработчик uShop
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1573,7 +1802,7 @@ export default (() => {
 											justify-content="center"
 										>
 											<Text font="500 36px 'AvenirNextCyrBold', sans-serif" color="#ffffff">
-												+12
+												+20
 											</Text>
 										</Box>
 										<Text
@@ -1629,8 +1858,7 @@ export default (() => {
 				>
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					<Text font="42px/28px 'AvenirNextCyrBold', sans-serif" margin="0px 0px 16px 0px" color="#fff">
-						12 лет
-						<br />
+						15 лет
 					</Text>
 					<Text font="18px/28px 'AvenirNextCyrMedium', sans-serif" margin="8px 0px 0px 0px" text-align="center" color="#fff">
 						на рынке SaaS-решений для создания сайтов и оптимизации их конверсии
