@@ -677,7 +677,7 @@ export default (() => {
 									border-width="0px"
 									transition="all 0.2s linear 0s"
 								>
-									Ростов-на-Дону{"\n\n"}
+									Ростов-на-Дону
 								</Button>
 							</Components.TabItem>
 							<Components.TabItem
@@ -713,7 +713,7 @@ export default (() => {
 									border-width="0px"
 									transition="all 0.2s linear 0s"
 								>
-									Черкассы{"\n\n"}
+									Черкассы
 								</Button>
 							</Components.TabItem>
 						</Components.TabList>
@@ -826,7 +826,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Ирина Черепанова{"\n\n"}
+											Ирина Черепанова
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1329,7 +1329,6 @@ export default (() => {
 										>
 											Татьяна Жукова
 											<br />
-											{"\n\n"}
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1343,7 +1342,7 @@ export default (() => {
 										>
 											Руководитель
 											<br />
-											отдела локализации{"\n\n"}
+											отдела локализации
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1376,7 +1375,6 @@ export default (() => {
 										>
 											Евгений Мудров
 											<br />
-											{"\n\n"}
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1390,7 +1388,6 @@ export default (() => {
 										>
 											Разработчик ядра uKit AI
 											<br />
-											{"\n\n"}
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1433,7 +1430,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Старший разработчик uLanding{"\n\n"}
+											Старший разработчик uLanding
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1478,7 +1475,6 @@ export default (() => {
 										>
 											Арт-директор uKit
 											<br />
-											{"\n\n"}
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1722,7 +1718,6 @@ export default (() => {
 										>
 											Наталья Переясловец
 											<br />
-											{"\n\n"}
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1898,6 +1893,8 @@ export default (() => {
 						display="inline-block"
 						sm-text-align="center"
 						sm-font="normal 500 24px/30px 'AvenirNextCyrBold', sans-serif"
+						sm-margin="0px 0px 0px 0px"
+						md-margin="0px 0px 0px 0px"
 					>
 						Последние новости из блогов
 						<br />
@@ -1908,11 +1905,185 @@ export default (() => {
 			</Stack>
 			<Stack margin="10px 0px 0px 0px" max-width="1170px" width="100%">
 				{"        "}
-				<StackItem width="50%" display="flex" sm-width="100%">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
-					{"        "}
-					<Components.InformerUcoz />
-					{"    "}
+				<StackItem width="50%" display="flex" sm-width="100%" md-width="100%">
+					<Override
+						slot="StackItemContent"
+						align-items="flex-start"
+						justify-content="flex-start"
+						flex-direction="column"
+						padding="0px 0px 0px 0px"
+						md-align-items="center"
+					/>
+					<Link href="https://blog.ucoz.ru/" target="_blank">
+						<Image margin="0px 0px 0px 0px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/ucozuco.svg?v=2021-02-03T15:17:23.120Z" />
+					</Link>
+					{"            "}
+				</StackItem>
+				<StackItem
+					width="50%"
+					display="flex"
+					sm-width="100%"
+					md-width="100%"
+					md-order="1"
+				>
+					<Override
+						slot="StackItemContent"
+						align-items="flex-start"
+						justify-content="flex-start"
+						flex-direction="column"
+						padding="0px 0px 0px 0px"
+						md-align-items="center"
+					/>
+					<Link href="https://blog-ru.ukit.com/" target="_blank">
+						<Image margin="0px 0px 0px 0px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/ukituco.svg?v=2021-02-03T15:44:44.464Z" />
+					</Link>
+					{"            "}
+				</StackItem>
+				<StackItem width="50%" display="flex" sm-width="100%" md-width="100%">
+					<Override
+						slot="StackItemContent"
+						align-items="flex-start"
+						justify-content="space-between"
+						flex-direction="column"
+						background="#ffffff"
+						padding="20px 20px 30px 20px"
+					/>
+					<Image
+						width="100%"
+						margin="0px 0px 18px 0px"
+						height="100%"
+						max-height="146px"
+						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/14828273.jpg?v=2021-02-03T13:44:49.980Z"
+					/>
+					<Text margin="0px 0px 12px 0px" font="20px/28px 'AvenirNextCyrMedium', sans-serif" nout-font="20px/23px 'AvenirNextCyrMedium', sans-serif" sm-font="16px/20px 'AvenirNextCyrMedium', sans-serif">
+						С Наступающим Новым годом!
+					</Text>
+					<Link
+						href="https://blog.ucoz.ru/ucoz/new-year-2021"
+						text-decoration-line="initial"
+						color="#4A8CFA"
+						font="20px/28px 'AvenirNextCyrMedium', sans-serif"
+						target="_blank"
+						hover-text-decoration-line="underline"
+						transition="all 0.2s ease 0s"
+						md-margin="20px 0px 0px 0px"
+						nout-margin="20px 0px 0px 0px"
+						sm-margin="20px 0px 0px 0px"
+					>
+						Читать далее
+					</Link>
+					{"            "}
+				</StackItem>
+				<StackItem
+					width="50%"
+					display="flex"
+					sm-width="100%"
+					md-width="100%"
+					md-order="1"
+				>
+					<Override
+						slot="StackItemContent"
+						align-items="flex-start"
+						justify-content="space-between"
+						flex-direction="column"
+						background="#ffffff"
+						padding="20px 20px 30px 20px"
+					/>
+					<Image
+						width="100%"
+						margin="0px 0px 18px 0px"
+						height="100%"
+						max-height="146px"
+						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/20886398%20(1).png?v=2021-02-03T15:47:32.977Z"
+					/>
+					<Text margin="0px 0px 12px 0px" font="20px/28px 'AvenirNextCyrMedium', sans-serif" nout-font="20px/23px 'AvenirNextCyrMedium', sans-serif" sm-font="16px/20px 'AvenirNextCyrMedium', sans-serif">
+						Подводим итоги 2020 и встречаем Новый год со скидками!{"\n\n"}
+					</Text>
+					<Link
+						href="https://blog-ru.ukit.com/newsline/new-year-2021"
+						text-decoration-line="initial"
+						color="#4A8CFA"
+						font="20px/28px 'AvenirNextCyrMedium', sans-serif"
+						target="_blank"
+						hover-text-decoration-line="underline"
+						transition="all 0.2s ease 0s"
+						nout-margin="20px 0px 0px 0px"
+					>
+						Читать далее
+					</Link>
+					{"            "}
+				</StackItem>
+				<StackItem width="50%" display="flex" sm-width="100%" md-width="100%">
+					<Override
+						slot="StackItemContent"
+						align-items="flex-start"
+						justify-content="space-between"
+						flex-direction="column"
+						background="#ffffff"
+						padding="20px 20px 30px 20px"
+					/>
+					<Image
+						width="100%"
+						margin="0px 0px 18px 0px"
+						height="100%"
+						max-height="146px"
+						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/57744999.png?v=2021-02-03T15:47:32.979Z"
+					/>
+					<Text margin="0px 0px 12px 0px" font="20px/28px 'AvenirNextCyrMedium', sans-serif" nout-font="20px/23px 'AvenirNextCyrMedium', sans-serif" sm-font="16px/20px 'AvenirNextCyrMedium', sans-serif">
+						Нам 15 лет! Празднуем и ностальгируем вместе!{"\n\n"}
+					</Text>
+					<Link
+						href="https://blog.ucoz.ru/ucoz/15-years"
+						text-decoration-line="initial"
+						color="#4A8CFA"
+						font="20px/28px 'AvenirNextCyrMedium', sans-serif"
+						target="_blank"
+						hover-text-decoration-line="underline"
+						transition="all 0.2s ease 0s"
+						nout-margin="20px 0px 0px 0px"
+					>
+						Читать далее
+					</Link>
+					{"            "}
+				</StackItem>
+				<StackItem
+					width="50%"
+					display="flex"
+					sm-width="100%"
+					md-width="100%"
+					md-order="1"
+				>
+					<Override
+						slot="StackItemContent"
+						align-items="flex-start"
+						justify-content="space-between"
+						flex-direction="column"
+						background="#ffffff"
+						padding="20px 20px 30px 20px"
+					/>
+					<Image
+						width="100%"
+						margin="0px 0px 18px 0px"
+						height="100%"
+						max-height="146px"
+						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/05479122.png?v=2021-02-03T15:47:52.340Z"
+					/>
+					<Text margin="0px 0px 12px 0px" font="20px/28px 'AvenirNextCyrMedium', sans-serif" nout-font="20px/23px 'AvenirNextCyrMedium', sans-serif" sm-font="16px/20px 'AvenirNextCyrMedium', sans-serif">
+						Большое обновление виджетов и новые шаблоны{"\n\n"}
+					</Text>
+					<Link
+						href="https://blog-ru.ukit.com/updates/new-templates-and-widgets"
+						text-decoration-line="initial"
+						color="#4A8CFA"
+						font="20px/28px 'AvenirNextCyrMedium', sans-serif"
+						target="_blank"
+						hover-text-decoration-line="underline"
+						transition="all 0.2s ease 0s"
+						nout-margin="20px 0px 0px 0px"
+					>
+						Читать далее
+					</Link>
+					{"            "}
 				</StackItem>
 			</Stack>
 		</Section>
