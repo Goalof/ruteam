@@ -29,6 +29,7 @@ export default (() => {
 			position="fixed"
 			background="#ffffff"
 			border-radius="0px"
+			z-index="9"
 		>
 			<Override slot="SectionContent" max-width="none" width="100%" />
 			<Stack margin="0px 0px 0px 0px" gap="0px">
