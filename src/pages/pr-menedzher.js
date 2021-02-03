@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, Box, Icon } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, Box, Icon, List } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, StackItem, Menu, Stack, Section } from "@quarkly/components";
@@ -499,6 +499,24 @@ export default (() => {
 						Мы ищем талантливого PR-щика, серьезно увлеченного вебом. Для продвижения на рынке (в первую очередь англоязычном) проекта Quarkly, ориентированного на профессиональных пользователей (веб-дизайнеров, фронтенд-разработчиков, верстальщиков).
 						<br />
 					</Text>
+					<Text
+						font="normal 400 20px/1.2 'AvenirNextCyrMedium', sans-serif"
+						margin="24px 0px 18px 0px"
+						display="inline-block"
+						sm-text-align="center"
+						sm-margin="0px 0px 0px 0px"
+						text-align="center"
+						color="#333"
+						sm-font="normal 900 53px/1.2 'AvenirNextCyrBold', sans-serif"
+						letter-spacing=".2"
+					>
+						Задачи:
+					</Text>
+					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
+						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif">
+							Разработка и реализация PR стратегии продвижения проекта Quarkly на российском и зарубежных рынках.
+						</Text>
+					</List>
 					{"    "}
 				</StackItem>
 				{"    "}
