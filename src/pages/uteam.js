@@ -29,6 +29,7 @@ export default (() => {
 			lg-position="fixed"
 			position="fixed"
 			background="#ffffff"
+			z-index="9"
 		>
 			<Override slot="SectionContent" max-width="none" width="100%" />
 			<Stack margin="0px 0px 0px 0px" gap="0px">
@@ -429,7 +430,7 @@ export default (() => {
 				{"        "}
 			</Stack>
 		</Section>
-		<Section padding="120px 0 100px 0" sm-padding="110px 0 60px 0" lg-padding="120px 0 80px 0">
+		<Section padding="120px 0 100px 0" sm-padding="110px 0 0px 0" lg-padding="120px 0 80px 0">
 			<Override slot="SectionContent" align-items="center" />
 			<Stack margin="0px 0px 0px 0px" max-width="850px">
 				{"    "}
@@ -441,9 +442,10 @@ export default (() => {
 						margin="0px 0px 5px 0px"
 						display="inline-block"
 						sm-text-align="center"
-						sm-margin="0px 0px 30px 0px"
+						sm-margin="0px 0px 0px 0px"
 						text-align="center"
 						color="#263238"
+						sm-font="normal 900 53px/1.2 'AvenirNextCyrBold', sans-serif"
 					>
 						Команда
 						<br />
@@ -458,9 +460,10 @@ export default (() => {
 						margin="0px 10px 5px 10px"
 						display="inline-block"
 						sm-text-align="center"
-						sm-margin="0px 0px 30px 0px"
+						sm-margin="0px 0px 0px 0px"
 						text-align="center"
 						letter-spacing="0.3px"
+						sm-font="normal 400 18px/26px 'AvenirNextCyrRegular', sans-serif"
 					>
 						Мы гордимся не только теми сервисами, которые мы делаем для вас каждый день, но и тем, что умеем превращать профессионалов своего дела в настоящих друзей и членов одной семьи. Посмотрите, как мы живем, — возможно, именно в этой атмосфере и среди этих людей вы окажетесь очень скоро.
 						<br />
@@ -717,8 +720,15 @@ export default (() => {
 						<Components.TabPanels margin="5px 0px 0px 0px">
 							<Components.TabPanel tabId="one">
 								<Stack margin="40px 0px 0px 0px">
-									<StackItem width="40%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
+									<StackItem width="40%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
+										/>
 										{"        "}
 										<Text
 											font="normal 400 30px/36px 'AvenirNextCyrBold', sans-serif"
@@ -741,14 +751,21 @@ export default (() => {
 											text-align="left"
 											letter-spacing="0.3px"
 											color="#9BABBF"
+											lg-text-align="center"
 										>
 											В московском офисе компании находится руководство, команды продуктологов, маркетинга, PR и бухгалтерия.
 											<br />
 										</Text>
 										{"    "}
 									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="center"
+											flex-direction="column"
+											lg-align-items="center"
+										/>
 										{"        "}
 										<Image
 											width="90px"
@@ -783,14 +800,20 @@ export default (() => {
 										</Text>
 										{"    "}
 									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="center"
+											flex-direction="column"
+											lg-align-items="center"
+										/>
 										{"        "}
 										<Image
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/cherepanova.jpg?v=2021-02-02T11:19:38.438Z"
 											border-radius="100%"
 										/>
 										<Text
@@ -803,7 +826,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Евгений Курт
+											Ирина Черепанова{"\n\n"}
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -815,18 +838,24 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											CEO
+											Директор по продуктам
 										</Text>
 										{"    "}
 									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+										/>
 										{"        "}
 										<Image
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/tatrova.jpg?v=2021-02-02T11:19:38.406Z"
 											border-radius="100%"
 										/>
 										<Text
@@ -839,7 +868,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Евгений Курт
+											Зарина Татрова
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -851,18 +880,24 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											CEO
+											Главный бухгалтер
 										</Text>
 										{"    "}
 									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="center"
+											flex-direction="column"
+											lg-align-items="center"
+										/>
 										{"        "}
 										<Image
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/popov.jpg?v=2021-02-02T11:19:38.411Z"
 											border-radius="100%"
 										/>
 										<Text
@@ -875,7 +910,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Евгений Курт
+											Алексей Попов
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -887,12 +922,18 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											CEO
+											Менеджер проектов
 										</Text>
 										{"    "}
 									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+										/>
 										{"        "}
 										<Box
 											margin="0px 0px 24px 0px"
@@ -927,8 +968,15 @@ export default (() => {
 							</Components.TabPanel>
 							<Components.TabPanel tabId="two">
 								<Stack margin="40px 0px 0px 0px">
-									<StackItem width="40%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
+									<StackItem width="40%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
+										/>
 										{"        "}
 										<Text
 											font="normal 400 30px/36px 'AvenirNextCyrBold', sans-serif"
@@ -951,20 +999,27 @@ export default (() => {
 											text-align="left"
 											letter-spacing="0.3px"
 											color="#9BABBF"
+											lg-text-align="center"
 										>
-											В московском офисе компании находится руководство, команды продуктологов, маркетинга, PR и бухгалтерия.
-											<br />
+											В питерском офисе работает одна из команд uKit. Тут созданы сервисы uSocial, uPartner, Divly.
 										</Text>
 										{"    "}
 									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
+										/>
 										{"        "}
 										<Image
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/lisovenko.jpg?v=2021-02-02T11:26:45.639Z"
 											border-radius="100%"
 										/>
 										<Text
@@ -977,7 +1032,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Евгений Курт
+											Олег Лисовенко
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -989,18 +1044,25 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											CEO
+											Менеджер проектов Divly, uSocial
 										</Text>
 										{"    "}
 									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
+										/>
 										{"        "}
 										<Image
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/pavlov.jpg?v=2021-02-02T11:26:45.643Z"
 											border-radius="100%"
 										/>
 										<Text
@@ -1013,7 +1075,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Евгений Курт
+											Олег Павлов
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1025,18 +1087,25 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											CEO
+											SMM и direct-маркетолог
 										</Text>
 										{"    "}
 									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
+										/>
 										{"        "}
 										<Image
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kuznetcov.jpg?v=2021-02-02T11:26:45.640Z"
 											border-radius="100%"
 										/>
 										<Text
@@ -1049,7 +1118,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Евгений Курт
+											Виктор Кузнецов
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1061,48 +1130,19 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											CEO
+											Руководитель службы технической поддержки
 										</Text>
 										{"    "}
 									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
-										{"        "}
-										<Image
-											width="90px"
-											height="90px"
-											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
-											border-radius="100%"
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
 										/>
-										<Text
-											font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
-											margin="0px 0px 12px 0px"
-											display="inline-block"
-											sm-text-align="center"
-											sm-margin="0px 0px 30px 0px"
-											text-align="left"
-											letter-spacing="0.3px"
-											color="#3D72CC"
-										>
-											Евгений Курт
-										</Text>
-										<Text
-											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
-											margin="0px 0px 0px 0px"
-											display="inline-block"
-											sm-text-align="center"
-											sm-margin="0px 0px 30px 0px"
-											text-align="left"
-											letter-spacing="0.3px"
-											color="#9BABBF"
-										>
-											CEO
-										</Text>
-										{"    "}
-									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
 										{"        "}
 										<Box
 											margin="0px 0px 24px 0px"
@@ -1114,8 +1154,8 @@ export default (() => {
 											align-items="center"
 											justify-content="center"
 										>
-											<Text font="600 36px 'AvenirNextCyrBold', sans-serif" color="#ffffff">
-												+5
+											<Text font="500 36px 'AvenirNextCyrBold', sans-serif" color="#ffffff">
+												+12
 											</Text>
 										</Box>
 										<Text
@@ -1137,8 +1177,15 @@ export default (() => {
 							</Components.TabPanel>
 							<Components.TabPanel tabId="three">
 								<Stack margin="40px 0px 0px 0px">
-									<StackItem width="40%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
+									<StackItem width="40%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
+										/>
 										{"        "}
 										<Text
 											font="normal 400 30px/36px 'AvenirNextCyrBold', sans-serif"
@@ -1161,20 +1208,27 @@ export default (() => {
 											text-align="left"
 											letter-spacing="0.3px"
 											color="#9BABBF"
+											lg-text-align="center"
 										>
-											В московском офисе компании находится руководство, команды продуктологов, маркетинга, PR и бухгалтерия.
-											<br />
+											В питерском офисе работает одна из команд uKit. Тут созданы сервисы uSocial, uPartner, Divly.
 										</Text>
 										{"    "}
 									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
+										/>
 										{"        "}
 										<Image
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/lisovenko.jpg?v=2021-02-02T11:26:45.639Z"
 											border-radius="100%"
 										/>
 										<Text
@@ -1187,7 +1241,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Евгений Курт
+											Олег Лисовенко
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1199,18 +1253,25 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											CEO
+											Менеджер проектов Divly, uSocial
 										</Text>
 										{"    "}
 									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
+										/>
 										{"        "}
 										<Image
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/pavlov.jpg?v=2021-02-02T11:26:45.643Z"
 											border-radius="100%"
 										/>
 										<Text
@@ -1223,7 +1284,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Евгений Курт
+											Олег Павлов
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1235,18 +1296,25 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											CEO
+											SMM и direct-маркетолог
 										</Text>
 										{"    "}
 									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
+										/>
 										{"        "}
 										<Image
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kuznetcov.jpg?v=2021-02-02T11:26:45.640Z"
 											border-radius="100%"
 										/>
 										<Text
@@ -1259,7 +1327,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Евгений Курт
+											Виктор Кузнецов
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1271,48 +1339,19 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											CEO
+											Руководитель службы технической поддержки
 										</Text>
 										{"    "}
 									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
-										{"        "}
-										<Image
-											width="90px"
-											height="90px"
-											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
-											border-radius="100%"
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
 										/>
-										<Text
-											font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
-											margin="0px 0px 12px 0px"
-											display="inline-block"
-											sm-text-align="center"
-											sm-margin="0px 0px 30px 0px"
-											text-align="left"
-											letter-spacing="0.3px"
-											color="#3D72CC"
-										>
-											Евгений Курт
-										</Text>
-										<Text
-											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
-											margin="0px 0px 0px 0px"
-											display="inline-block"
-											sm-text-align="center"
-											sm-margin="0px 0px 30px 0px"
-											text-align="left"
-											letter-spacing="0.3px"
-											color="#9BABBF"
-										>
-											CEO
-										</Text>
-										{"    "}
-									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
 										{"        "}
 										<Box
 											margin="0px 0px 24px 0px"
@@ -1324,8 +1363,8 @@ export default (() => {
 											align-items="center"
 											justify-content="center"
 										>
-											<Text font="600 36px 'AvenirNextCyrBold', sans-serif" color="#ffffff">
-												+5
+											<Text font="500 36px 'AvenirNextCyrBold', sans-serif" color="#ffffff">
+												+12
 											</Text>
 										</Box>
 										<Text
@@ -1347,8 +1386,15 @@ export default (() => {
 							</Components.TabPanel>
 							<Components.TabPanel tabId="four">
 								<Stack margin="40px 0px 0px 0px">
-									<StackItem width="40%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
+									<StackItem width="40%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
+										/>
 										{"        "}
 										<Text
 											font="normal 400 30px/36px 'AvenirNextCyrBold', sans-serif"
@@ -1371,20 +1417,27 @@ export default (() => {
 											text-align="left"
 											letter-spacing="0.3px"
 											color="#9BABBF"
+											lg-text-align="center"
 										>
-											В московском офисе компании находится руководство, команды продуктологов, маркетинга, PR и бухгалтерия.
-											<br />
+											В питерском офисе работает одна из команд uKit. Тут созданы сервисы uSocial, uPartner, Divly.
 										</Text>
 										{"    "}
 									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
+										/>
 										{"        "}
 										<Image
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/lisovenko.jpg?v=2021-02-02T11:26:45.639Z"
 											border-radius="100%"
 										/>
 										<Text
@@ -1397,7 +1450,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Евгений Курт
+											Олег Лисовенко
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1409,18 +1462,25 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											CEO
+											Менеджер проектов Divly, uSocial
 										</Text>
 										{"    "}
 									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
+										/>
 										{"        "}
 										<Image
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/pavlov.jpg?v=2021-02-02T11:26:45.643Z"
 											border-radius="100%"
 										/>
 										<Text
@@ -1433,7 +1493,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Евгений Курт
+											Олег Павлов
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1445,18 +1505,25 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											CEO
+											SMM и direct-маркетолог
 										</Text>
 										{"    "}
 									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
+										/>
 										{"        "}
 										<Image
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
+											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kuznetcov.jpg?v=2021-02-02T11:26:45.640Z"
 											border-radius="100%"
 										/>
 										<Text
@@ -1469,7 +1536,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Евгений Курт
+											Виктор Кузнецов
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1481,48 +1548,19 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											CEO
+											Руководитель службы технической поддержки
 										</Text>
 										{"    "}
 									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="center" flex-direction="column" />
-										{"        "}
-										<Image
-											width="90px"
-											height="90px"
-											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/kurt.jpg?v=2021-01-28T13:05:31.217Z"
-											border-radius="100%"
+									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
+										<Override
+											slot="StackItemContent"
+											align-items="flex-start"
+											justify-content="flex-start"
+											flex-direction="column"
+											lg-align-items="center"
+											lg-justify-content="center"
 										/>
-										<Text
-											font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
-											margin="0px 0px 12px 0px"
-											display="inline-block"
-											sm-text-align="center"
-											sm-margin="0px 0px 30px 0px"
-											text-align="left"
-											letter-spacing="0.3px"
-											color="#3D72CC"
-										>
-											Евгений Курт
-										</Text>
-										<Text
-											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
-											margin="0px 0px 0px 0px"
-											display="inline-block"
-											sm-text-align="center"
-											sm-margin="0px 0px 30px 0px"
-											text-align="left"
-											letter-spacing="0.3px"
-											color="#9BABBF"
-										>
-											CEO
-										</Text>
-										{"    "}
-									</StackItem>
-									<StackItem width="20%" display="flex">
-										<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
 										{"        "}
 										<Box
 											margin="0px 0px 24px 0px"
@@ -1534,8 +1572,8 @@ export default (() => {
 											align-items="center"
 											justify-content="center"
 										>
-											<Text font="600 36px 'AvenirNextCyrBold', sans-serif" color="#ffffff">
-												+5
+											<Text font="500 36px 'AvenirNextCyrBold', sans-serif" color="#ffffff">
+												+12
 											</Text>
 										</Box>
 										<Text
@@ -1562,11 +1600,17 @@ export default (() => {
 				{"    "}
 			</Stack>
 		</Section>
-		<Section padding="60px 0 75px 0" background="#3D72CC">
+		<Section padding="60px 0 75px 0" background="#3D72CC" md-padding="40px 0 40px 0">
 			<Override slot="SectionContent" align-items="center" />
 			<Stack margin="0px 0px 0px 0px" max-width="1170px" width="100%" gap="--cmp-stack-gap-default">
 				{"    "}
-				<StackItem width="33.333%" display="flex" sm-width="100%" md-width="50%">
+				<StackItem
+					width="33.333%"
+					display="flex"
+					sm-width="100%"
+					md-width="100%"
+					md-margin="0px 0px 17px 0px"
+				>
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					<Text font="42px/28px 'AvenirNextCyrBold', sans-serif" margin="0px 0px 16px 0px" color="#fff">
 						от 3-x лет
@@ -1576,7 +1620,13 @@ export default (() => {
 					</Text>
 					{"            "}
 				</StackItem>
-				<StackItem width="33.333%" display="flex" sm-width="100%" md-width="50%">
+				<StackItem
+					width="33.333%"
+					display="flex"
+					sm-width="100%"
+					md-width="100%"
+					md-margin="0px 0px 17px 0px"
+				>
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					<Text font="42px/28px 'AvenirNextCyrBold', sans-serif" margin="0px 0px 16px 0px" color="#fff">
 						12 лет
@@ -1587,7 +1637,13 @@ export default (() => {
 					</Text>
 					{"            "}
 				</StackItem>
-				<StackItem width="33.333%" display="flex" sm-width="100%" md-width="50%">
+				<StackItem
+					width="33.333%"
+					display="flex"
+					sm-width="100%"
+					md-width="100%"
+					md-margin="0px 0px 17px 0px"
+				>
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					<Text font="42px/28px 'AvenirNextCyrBold', sans-serif" margin="0px 0px 16px 0px" color="#fff">
 						7 проектов
@@ -1608,7 +1664,13 @@ export default (() => {
 				<StackItem width="100%" display="flex">
 					<Override slot="StackItemContent" align-items="center" justify-content="center" />
 					{"        "}
-					<Text font="normal 500 36px/40px 'AvenirNextCyrBold', sans-serif" margin="0px 0px 40px 0px" display="inline-block">
+					<Text
+						font="normal 500 36px/40px 'AvenirNextCyrBold', sans-serif"
+						margin="0px 0px 40px 0px"
+						display="inline-block"
+						sm-text-align="center"
+						sm-font="normal 500 24px/30px 'AvenirNextCyrBold', sans-serif"
+					>
 						Последние новости из блогов
 						<br />
 					</Text>
@@ -1630,7 +1692,13 @@ export default (() => {
 			<Stack margin="10px 0px 0px 0px" max-width="1170px" width="100%">
 				{"        "}
 				<StackItem width="50%" display="flex" sm-width="100%">
-					<Override slot="StackItemContent" flex-direction="row" align-items="flex-start" />
+					<Override
+						slot="StackItemContent"
+						flex-direction="row"
+						align-items="flex-start"
+						sm-align-items="center"
+						sm-justify-content="center"
+					/>
 					<Link
 						href="https://www.instagram.com/ucoz_ru/"
 						display="flex"
@@ -1650,7 +1718,13 @@ export default (() => {
 					{"            "}
 				</StackItem>
 				<StackItem width="50%" display="flex" sm-width="100%">
-					<Override slot="StackItemContent" flex-direction="row" align-items="center" justify-content="flex-end" />
+					<Override
+						slot="StackItemContent"
+						flex-direction="row"
+						align-items="center"
+						justify-content="flex-end"
+						sm-justify-content="center"
+					/>
 					<Link
 						href="https://vk.com/ucoz"
 						display="flex"
@@ -1718,7 +1792,7 @@ export default (() => {
 							margin="3px 0px 0px 22px"
 							display="inline-block"
 							color="#9BABBF"
-							lg-margin="10px 0px 0px 22px"
+							lg-margin="10px 0px 0px 0px"
 						>
 							<Link
 								href="https://blog.ucoz.ru/"
@@ -1739,7 +1813,7 @@ export default (() => {
 							margin="3px 0px 0px 22px"
 							display="inline-block"
 							color="#9BABBF"
-							lg-margin="10px 0px 0px 22px"
+							lg-margin="10px 0px 0px 0px"
 						>
 							<Link
 								href="http://www.ucoz.ru/all/"
@@ -1760,7 +1834,7 @@ export default (() => {
 							margin="3px 0px 0px 22px"
 							display="inline-block"
 							color="#9BABBF"
-							lg-margin="10px 0px 0px 22px"
+							lg-margin="10px 0px 0px 0px"
 						>
 							<Link
 								href="http://ua.uteam.pro/"
@@ -1780,7 +1854,7 @@ export default (() => {
 							margin="3px 0px 0px 22px"
 							display="inline-block"
 							color="#9BABBF"
-							lg-margin="10px 0px 0px 22px"
+							lg-margin="10px 0px 0px 0px"
 						>
 							<Link
 								href="http://en.uteam.pro/"
