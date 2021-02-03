@@ -26,6 +26,10 @@ const pageStyles = {
     "contacts": {
         "overflow-y": "",
         "overflow-x": "hidden"
+    },
+    "pr-menedzher": {
+        "overflow-y": "",
+        "overflow-x": "hidden"
     }
 };
 

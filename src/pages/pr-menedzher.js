@@ -1,14 +1,15 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, Box, Icon, Button } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, Box, Icon } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, StackItem, Menu, Stack, Section } from "@quarkly/components";
 import * as Components from "components";
 import { FaVk, FaFacebookF, FaTwitter, FaInstagram, FaOdnoklassniki } from "react-icons/fa";
+import { MdKeyboardArrowLeft } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
-		<GlobalQuarklyPageStyles pageUrl={"vakansii"} />
+		<GlobalQuarklyPageStyles pageUrl={"pr-menedzher"} />
 		<Helmet>
 			<title>
 				Quarkly export
@@ -16,7 +17,7 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/favicon_uteam.png?v=2021-02-01T19:35:08.128Z"} type={"image/x-icon"} />
 		</Helmet>
-		<Components.EmbedHTML />
+		<Components.EmbedHTML font="4000 14px/18px 'AvenirNextCyrMedium'" color="#ffffff" />
 		<Section
 			id="header"
 			quarkly-title="Header"
@@ -29,6 +30,7 @@ export default (() => {
 			lg-position="fixed"
 			position="fixed"
 			background="#ffffff"
+			z-index="99"
 		>
 			<Override slot="SectionContent" max-width="none" width="100%" />
 			<Stack margin="0px 0px 0px 0px" gap="0px">
@@ -420,269 +422,86 @@ export default (() => {
 							color="#263238"
 							hover-color="#4a8cfa"
 						/>
+						<Override slot="link-uteam">
+							uTeam
+						</Override>
+						<Override slot="item-pr-menedzher" display="none" />
 					</Menu>
 					{"        "}
 				</StackItem>
 				{"        "}
 			</Stack>
 		</Section>
-		<Section padding="150px 0 80px 0" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/vac_head.jpg?v=2021-01-28T20:18:22.116Z) 0% 0% /cover repeat scroll padding-box">
+		<Section padding="120px 0 40px 0" sm-padding="110px 0 0px 0" lg-padding="120px 0 80px 0">
 			<Override slot="SectionContent" align-items="center" />
 			<Stack margin="0px 0px 0px 0px" max-width="850px">
 				{"    "}
 				<StackItem width="100%" display="flex">
-					<Override slot="StackItemContent" align-items="center" justify-content="center" />
+					<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
 					{"        "}
+					<Link
+						href="/vacancies"
+						margin="0px 0px 20px 0px"
+						text-decoration-line="initial"
+						color="#4a8cfa"
+						font="14px 'AvenirNextCyrMedium', sans-serif"
+						transition="color 0.2s linear 0s"
+						hover-color="#3d72cc"
+						display="flex"
+					>
+						<Icon
+							category="md"
+							icon={MdKeyboardArrowLeft}
+							color="inherit"
+							size="20px"
+							margin="-1px 2px 0px 0px"
+							hover-color="inherit"
+						/>
+						К списку вакансий
+					</Link>
 					<Text
 						font="normal 500 64px/1.2 'AvenirNextCyrDemi', sans-serif"
-						margin="0px 0px 5px 0px"
+						margin="0px 0px 15px -3px"
 						display="inline-block"
 						sm-text-align="center"
-						sm-margin="0px 0px 30px 0px"
+						sm-margin="0px 0px 0px 0px"
 						text-align="center"
-						color="#ffffff"
+						color="#263238"
+						sm-font="normal 900 53px/1.2 'AvenirNextCyrBold', sans-serif"
 					>
-						Вакансии
+						PR-менеджер
+						<br />
+					</Text>
+					<Text
+						font="normal 400 18px/1.2 'AvenirNextCyrMedium', sans-serif"
+						margin="0px 0px 20px 0px"
+						display="inline-block"
+						sm-text-align="center"
+						sm-margin="0px 0px 0px 0px"
+						text-align="center"
+						color="#333"
+						sm-font="normal 900 53px/1.2 'AvenirNextCyrBold', sans-serif"
+						letter-spacing=".2"
+					>
+						Проект Quarkly| Москва
+						<br />
+					</Text>
+					<Text
+						font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif"
+						margin="0px 0px 0px 0px"
+						display="inline-block"
+						sm-text-align="center"
+						sm-margin="0px 0px 0px 0px"
+						letter-spacing="0.3px"
+						sm-font="normal 400 18px/26px 'AvenirNextCyrRegular', sans-serif"
+						color="#333"
+					>
+						Мы ищем талантливого PR-щика, серьезно увлеченного вебом. Для продвижения на рынке (в первую очередь англоязычном) проекта Quarkly, ориентированного на профессиональных пользователей (веб-дизайнеров, фронтенд-разработчиков, верстальщиков).
+						<br />
 					</Text>
 					{"    "}
 				</StackItem>
 				{"    "}
-			</Stack>
-		</Section>
-		<Section padding="0px 0 20px 0" sm-padding="110px 0 60px 0" lg-padding="120px 0 80px 0">
-			<Override slot="SectionContent" align-items="center" />
-			<Stack margin="0px 0px 0px 0px" max-width="1170px" width="100%">
-				<StackItem width="100%">
-					<Components.Tabs
-						defaultTab="one"
-						orientation="Horizontal"
-						width="100%"
-						height="auto"
-						align="center"
-						margin="0px 0px 0px 0px"
-					>
-						<Components.TabList
-							sm-width="100%"
-							sm-display="flex"
-							sm-flex-direction="column"
-							padding="0px 0px 0px 0px"
-							position="relative"
-							top="-90px"
-						>
-							<Override slot="TabList Wrapper" sm-flex-direction="column" />
-							<Components.TabItem
-								tabId="one"
-								color="#263238"
-								background="#E4E9ED"
-								transition="all 0.2s linear 0s"
-								margin="0px 2px 0px 0px"
-								border-radius="5px 0px 0px 5px"
-							>
-								<Override
-									slot="Selected Tab"
-									color="#fff"
-									border-width="2px"
-									background="#4a8cfa"
-									border-style="solid"
-									border-color="#4a8cfa"
-								/>
-								<Override
-									slot="Tab"
-									border-color="rgba(74, 140, 250, 0)"
-									border-width="2px"
-									border-style="solid"
-									color="inherit"
-									transition="all 0.2s linear 0s"
-									border-radius="5px 0px 0px 5px"
-									margin="0px 0px 0px 0px"
-								/>
-								<Button
-									background="rgba(0, 119, 204, 0)"
-									color="inherit"
-									padding="8px 12px 8px 12px"
-									font="normal 400 14px/22px 'AvenirNextCyrMedium'"
-									transition="all 0.2s linear 0s"
-								>
-									Москва
-								</Button>
-							</Components.TabItem>
-							<Components.TabItem
-								tabId="two"
-								background="#E4E9ED"
-								color="#263238"
-								border-color="#263238"
-								transition="all 0.2s linear 0s"
-								margin="0px 2px 0px 0px"
-							>
-								<Override
-									slot="Selected Tab"
-									color="#fff"
-									background="#4a8cfa"
-									border-width="2px"
-									border-style="solid"
-									border-color="#4a8cfa"
-								/>
-								<Override
-									slot="Tab"
-									border-radius="0px"
-									border-width="2px"
-									border-style="solid"
-									border-color="rgba(0, 0, 0, 0)"
-									transition="all 0.2s linear 0s"
-									margin="0px 0px 0px 0px"
-								/>
-								<Button
-									background="rgba(0, 119, 204, 0)"
-									color="inherit"
-									padding="8px 12px 8px 12px"
-									font="normal 400 14px/22px 'AvenirNextCyrMedium'"
-									border-width="0px"
-									transition="all 0.2s linear 0s"
-								>
-									Санкт-Петербург
-								</Button>
-							</Components.TabItem>
-							<Components.TabItem
-								tabId="three"
-								background="#E4E9ED"
-								color="#263238"
-								border-color="#263238"
-								transition="all 0.2s linear 0s"
-								margin="0px 2px 0px 0px"
-							>
-								<Override
-									slot="Selected Tab"
-									color="#fff"
-									background="#4a8cfa"
-									border-width="2px"
-									border-style="solid"
-									border-color="#4a8cfa"
-								/>
-								<Override
-									slot="Tab"
-									border-radius="0px"
-									border-width="2px"
-									border-style="solid"
-									border-color="rgba(0, 0, 0, 0)"
-									transition="all 0.2s linear 0s"
-									margin="0px 2px 0px 0px"
-								/>
-								<Button
-									background="rgba(0, 119, 204, 0)"
-									color="inherit"
-									padding="8px 12px 8px 12px"
-									font="normal 400 14px/22px 'AvenirNextCyrMedium'"
-									border-width="0px"
-									transition="all 0.2s linear 0s"
-								>
-									Ростов-на-Дону
-								</Button>
-							</Components.TabItem>
-							<Components.TabItem
-								tabId="four"
-								background="#E4E9ED"
-								color="#263238"
-								border-color="#263238"
-								transition="all 0.2s linear 0s"
-								border-radius="0px 5px 5px 0px"
-							>
-								<Override
-									slot="Selected Tab"
-									color="#fff"
-									background="#4a8cfa"
-									border-width="2px"
-									border-style="solid"
-									border-color="#4a8cfa"
-								/>
-								<Override
-									slot="Tab"
-									border-radius="0px 5px 5px 0px"
-									border-width="2px"
-									border-style="solid"
-									border-color="rgba(0, 0, 0, 0)"
-									transition="all 0.2s linear 0s"
-									margin="0px 2px 0px 0px"
-								/>
-								<Button
-									background="rgba(0, 119, 204, 0)"
-									color="inherit"
-									padding="8px 12px 8px 12px"
-									font="normal 400 14px/22px 'AvenirNextCyrMedium'"
-									border-width="0px"
-									transition="all 0.2s linear 0s"
-								>
-									Черкассы
-								</Button>
-							</Components.TabItem>
-						</Components.TabList>
-						<Components.TabPanels margin="0px 0px 0px 0px">
-							<Components.TabPanel tabId="one">
-								<Stack margin="0px 0px 0px 0px">
-									<StackItem width="100%" display="flex" lg-width="50%" sm-width="100%">
-										<Override
-											slot="StackItemContent"
-											align-items="flex-start"
-											justify-content="flex-start"
-											flex-direction="column"
-											lg-align-items="center"
-										/>
-										{"        "}
-										<Components.Tabs defaultTab="one" orientation="Vertical" width="100%">
-											<Components.TabList>
-												<Components.TabItem tabId="one">
-													<Override slot="Selected Tab" border-width="2px" border-style="solid" border-color="--color-secondary" />
-													<Button>
-														Tab 1
-													</Button>
-												</Components.TabItem>
-												<Components.TabItem tabId="two">
-													<Button>
-														Tab 2
-													</Button>
-												</Components.TabItem>
-												<Components.TabItem tabId="three">
-													<Button>
-														Tab 3
-													</Button>
-												</Components.TabItem>
-												<Components.TabItem tabId="four">
-													<Button>
-														Tab 4
-													</Button>
-												</Components.TabItem>
-											</Components.TabList>
-											<Components.TabPanels>
-												<Components.TabPanel tabId="one">
-													<Text>
-														Tab 1
-													</Text>
-												</Components.TabPanel>
-												<Components.TabPanel tabId="two">
-													<Text>
-														Tab 2
-													</Text>
-												</Components.TabPanel>
-												<Components.TabPanel tabId="three">
-													<Text>
-														Tab 3
-													</Text>
-												</Components.TabPanel>
-												<Components.TabPanel tabId="four">
-													<Text>
-														Tab 4
-													</Text>
-												</Components.TabPanel>
-											</Components.TabPanels>
-										</Components.Tabs>
-										{"    "}
-									</StackItem>
-									{"        "}
-								</Stack>
-							</Components.TabPanel>
-						</Components.TabPanels>
-					</Components.Tabs>
-				</StackItem>
-				{"        "}
 			</Stack>
 		</Section>
 		<Section
@@ -715,7 +534,7 @@ export default (() => {
 							margin="3px 0px 0px 22px"
 							display="inline-block"
 							color="#9BABBF"
-							lg-margin="10px 0px 0px 22px"
+							lg-margin="10px 0px 0px 0px"
 						>
 							<Link
 								href="https://blog.ucoz.ru/"
@@ -736,7 +555,7 @@ export default (() => {
 							margin="3px 0px 0px 22px"
 							display="inline-block"
 							color="#9BABBF"
-							lg-margin="10px 0px 0px 22px"
+							lg-margin="10px 0px 0px 0px"
 						>
 							<Link
 								href="http://www.ucoz.ru/all/"
@@ -757,7 +576,7 @@ export default (() => {
 							margin="3px 0px 0px 22px"
 							display="inline-block"
 							color="#9BABBF"
-							lg-margin="10px 0px 0px 22px"
+							lg-margin="10px 0px 0px 0px"
 						>
 							<Link
 								href="http://ua.uteam.pro/"
@@ -777,7 +596,7 @@ export default (() => {
 							margin="3px 0px 0px 22px"
 							display="inline-block"
 							color="#9BABBF"
-							lg-margin="10px 0px 0px 22px"
+							lg-margin="10px 0px 0px 0px"
 						>
 							<Link
 								href="http://en.uteam.pro/"
