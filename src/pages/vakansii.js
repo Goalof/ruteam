@@ -25,10 +25,10 @@ export default (() => {
 			border-style="solid"
 			border-color="#dbe6f4"
 			transition="all 400ms ease 0s"
-			nout-border-radius="6px"
 			lg-position="fixed"
 			position="fixed"
 			background="#ffffff"
+			z-index="99"
 		>
 			<Override slot="SectionContent" max-width="none" width="100%" />
 			<Stack margin="0px 0px 0px 0px" gap="0px">
