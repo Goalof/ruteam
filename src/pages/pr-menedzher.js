@@ -7,6 +7,7 @@ import { Override, StackItem, Menu, Stack, Section } from "@quarkly/components";
 import * as Components from "components";
 import { FaVk, FaFacebookF, FaTwitter, FaInstagram, FaOdnoklassniki } from "react-icons/fa";
 import { MdKeyboardArrowLeft } from "react-icons/md";
+import { AiOutlinePrinter } from "react-icons/ai";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"pr-menedzher"} />
@@ -432,7 +433,7 @@ export default (() => {
 				{"        "}
 			</Stack>
 		</Section>
-		<Section padding="120px 0 40px 0" sm-padding="110px 0 0px 0" lg-padding="120px 0 80px 0">
+		<Section padding="140px 0 40px 0" sm-padding="110px 0 0px 0" lg-padding="120px 0 80px 0">
 			<Override slot="SectionContent" align-items="center" />
 			<Stack margin="0px 0px 0px 0px" max-width="850px">
 				{"    "}
@@ -513,11 +514,151 @@ export default (() => {
 						Задачи:
 					</Text>
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
-						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif">
+						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
 							Разработка и реализация PR стратегии продвижения проекта Quarkly на российском и зарубежных рынках.
 						</Text>
 					</List>
+					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
+						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
+							Написание и размещение информационных материалов: комментарии, новости, пресс-релизы, аналитические исследования, в том числе и развернутые статьи на технические темы, связанные с деятельностью и продуктами компании.
+							<br />
+						</Text>
+					</List>
+					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
+						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
+							Взаимодействие с профессиональными сообществами, инфлюэнсерами. Организация участия в мероприятиях (конференции, митапы и пр.)
+						</Text>
+					</List>
+					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
+						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
+							Поддержание и расширение контактов со СМИ.
+						</Text>
+					</List>
+					<Text
+						font="normal 400 20px/1.2 'AvenirNextCyrMedium', sans-serif"
+						margin="20px 0px 18px 0px"
+						display="inline-block"
+						sm-text-align="center"
+						sm-margin="0px 0px 0px 0px"
+						text-align="center"
+						color="#333"
+						sm-font="normal 900 53px/1.2 'AvenirNextCyrBold', sans-serif"
+						letter-spacing=".2"
+					>
+						Требования:
+						<br />
+					</Text>
+					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
+						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
+							Опыт публикации вакансий на инфоплощадках IT-тематики (англоязычных и русскоязычных).
+						</Text>
+					</List>
+					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
+						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
+							Естественно, высочайший уровень коммуникативных и презентационных навыков.
+							<br />
+						</Text>
+					</List>
+					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
+						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
+							Незаурядные способности в написании грамотных, эффективных и интересных текстов.
+						</Text>
+					</List>
+					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
+						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
+							Свободный английский язык.
+						</Text>
+					</List>
+					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
+						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
+							Инициативность, трезвость мышления и бизнес-ориентированность.
+							<br />
+						</Text>
+					</List>
+					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
+						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
+							Знание и понимание веба (нужно говорить на одном языке с аудитрией и разработчиками продуктов).
+							<br />
+						</Text>
+					</List>
+					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
+						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
+							Наличие деловых контактов на рынке digital/IT будет бесспорным плюсом.
+						</Text>
+					</List>
+					<Text
+						font="normal 400 20px/1.2 'AvenirNextCyrMedium', sans-serif"
+						margin="20px 0px 12px 0px"
+						display="inline-block"
+						sm-text-align="center"
+						sm-margin="0px 0px 0px 0px"
+						text-align="center"
+						color="#333"
+						sm-font="normal 900 53px/1.2 'AvenirNextCyrBold', sans-serif"
+						letter-spacing=".2"
+					>
+						Условия:
+						<br />
+					</Text>
+					<Box display="flex" align-items="center" margin="0px 0px 6px 0px">
+						<Image
+							src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/tick.svg?v=2021-02-04T00:08:19.533Z"
+							width="15px"
+							height="12px"
+							padding="0px 0px 0px 0px"
+							margin="0px 10px 0px 0px"
+						/>
+						<Text margin="6px 0px 6px 0px">
+							Удаленная работа.
+							<br />
+						</Text>
+					</Box>
+					<Box display="flex" align-items="center" margin="0px 0px 6px 0px">
+						<Image
+							src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/tick.svg?v=2021-02-04T00:08:19.533Z"
+							width="15px"
+							height="12px"
+							padding="0px 0px 0px 0px"
+							margin="0px 10px 0px 0px"
+						/>
+						<Text margin="6px 0px 6px 0px">
+							«Белая» заработная плата, уровень определяется по результатам собеседования.
+						</Text>
+					</Box>
+					<Box display="flex" align-items="center" margin="0px 0px 6px 0px">
+						<Image
+							src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/tick.svg?v=2021-02-04T00:08:19.533Z"
+							width="15px"
+							height="12px"
+							padding="0px 0px 0px 0px"
+							margin="0px 10px 0px 0px"
+						/>
+						<Text margin="6px 0px 6px 0px">
+							Все возможности для профессионального роста и развития. (конференции, обучение).
+							<br />
+						</Text>
+					</Box>
 					{"    "}
+				</StackItem>
+				<StackItem width="100%">
+					<Override slot="StackItemContent" align-items="center" />
+					<Text font="normal 600 14px/20px 'AvenirNextCyrRegular', sans-serif" margin="0px 12px 0px 0px" color="#58646f">
+						Поделиться
+					</Text>
+					<Image src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/mdash.png?v=2021-02-04T00:43:50.126Z" width="36px" height="1px" margin="0px 12px 0px 0px" />
+					<Link
+						href="javascript:(print());"
+						display="flex"
+						align-items="center"
+						color="#58646f"
+						text-decoration-line="initial"
+						font="normal 600 14px/20px 'AvenirNextCyrRegular', sans-serif"
+						hover-color="#4a8cfa"
+						transition="color 0.2s ease 0s"
+					>
+						Распечатать вакансию
+						<Icon category="ai" icon={AiOutlinePrinter} margin="0px 0px 0px 10px" color="inherit" />
+					</Link>
 				</StackItem>
 				{"    "}
 			</Stack>

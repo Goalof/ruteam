@@ -135,7 +135,7 @@ export default (() => {
 						/>
 						<Override
 							slot="Button Liner"
-							nout-background="--color-dark"
+							nout-background="#ffffff"
 							nout-min-height="3px"
 							border-radius="6px"
 							nout-position="absolute"
@@ -498,7 +498,14 @@ export default (() => {
 					padding="0px 0px 0px 0px"
 					border-radius="0px"
 				/>
-				<Override slot="close" color="#c5cfdb" padding="0.7rem 0.7rem .5rem .5rem" size="20px" />
+				<Override
+					slot="close"
+					color="#c5cfdb"
+					padding="0.7rem 0.7rem .5rem .5rem"
+					size="20px"
+					hover-color="#333"
+					transition="color 0.3s ease 0s"
+				/>
 				<Section padding="10px 0 40px 0">
 					<Override slot="SectionContent" align-items="center" />
 					<Text text-align="center" color="#4a8cfa" font="30px 'AvenirNextCyrMedium'" margin="20px 0px 28px 0px">

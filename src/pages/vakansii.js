@@ -626,7 +626,55 @@ export default (() => {
 											flex-direction="column"
 											lg-align-items="center"
 										/>
-										{"        "}{"    "}
+										{"        "}
+										<Components.Tabs defaultTab="one" orientation="Vertical" width="100%">
+											<Components.TabList>
+												<Components.TabItem tabId="one">
+													<Override slot="Selected Tab" border-width="2px" border-style="solid" border-color="--color-secondary" />
+													<Button>
+														Tab 1
+													</Button>
+												</Components.TabItem>
+												<Components.TabItem tabId="two">
+													<Button>
+														Tab 2
+													</Button>
+												</Components.TabItem>
+												<Components.TabItem tabId="three">
+													<Button>
+														Tab 3
+													</Button>
+												</Components.TabItem>
+												<Components.TabItem tabId="four">
+													<Button>
+														Tab 4
+													</Button>
+												</Components.TabItem>
+											</Components.TabList>
+											<Components.TabPanels>
+												<Components.TabPanel tabId="one">
+													<Text>
+														Tab 1
+													</Text>
+												</Components.TabPanel>
+												<Components.TabPanel tabId="two">
+													<Text>
+														Tab 2
+													</Text>
+												</Components.TabPanel>
+												<Components.TabPanel tabId="three">
+													<Text>
+														Tab 3
+													</Text>
+												</Components.TabPanel>
+												<Components.TabPanel tabId="four">
+													<Text>
+														Tab 4
+													</Text>
+												</Components.TabPanel>
+											</Components.TabPanels>
+										</Components.Tabs>
+										{"    "}
 									</StackItem>
 									{"        "}
 								</Stack>

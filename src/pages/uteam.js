@@ -1997,7 +1997,7 @@ export default (() => {
 						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/20886398%20(1).png?v=2021-02-03T15:47:32.977Z"
 					/>
 					<Text margin="0px 0px 12px 0px" font="20px/28px 'AvenirNextCyrMedium', sans-serif" nout-font="20px/23px 'AvenirNextCyrMedium', sans-serif" sm-font="16px/20px 'AvenirNextCyrMedium', sans-serif">
-						Подводим итоги 2020 и встречаем Новый год со скидками!{"\n\n"}
+						Подводим итоги 2020 и встречаем Новый год со скидками!
 					</Text>
 					<Link
 						href="https://blog-ru.ukit.com/newsline/new-year-2021"
@@ -2030,7 +2030,7 @@ export default (() => {
 						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/57744999.png?v=2021-02-03T15:47:32.979Z"
 					/>
 					<Text margin="0px 0px 12px 0px" font="20px/28px 'AvenirNextCyrMedium', sans-serif" nout-font="20px/23px 'AvenirNextCyrMedium', sans-serif" sm-font="16px/20px 'AvenirNextCyrMedium', sans-serif">
-						Нам 15 лет! Празднуем и ностальгируем вместе!{"\n\n"}
+						Нам 15 лет! Празднуем и ностальгируем вместе!
 					</Text>
 					<Link
 						href="https://blog.ucoz.ru/ucoz/15-years"
@@ -2069,7 +2069,7 @@ export default (() => {
 						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/05479122.png?v=2021-02-03T15:47:52.340Z"
 					/>
 					<Text margin="0px 0px 12px 0px" font="20px/28px 'AvenirNextCyrMedium', sans-serif" nout-font="20px/23px 'AvenirNextCyrMedium', sans-serif" sm-font="16px/20px 'AvenirNextCyrMedium', sans-serif">
-						Большое обновление виджетов и новые шаблоны{"\n\n"}
+						Большое обновление виджетов и новые шаблоны
 					</Text>
 					<Link
 						href="https://blog-ru.ukit.com/updates/new-templates-and-widgets"
