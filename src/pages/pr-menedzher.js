@@ -470,7 +470,7 @@ export default (() => {
 						color="#263238"
 						sm-font="normal 900 53px/1.2 'AvenirNextCyrBold', sans-serif"
 					>
-						PR-менеджер{" "}
+						PR-менеджер
 					</Text>
 					<Text
 						font="normal 400 18px/1.2 'AvenirNextCyrMedium', sans-serif"
