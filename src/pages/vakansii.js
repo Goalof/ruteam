@@ -1,11 +1,11 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, Box, Icon, Button } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, Box, Icon, Button, Hr } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, StackItem, Menu, Stack, Section } from "@quarkly/components";
 import * as Components from "components";
-import { FaVk, FaFacebookF, FaTwitter, FaInstagram, FaOdnoklassniki } from "react-icons/fa";
+import { FaVk, FaFacebookF, FaTwitter, FaInstagram, FaOdnoklassniki, FaBoxes, FaFileCode } from "react-icons/fa";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"vakansii"} />
@@ -16,6 +16,7 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/favicon_uteam.png?v=2021-02-01T19:35:08.128Z"} type={"image/x-icon"} />
 		</Helmet>
+		{" "}
 		<Components.EmbedHTML />
 		<Section
 			id="header"
@@ -627,49 +628,129 @@ export default (() => {
 											lg-align-items="center"
 										/>
 										{"        "}
-										<Components.Tabs defaultTab="one" orientation="Vertical" width="100%">
+										<Components.Tabs
+											defaultTab="one"
+											orientation="Vertical"
+											width="100%"
+											flex-direction="row-reverse"
+											justify-content="space-between"
+											height="auto"
+										>
 											<Components.TabList>
 												<Components.TabItem tabId="one">
-													<Override slot="Selected Tab" border-width="2px" border-style="solid" border-color="--color-secondary" />
-													<Button>
-														Tab 1
+													<Override slot="Selected Tab" color="#3d72cc" />
+													<Override slot="Tab" color="#afc1db" />
+													<Button
+														background="rgba(0, 119, 204, 0)"
+														color="inherit"
+														font="normal 300 12px/24px 'AvenirNextCyrDemi', sans-serif"
+														letter-spacing=".2px"
+														display="flex"
+														align-items="center"
+														padding="8px 24px 8px 12px"
+													>
+														<Icon
+															category="fa"
+															icon={FaBoxes}
+															color="#inherit"
+															margin="0px 8px 0px 0px"
+															size="17px"
+														/>
+														ВСЕ ВАКАНСИИ (13)
 													</Button>
 												</Components.TabItem>
 												<Components.TabItem tabId="two">
-													<Button>
-														Tab 2
-													</Button>
-												</Components.TabItem>
-												<Components.TabItem tabId="three">
-													<Button>
-														Tab 3
-													</Button>
-												</Components.TabItem>
-												<Components.TabItem tabId="four">
-													<Button>
-														Tab 4
+													<Override slot="Selected Tab" color="#3d72cc" />
+													<Override slot="Tab" color="#afc1db" />
+													<Button
+														background="rgba(0, 119, 204, 0)"
+														color="inherit"
+														font="normal 300 12px/24px 'AvenirNextCyrDemi', sans-serif"
+														letter-spacing=".2"
+														display="flex"
+														align-items="center"
+														padding="8px 24px 8px 12px"
+													>
+														<Icon
+															category="fa"
+															icon={FaFileCode}
+															size="17px"
+															color="inherit"
+															margin="0px 8px 0px 0px"
+														/>
+														РАЗРАБОТКА (6)
 													</Button>
 												</Components.TabItem>
 											</Components.TabList>
-											<Components.TabPanels>
+											<Components.TabPanels width="100%">
 												<Components.TabPanel tabId="one">
-													<Text>
-														Tab 1
-													</Text>
+													<Box width="85%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
+														<Link
+															href="#"
+															text-decoration-line="initial"
+															color="#263238"
+															font="22px 'AvenirNextCyrMedium', sans-serif"
+															margin="0px 0px 0px 0px"
+															transition="color 0.2s linear 0s"
+															hover-color="#4a8cfa"
+														>
+															PR-менеджер
+														</Link>
+														<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333">
+															Проект Quarkly | Москва
+														</Text>
+														<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrRegular', sans-serif" color="#333">
+															Мы ищем талантливого PR-щика, серьезно увлеченного вебом. Для продвижения на рынке (в первую очередь англоязычном) проекта Quarkly, ориентированного на профессиональных пользователей (веб-дизайнеров, фронтенд-разработчиков, верстальщиков).
+															<br />
+														</Text>
+														<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
+													</Box>
+													<Box width="85%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
+														<Link
+															href="#"
+															text-decoration-line="initial"
+															color="#263238"
+															font="22px 'AvenirNextCyrMedium', sans-serif"
+															margin="0px 0px 0px 0px"
+															transition="color 0.2s linear 0s"
+															hover-color="#4a8cfa"
+														>
+															PR-менеджер
+														</Link>
+														<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333">
+															Проект Quarkly | Москва
+														</Text>
+														<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrRegular', sans-serif" color="#333">
+															Мы ищем талантливого PR-щика, серьезно увлеченного вебом. Для продвижения на рынке (в первую очередь англоязычном) проекта Quarkly, ориентированного на профессиональных пользователей (веб-дизайнеров, фронтенд-разработчиков, верстальщиков).
+															<br />
+														</Text>
+														<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
+													</Box>
+													<Box width="85%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
+														<Link
+															href="#"
+															text-decoration-line="initial"
+															color="#263238"
+															font="22px 'AvenirNextCyrMedium', sans-serif"
+															margin="0px 0px 0px 0px"
+															transition="color 0.2s linear 0s"
+															hover-color="#4a8cfa"
+														>
+															PR-менеджер
+														</Link>
+														<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333">
+															Проект Quarkly | Москва
+														</Text>
+														<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrRegular', sans-serif" color="#333">
+															Мы ищем талантливого PR-щика, серьезно увлеченного вебом. Для продвижения на рынке (в первую очередь англоязычном) проекта Quarkly, ориентированного на профессиональных пользователей (веб-дизайнеров, фронтенд-разработчиков, верстальщиков).
+															<br />
+														</Text>
+														<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
+													</Box>
 												</Components.TabPanel>
 												<Components.TabPanel tabId="two">
 													<Text>
 														Tab 2
-													</Text>
-												</Components.TabPanel>
-												<Components.TabPanel tabId="three">
-													<Text>
-														Tab 3
-													</Text>
-												</Components.TabPanel>
-												<Components.TabPanel tabId="four">
-													<Text>
-														Tab 4
 													</Text>
 												</Components.TabPanel>
 											</Components.TabPanels>
@@ -689,7 +770,7 @@ export default (() => {
 											flex-direction="column"
 											lg-align-items="center"
 										/>
-										{"        "}{"    "}
+										{"            "}
 									</StackItem>
 									{"        "}
 								</Stack>
@@ -704,7 +785,7 @@ export default (() => {
 											flex-direction="column"
 											lg-align-items="center"
 										/>
-										{"        "}{"    "}
+										{"            "}
 									</StackItem>
 									{"        "}
 								</Stack>
@@ -719,7 +800,7 @@ export default (() => {
 											flex-direction="column"
 											lg-align-items="center"
 										/>
-										{"        "}{"    "}
+										{"            "}
 									</StackItem>
 									{"        "}
 								</Stack>
